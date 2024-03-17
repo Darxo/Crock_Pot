@@ -21,7 +21,8 @@ In order to enjoy those ideas I made them into this submod for myself; and maybe
 ### Other Items
 
 - Unleashable Hawk (similar to Falcon) which grants +15 Iniative and can be released to hinder an enemy movement for 1 turn. Spawns in T3 Towns or Military Settlements (like Falcon just a bit rarer). Can also appear in any town with a Hunters Cabin location.
-- Unleashable Owl (similar to Falcon) which grants +10 Ranged Defense can be released to cause a negative morale check on an enemy. Has stronger effect during night. Spawns in T3 Towns or Military Settlements (like Falcon just a bit rarer). Can also appear in any town with the Trapper location.
+- Unleashable Owl (similar to Falcon) which grants +10 Ranged Defense can be released to cause a negative morale check on an enemy. Has stronger effect during night. Spawns in T3 Towns or Military Settlements (like Falcon just a bit rarer). Regularly spawns in Alchemists. Can also appear in any town with the Trapper location.
+- Unleashable Vulture (similar to Falcon) which grants +10 Threat TODO can be released to cause a negative morale check on an enemy. Has stronger effect during night. Spawns in T3 Towns or Military Settlements (like Falcon just a bit rarer). Regularly spawns in Alchemists. Can also appear in any town with the Pig Farm location.
 
 ## Balance & Polishing
 
