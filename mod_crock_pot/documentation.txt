@@ -4,14 +4,15 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Future Plans: ###
 
-- This is a checklist of ideas that you consider adding to the mod in the future
-- This will help users to not suggest things to you that you already have plans for
-- And its a basic checklist for yourself if you return to one of your older mods later on
+- Change auto release of birds to instead happen when owner loses morale?
+- Unleashable Vulture, that can apply Hawk debuff but only on undead or can eat an undead corpse preventing them from respawning
 
 ### Changes: ###
 
 0.1.1
-	- vastly rework and improve template using modern hooks
+	- add new unleashable hawk that grants +15 Initiative while equipped and can be unleasehd on a single enemy to hinder their movement for 1 turn
+	- add new unleashable owl that grants +10 Ranged Defense while equipped and can be unleashed on a single enemy to cause a negative morale check. Has a stronger effect during night.
+	- unleashable birds (Falcon, Hawk, Owl) are now automatically releases without effect, when their owner takes any damage
 
 0.1.0
 	- released on discord
