@@ -10,6 +10,7 @@ this.falcon_item <- this.inherit("scripts/items/accessory/cp_bird", {
 		this.m.Name = "Falcon";
 		this.m.Description = "A trained falcon that grants initiative while by your side. Can be released in battle to discover hidden prey.";
 		this.m.Icon = "tools/falcon.png";
+		this.m.DefaultIcon = "tools/falcon.png";
 		this.m.Value = 800;
 
 		this.m.DefaultSound = [
