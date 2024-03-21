@@ -69,6 +69,19 @@ this.cp_release_owl_skill <- this.inherit("scripts/skills/skill", {
 		return tooltip;
 	}
 
+	function onVerifyTarget( _originTile, _targetTile )
+	{
+		if (!this.skill.onVerifyTarget(_originTile, _targetTile)) return false;
+
+		if (this.m.MoraleState == ::Const.MoraleState.Ignore)
+		{
+			return false;
+		}
+
+		return true;
+	}
+
+
 	function isUsable()
 	{
 		if (this.getItem().isReleased() || !this.skill.isUsable())
