@@ -10,6 +10,12 @@
 					P = 1.0,
 					S = "accessory/cp_vulture_item"
 				});
+
+				_list.push({
+					R = 75,
+					P = 1.0,
+					S = "accessory/cp_owl_item"
+				});
 				break;
 			}
 		}
