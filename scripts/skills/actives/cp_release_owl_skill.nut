@@ -73,7 +73,7 @@ this.cp_release_owl_skill <- this.inherit("scripts/skills/skill", {
 	{
 		if (!this.skill.onVerifyTarget(_originTile, _targetTile)) return false;
 
-		if (this.m.MoraleState == ::Const.MoraleState.Ignore)
+		if (_targetTile.getEntity().getMoraleState() == ::Const.MoraleState.Ignore)
 		{
 			return false;
 		}
