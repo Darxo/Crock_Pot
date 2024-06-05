@@ -7,6 +7,7 @@ Write a short summary about what your mod does without going into specific. This
 - Change auto release of birds to instead happen when owner loses morale?
 - Unleashable Vulture, that can apply Hawk debuff but only on undead or can eat an undead corpse preventing them from respawning
 - Custom Icons for the release skills of the new birds
+- New Ammunition (ammunition rework)
 
 ### Changes: ###
 
