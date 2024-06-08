@@ -1,0 +1,5 @@
+<brush name="gfx/cp_skills.png" version="17">
+	<sprite id="cp_release_hawk" ic = "FF23165B" img="..\..\gfx\skills\cp_release_hawk.png" />
+	<sprite id="cp_release_owl" ic = "FF23165B" img="..\..\gfx\skills\cp_release_owl.png" />
+	<sprite id="cp_release_vulture" ic = "FF23165B" img="..\..\gfx\skills\cp_release_vulture.png" />
+</brush>

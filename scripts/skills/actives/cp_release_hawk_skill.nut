@@ -11,9 +11,9 @@ this.cp_release_hawk_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.cp_release_hawk";
 		this.m.Name = "Release Hawk";
 		this.m.Description = "Release your hawk to hinder the movement of an enemy until the end of their turn. Does not work on the same enemy multiple times.";
-		this.m.Icon = "skills/active_104.png";	// Placeholder
-		this.m.IconDisabled = "skills/active_104_sw.png";	// Placeholder
-		this.m.Overlay = "active_104";	// Placeholder
+		this.m.Icon = "skills/cp_release_hawk.png";
+		this.m.IconDisabled = "skills/cp_release_hawk_sw.png";
+		this.m.Overlay = "cp_release_hawk";
 		this.m.SoundOnUse = [
 			"sounds/combat/hawk_01.wav",
 			"sounds/combat/hawk_02.wav"

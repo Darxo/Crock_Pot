@@ -11,9 +11,9 @@ this.cp_release_owl_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.cp_release_owl";
 		this.m.Name = "Release Owl";
 		this.m.Description = "Release your owl to scare an enemy.";
-		this.m.Icon = "skills/active_104.png";	// Placeholder
-		this.m.IconDisabled = "skills/active_104_sw.png";	// Placeholder
-		this.m.Overlay = "active_104";	// Placeholder
+		this.m.Icon = "skills/cp_release_owl.png";
+		this.m.IconDisabled = "skills/cp_release_owl_sw.png";
+		this.m.Overlay = "cp_release_owl";
 		this.m.SoundOnUse = [
 			"sounds/combat/cp_owl_use_01.wav",
 			"sounds/combat/cp_owl_use_02.wav"

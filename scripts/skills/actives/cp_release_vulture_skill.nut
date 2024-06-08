@@ -19,9 +19,9 @@ this.cp_release_vulture_skill <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.cp_release_vulture";
 		this.m.Name = "Release Vulture";
 		this.m.Description = "Release your vulture to feast on a corpse, prevening it from being reanimated or consumed. The targeted tile must be empty.";
-		this.m.Icon = "skills/active_104.png";	// Placeholder
-		this.m.IconDisabled = "skills/active_104_sw.png";	// Placeholder
-		this.m.Overlay = "active_104";	// Placeholder
+		this.m.Icon = "skills/cp_release_vulture.png";
+		this.m.IconDisabled = "skills/cp_release_vulture_sw.png";
+		this.m.Overlay = "cp_release_vulture";
 		this.m.SoundOnUse = [
 			"sounds/combat/cp_vulture_use_01.wav",
 			"sounds/combat/cp_vulture_use_02.wav"
