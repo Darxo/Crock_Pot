@@ -27,6 +27,10 @@ In order to enjoy those ideas I made them into this submod for myself; and maybe
 - Unleashable Vulture (similar to Falcon) which grants +10 Threat and can be unleashed to remove a single consumable corpse.
   - Spawns in T3 Towns or Military Settlements (like Falcon just a bit rarer), or any town with a Pig Farm location. Regularly spawns in Alchemists.
 
+### Additional Artwork
+
+- Add a new helmet variant for Witchhunter Hat, Undertaker's Hat and Dark Cowl
+
 ## Balance & Polishing
 
 - Unleashable Birds (Falcon, Hawk, Owl, Vulture) are now automatically released without effect when their owner takes any damage
@@ -34,6 +38,8 @@ In order to enjoy those ideas I made them into this submod for myself; and maybe
 ## Quality of Life
 
 ## Fixes
+
+- Change witchhunter helmet icon to align with sprite
 
 # Requirements
 

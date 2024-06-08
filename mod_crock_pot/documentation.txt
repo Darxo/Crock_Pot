@@ -5,11 +5,14 @@ Write a short summary about what your mod does without going into specific. This
 ### Future Plans: ###
 
 - Change auto release of birds to instead happen when owner loses morale?
-- Unleashable Vulture, that can apply Hawk debuff but only on undead or can eat an undead corpse preventing them from respawning
-- Custom Icons for the release skills of the new birds
 - New Ammunition (ammunition rework)
 
 ### Changes: ###
+
+0.1.3
+	- Add a new helmet variant for Witchhunter Hat, Undertaker's Hat and Dark Cowl
+	- Add unique skill icons for releasing Hawk, Owl and Vulture
+	- Change witchhunter helmet icon to align with sprite
 
 0.1.2
 	- add new unleashable vulture that grants +10 Threat while equipped and can be unleasehed to remove a single consumable corpse
