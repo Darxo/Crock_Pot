@@ -19,7 +19,7 @@ this.cp_release_owl_skill <- this.inherit("scripts/skills/skill", {
 			"sounds/combat/cp_owl_use_02.wav"
 		];
 		this.m.Type = ::Const.SkillType.Active;
-		this.m.Order = ::Const.SkillOrder.NonTargeted + 5;
+		this.m.Order = ::Const.SkillOrder.BeforeLast + 5;	// We want release-ables to be listed after break-free skills (which are BeforeLast)
 		this.m.IsSerialized = false;
 		this.m.IsActive = true;
 		this.m.IsTargeted = true;

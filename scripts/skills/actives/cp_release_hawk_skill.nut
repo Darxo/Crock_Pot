@@ -10,7 +10,7 @@ this.cp_release_hawk_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.cp_release_hawk";
 		this.m.Name = "Release Hawk";
-		this.m.Description = "Release your hawk to hinder the movement of an enemy until the end of their turn. Does not work on the same enemy multiple times.";
+		this.m.Description = "Release your hawk to hinder the movement of an enemy until the end of their turn. Can only be used once on any entity per battle.";
 		this.m.Icon = "skills/cp_release_hawk.png";
 		this.m.IconDisabled = "skills/cp_release_hawk_sw.png";
 		this.m.Overlay = "cp_release_hawk";
@@ -19,7 +19,7 @@ this.cp_release_hawk_skill <- this.inherit("scripts/skills/skill", {
 			"sounds/combat/hawk_02.wav"
 		];
 		this.m.Type = ::Const.SkillType.Active;
-		this.m.Order = ::Const.SkillOrder.NonTargeted + 5;
+		this.m.Order = ::Const.SkillOrder.BeforeLast + 5;	// We want release-ables to be listed after break-free skills (which are BeforeLast)
 		this.m.IsSerialized = false;
 		this.m.IsActive = true;
 		this.m.IsTargeted = true;
