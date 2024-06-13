@@ -5,9 +5,11 @@ In order to enjoy those ideas I made them into this submod for myself; and maybe
 
 # List of all Changes
 
-## Major Changes
-
 ## Additions
+
+### Locations
+
+- Add new T3 Bandit Fort location which 300 Base Resources. For every 50 days (rounded up) one of these can exist at the same time up to a maximum of 7 camps.
 
 ### Items (Craftable)
 

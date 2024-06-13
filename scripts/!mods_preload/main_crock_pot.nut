@@ -1,7 +1,7 @@
 ::CrockPot <- {
 	ID = "mod_crock_pot",
 	Name = "Crock Pot",
-	Version = "0.1.3",
+	Version = "0.1.4",
 	// GitHubURL = "https://github.com/YOURNAME/mod_crock_pot",
 }
 
