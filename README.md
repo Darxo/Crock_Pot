@@ -10,6 +10,16 @@ In order to enjoy those ideas I made them into this submod for myself; and maybe
 ### Locations
 
 - Add new T3 Bandit Fort location which 300 Base Resources. For every 50 days (rounded up) one of these can exist at the same time up to a maximum of 7 camps.
+- Add new Cave location for most beasts with 120 Base Resources. They current don't send out roaming parties or are involved in contracts, but they can appear in tavern rumors.
+  - Direwolves Caves (Up to 2) spawn only in forests
+  - Ghoul Caves (Up to 2) spawn only in swamps
+  - Hyena Caves (Up to 2) spawn only in the desert
+  - Lindwurm Caves (Up to 1) spawn only in the desert or steppe
+  - Serpent Caves (Up to 2) spawn only in the desert
+  - Bog Unhold Caves (Up to 1) spawn only in the swamp or oasis
+  - Unhold Caves (Up to 1) spawn only in the mountains or hills
+  - Frost Unhold Caves (Up to 1) spawn only in the snow
+  - Webknecht Caves (Up to 2) spawn only in the non-snowy forests
 
 ### Items (Craftable)
 

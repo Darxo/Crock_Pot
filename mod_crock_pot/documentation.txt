@@ -4,10 +4,23 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Future Plans: ###
 
+- Improve Caves (Roamer, Tileset, Ambience, Alternative Location Sprites)
 - Change auto release of birds to instead happen when owner loses morale?
 - New Ammunition (ammunition rework)
 
 ### Changes: ###
+
+0.1.5
+	- Add new Cave location for most beasts with 120 Base Resources. They current don't send out roaming parties or are involved in contracts, but they can appear in tavern rumors.
+	  - Direwolves Caves (Up to 2) spawn only in forests
+	  - Ghoul Caves (Up to 2) spawn only in swamps
+	  - Hyena Caves (Up to 2) spawn only in the desert
+	  - Lindwurm Caves (Up to 1) spawn only in the desert or steppe
+	  - Serpent Caves (Up to 2) spawn only in the desert
+	  - Bog Unhold Caves (Up to 1) spawn only in the swamp or oasis
+	  - Unhold Caves (Up to 1) spawn only in the mountains or hills
+	  - Frost Unhold Caves (Up to 1) spawn only in the snow
+	  - Webknecht Caves (Up to 2) spawn only in the non-snowy forests
 
 0.1.4
 	- Add new T3 Bandit Fort location which 300 Base Resources. For every 50 days (rounded up) one of these can exist at the same time up to a maximum of 7 camps.
