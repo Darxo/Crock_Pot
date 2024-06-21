@@ -58,5 +58,14 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 		}
 	}
 
+	function onDeserialize( _in )
+	{
+		this.location.onDeserialize(_in);
+		if (this.getDefenderSpawnListId() == "")
+		{
+			this.fadeOutAndDie();
+		}
+	}
+
 });
 
