@@ -10,6 +10,9 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.1.6
+	- Fix caves not being attackable after loading a savegame
+
 0.1.5
 	- Add new Cave location for most beasts with 120 Base Resources. They current don't send out roaming parties or are involved in contracts, but they can appear in tavern rumors.
 	  - Direwolves Caves (Up to 2) spawn only in forests
