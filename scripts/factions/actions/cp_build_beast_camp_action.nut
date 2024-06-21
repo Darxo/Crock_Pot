@@ -2,7 +2,7 @@ this.cp_build_beast_camp_action <- this.inherit("scripts/factions/faction_action
 	m = {
 		// Config
 		CampLimitDefault = 12,	// This many camps can be present from Day 1
-		DefenderSpawnlist = null,	// Must be set buy an inheriting class
+		DefenderSpawnlistId = "",	// Must be set by an inheriting class
 	},
 	function create()
 	{
@@ -17,7 +17,7 @@ this.cp_build_beast_camp_action <- this.inherit("scripts/factions/faction_action
 		local foundCaves = 0;
 		foreach (cave in settlements)
 		{
-			if (cave.getDefenderSpawnList() == this.m.DefenderSpawnlist)	// Cheap way to identify our related caves quickly
+			if (cave.getDefenderSpawnListId() == this.m.DefenderSpawnlistId)	// Cheap way to identify our related caves quickly
 			{
 				foundCaves++;
 			}
@@ -39,7 +39,7 @@ this.cp_build_beast_camp_action <- this.inherit("scripts/factions/faction_action
 			local camp = ::World.spawnLocation("scripts/entity/world/locations/cp_beast_cave_location", tile.Coords);
 			if (camp != null)	// This creation might fail for some reason. Not sure though as it's in the exe
 			{
-				camp.setDefenderSpawnList(this.m.DefenderSpawnlist)
+				camp.setDefenderSpawnListId(this.m.DefenderSpawnlistId)
 				camp.onSpawned();
 				camp.setBanner("banner_beasts_01");
 				_faction.addSettlement(camp, false);

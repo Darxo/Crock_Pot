@@ -5,7 +5,7 @@ this.cp_build_hyena_camp_action <- this.inherit("scripts/factions/actions/cp_bui
 		this.m.ID = "cp_build_hyena_camp_action";
 		this.cp_build_beast_camp_action.create();
 
-		this.m.DefenderSpawnlist = ::Const.World.Spawn.Hyenas;
+		this.m.DefenderSpawnlistId = "Hyenas";
 		this.m.CampLimitDefault = 2;
 	}
 

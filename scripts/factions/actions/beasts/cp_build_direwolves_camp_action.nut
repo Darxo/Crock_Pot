@@ -5,7 +5,7 @@ this.cp_build_direwolves_camp_action <- this.inherit("scripts/factions/actions/c
 		this.m.ID = "cp_build_direwolves_camp_action";
 		this.cp_build_beast_camp_action.create();
 
-		this.m.DefenderSpawnlist = ::Const.World.Spawn.Direwolves;
+		this.m.DefenderSpawnlistId = "Direwolves";
 		this.m.CampLimitDefault = 2;
 	}
 

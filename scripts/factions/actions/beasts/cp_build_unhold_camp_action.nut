@@ -5,7 +5,7 @@ this.cp_build_unhold_camp_action <- this.inherit("scripts/factions/actions/cp_bu
 		this.m.ID = "cp_build_unhold_camp_action";
 		this.cp_build_beast_camp_action.create();
 
-		this.m.DefenderSpawnlist = ::Const.World.Spawn.Unhold;
+		this.m.DefenderSpawnlistId = "Unhold";
 		this.m.CampLimitDefault = 1;
 	}
 

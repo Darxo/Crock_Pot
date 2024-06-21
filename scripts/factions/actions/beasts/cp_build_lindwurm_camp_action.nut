@@ -5,7 +5,7 @@ this.cp_build_lindwurm_camp_action <- this.inherit("scripts/factions/actions/cp_
 		this.m.ID = "cp_build_lindwurm_camp_action";
 		this.cp_build_beast_camp_action.create();
 
-		this.m.DefenderSpawnlist = ::Const.World.Spawn.Lindwurm;
+		this.m.DefenderSpawnlistId = "Lindwurm";
 		this.m.CampLimitDefault = 1;
 	}
 

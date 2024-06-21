@@ -5,7 +5,7 @@ this.cp_build_webknecht_camp_action <- this.inherit("scripts/factions/actions/cp
 		this.m.ID = "cp_build_webknecht_camp_action";
 		this.cp_build_beast_camp_action.create();
 
-		this.m.DefenderSpawnlist = ::Const.World.Spawn.Spiders;
+		this.m.DefenderSpawnlistId = "Spiders";
 		this.m.CampLimitDefault = 2;
 	}
 

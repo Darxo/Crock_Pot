@@ -5,7 +5,7 @@ this.cp_build_serpent_camp_action <- this.inherit("scripts/factions/actions/cp_b
 		this.m.ID = "cp_build_serpent_camp_action";
 		this.cp_build_beast_camp_action.create();
 
-		this.m.DefenderSpawnlist = ::Const.World.Spawn.Serpents;
+		this.m.DefenderSpawnlistId = "Serpents";
 		this.m.CampLimitDefault = 2;
 	}
 
