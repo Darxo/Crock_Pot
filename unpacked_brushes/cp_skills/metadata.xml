@@ -2,4 +2,7 @@
 	<sprite id="cp_release_hawk" ic = "FF23165B" img="..\..\gfx\skills\cp_release_hawk.png" />
 	<sprite id="cp_release_owl" ic = "FF23165B" img="..\..\gfx\skills\cp_release_owl.png" />
 	<sprite id="cp_release_vulture" ic = "FF23165B" img="..\..\gfx\skills\cp_release_vulture.png" />
+
+	<sprite id="cp_creative_effect" ic = "FF23165B" img="..\..\gfx\ui\traits\trait_icon_cp_creative.png" />
+	<sprite id="cp_creative_effect_mini" ic = "FF23165B" img="mini\cp_creative_effect_mini.png" />
 </brush>
