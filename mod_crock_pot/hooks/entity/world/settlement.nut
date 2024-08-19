@@ -39,6 +39,12 @@
 						P = 1.0,
 						S = "accessory/cp_vulture_item"
 					});
+
+					_list.push({
+						R = 85,
+						P = 1.0,
+						S = "accessory/cp_military_bandage_item",
+					});
 				}
 			}
 		}
