@@ -28,7 +28,7 @@ this.cp_owl_item <- this.inherit("scripts/items/accessory/cp_bird", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = ::MSU.Text.colorizeValue(rangedDefenseBonus) + " Ranged Defense"
+				text = ::MSU.Text.colorizeValue(rangedDefenseBonus, {AddSign = true}) + " Ranged Defense"
 			});
 		}
 

@@ -28,7 +28,7 @@ this.cp_hawk_item <- this.inherit("scripts/items/accessory/cp_bird", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = ::MSU.Text.colorizeValue(this.m.InitiativeBonus) + " Initiative"
+				text = ::MSU.Text.colorizeValue(this.m.InitiativeBonus, {AddSign = true}) + " Initiative"
 			});
 		}
 

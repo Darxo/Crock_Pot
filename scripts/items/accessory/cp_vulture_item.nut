@@ -28,7 +28,7 @@ this.cp_vulture_item <- this.inherit("scripts/items/accessory/cp_bird", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/kills.png",
-				text = "Adjacent enemies have " + ::MSU.Text.colorizeValue(-1 * this.m.ThreatModifier) + " Resolve during Morale Checks."
+				text = "Adjacent enemies have " + ::MSU.Text.colorizeValue(-1 * this.m.ThreatModifier, {AddSign = true}) + " Resolve during Morale Checks."
 			});
 		}
 
