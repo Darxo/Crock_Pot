@@ -96,5 +96,12 @@ this.cp_bandit_fort_location <- this.inherit("scripts/entity/world/location", {
 		body.setBrush("world_bandit_camp_03");
 	}
 
+	// This type of location is deprecated because it is superseded by the T3 Bandit Location introduced by Reforged
+	function onDeserialize( _in )
+	{
+		this.location.onDeserialize(_in);
+		this.fadeOutAndDie();
+	}
+
 });
 

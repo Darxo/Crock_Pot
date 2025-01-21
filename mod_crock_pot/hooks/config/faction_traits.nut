@@ -1,5 +1,3 @@
-::Const.FactionTrait.Actions[::Const.FactionTrait.Bandit].push("scripts/factions/actions/cp_build_bandit_camp_action");
-
 ::Const.FactionTrait.Actions[::Const.FactionTrait.Beasts].extend([
 	"scripts/factions/actions/beasts/cp_build_direwolves_camp_action",
 	"scripts/factions/actions/beasts/cp_build_ghouls_camp_action",
