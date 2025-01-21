@@ -7,8 +7,18 @@ Write a short summary about what your mod does without going into specific. This
 - Improve Caves (Roamer, Tileset, Ambience, Alternative Location Sprites)
 - Change auto release of birds to instead happen when owner loses morale?
 - New Ammunition (ammunition rework)
+- New Throwing Dagger weapon (3 AP attack, Dagger/Throwing hybrid, profits from between the ribs)
+- change crock pot sounds into mono to reduce file size
+- change bird sfx to mono to safe space
+- Verify whether caves count towards beast fights. If not, make it so they do
 
 ### Changes: ###
+
+0.2.0
+	- Add new **Creative** trait. At the start of each round there is a 25% chance that this characters gains an extra +3 Action Points. This can only trigger once per battle
+	- Adjust look of Duelist hat to make it more distinct from the Zweihander Helmet
+	- Remove T3 Bandit Forts, as they are now part of Reforged
+	- Add missing signs in tooltip of new bird items
 
 0.1.6
 	- Fix caves not being attackable after loading a savegame
