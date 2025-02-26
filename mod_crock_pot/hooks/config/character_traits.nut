@@ -1,8 +1,12 @@
+/*
+I didnt like how this trait felt ingame.
+It feels out of place compared to most other perks as it is the only one that triggers once per battle and changes Action Point economy.
+So for the time being I disable it from appearing
+
 ::Const.CharacterTraits.push([
 	"trait.cp_creative",
 	"scripts/skills/traits/cp_creative_trait",
 ]);
-
 
 local excludeTrait = function( _scriptPath, _traitID )
 {
@@ -55,3 +59,4 @@ local excludeTrait = function( _scriptPath, _traitID )
 		excludeTrait(rootPath + traitName, "trait.cp_creative");
 	}
 }
+*/
