@@ -22,7 +22,7 @@ this.cp_build_lindwurm_camp_action <- this.inherit("scripts/factions/actions/cp_
 		local disallowedTerrain = [];
 		for (local i = 0; i < ::Const.World.TerrainType.COUNT; ++i )
 		{
-			if (i == ::Const.World.TerrainType.Desert || i == ::Const.World.TerrainType.Oasis || i == ::Const.World.TerrainType.Steppe || i == ::Const.World.TerrainType.Hills)
+			if (i == ::Const.World.TerrainType.Desert || i == ::Const.World.TerrainType.Oasis || i == ::Const.World.TerrainType.Steppe)
 			{
 				continue;
 			}
