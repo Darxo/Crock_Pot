@@ -8,7 +8,7 @@ this.cp_owl_item <- this.inherit("scripts/items/accessory/cp_bird", {
 		this.cp_bird.create();
 		this.m.ID = "accessory.cp_owl";
 		this.m.Name = "Owl";
-		this.m.Description = "A trained owl that grants ranged defense while by your side. The bonus is doubled during night. Can be released in battle to scare an enemy.";
+		this.m.Description = "A trained owl that grants ranged defense while by your side. Can be released in battle to scare an enemy.";
 		this.m.Icon = "accessory/cp_owl.png";
 		this.m.DefaultIcon = "accessory/cp_owl.png";
 		this.m.DefaultSound = [
@@ -55,14 +55,7 @@ this.cp_owl_item <- this.inherit("scripts/items/accessory/cp_bird", {
 // New Functions
 	function getRangedDefense()
 	{
-		if (::World.getTime().IsDaytime)
-		{
-			return this.m.RangedDefenseBonus;
-		}
-		else	// Night
-		{
-			return 2 * this.m.RangedDefenseBonus;
-		}
+		return this.m.RangedDefenseBonus;
 	}
 
 });
