@@ -11,8 +11,16 @@ Write a short summary about what your mod does without going into specific. This
 - change crock pot sounds into mono to reduce file size
 - change bird sfx to mono to safe space
 - Verify whether caves count towards beast fights. If not, make it so they do
+- change events that grant falcon to alternatively also grant one of the other animals
 
 ### Changes: ###
+
+0.3.0
+	- Disable **Creative** trait from appearing
+	- Prevent Lindwurm caves from spawning in hills
+	- Add tips of the day describing each animal caves spawn behavior
+	- **Owl** no longer grants an additional ranged defense bonus during night and releasing it no longer has a difficulty bonus for the morale check when doing it at night
+	- Duelist Hat can no longer appear with the alternative art, as that art is now used by the Duelists Helmet
 
 0.2.0
 	- Add new **Creative** trait. At the start of each round there is a 25% chance that this characters gains an extra +3 Action Points. This can only trigger once per battle

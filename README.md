@@ -31,23 +31,17 @@ In order to enjoy those ideas I made them into this submod for myself; and maybe
 
 ### Other Items
 
-- Unleashable Hawk (similar to Falcon) which grants +15 Iniative and can be released to hinder an enemy movement for 1 turn.
-  - Spawns in T3 Towns or Military Settlements (like Falcon just a bit rarer), or any town with a Hunters Cabin location.
-- Unleashable Owl (similar to Falcon) which grants +10 Ranged Defense can be released to cause a negative morale check on an enemy. Has stronger effect during night.
-  - Spawns in T3 Towns or Military Settlements (like Falcon just a bit rarer), or any town with a Trapper location. Regularly spawns in Alchemists.
-- Unleashable Vulture (similar to Falcon) which grants +10 Threat and can be unleashed to remove a single consumable corpse.
-  - Spawns in T3 Towns or Military Settlements (like Falcon just a bit rarer), or any town with a Pig Farm location. Regularly spawns in Alchemists.
-
-### Traits
-
-- **Creative**
-  - **Effect:** At the start of each round there is a 25% chance that this characters gains an extra +3 Action Points. This can only trigger once per battle.
-  - This trait will not appear on characters with the **Dumb** trait or on backgrounds with mundane one-dimensional lowborn jobs
+- Unleashable Hawk (similar to Falcon) which grants +15 Iniative and can be released to hinder an enemy movement for 1 turn
+  - Spawns in T3 Towns or Military Settlements (like Falcon just a bit rarer), or any town with a Hunters Cabin location
+- Unleashable Owl (similar to Falcon) which grants +10 Ranged Defense can be released to cause a negative morale check on an enemy
+  - Spawns in T3 Towns or Military Settlements (like Falcon just a bit rarer), or any town with a Trapper location. Regularly spawns in Alchemists
+- Unleashable Vulture (similar to Falcon) which grants +10 Threat and can be unleashed to remove a single consumable corpse
+  - Spawns in T3 Towns or Military Settlements (like Falcon just a bit rarer), or any town with a Pig Farm location. Regularly spawns in Alchemists
 
 ### Additional Artwork
 
 - Add a new helmet variant for Witchhunter Hat, Undertaker's Hat and Dark Cowl
-- Adjust Artwork for Duelist Hats to make them more distinct from Zweihander Helmets
+- Adjust Artwork for Duelist Hats to make them more distinct from Zweihander Helmets and Duelist Helmets
 
 ## Balance & Polishing
 
