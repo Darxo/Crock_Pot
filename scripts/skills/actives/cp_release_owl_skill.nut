@@ -56,14 +56,7 @@ this.cp_release_owl_skill <- this.inherit("scripts/skills/skill", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/kills.png",
-			text = "Trigger a negative morale check on the target with a additional difficulty of " + ::MSU.Text.colorGreen(this.getMoraleCheckPenalty()) + "."
-		});
-
-		tooltip.push({
-			id = 11,
-			type = "text",
-			icon = "ui/icons/special.png",
-			text = "The additional difficulty is doubled during night."
+			text = "Trigger a negative morale check on the target with a additional difficulty of " + ::MSU.Text.colorPositive(this.getMoraleCheckPenalty()) + "."
 		});
 
 		return tooltip;
@@ -115,14 +108,7 @@ this.cp_release_owl_skill <- this.inherit("scripts/skills/skill", {
 
 	function getMoraleCheckPenalty()
 	{
-		if (::World.getTime().IsDaytime)
-		{
-			return this.m.MoraleCheckPenalty;
-		}
-		else	// Night
-		{
-			return 2 * this.m.MoraleCheckPenalty;
-		}
+		return this.m.MoraleCheckPenalty;
 	}
 });
 
