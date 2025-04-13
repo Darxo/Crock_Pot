@@ -49,7 +49,7 @@ this.cp_release_hawk_skill <- this.inherit("scripts/skills/skill", {
 			id = 8,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of " + ::MSU.Text.colorGreen(this.getMaxRange()) + " tiles."
+			text = "Has a range of " + ::MSU.Text.colorPositive(this.getMaxRange()) + " tiles."
 		});
 
 		tooltip.push({

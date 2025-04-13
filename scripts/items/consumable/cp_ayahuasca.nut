@@ -23,7 +23,7 @@ this.cp_ayahuasca <- this.inherit("scripts/items/item", {
 			id = 65,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = ::Reforged.Mod.Tooltips.parseString("Increase your [Perk Tier|Concept.PerkTier] by " + ::MSU.Text.colorGreen("1"))
+			text = ::Reforged.Mod.Tooltips.parseString("Increase your [Perk Tier|Concept.PerkTier] by " + ::MSU.Text.colorPositive("1"))
 		});
 		result.push({
 			id = 65,
