@@ -26,11 +26,8 @@ this.cp_build_beast_camp_action <- this.inherit("scripts/factions/faction_action
 				foundCaves++;
 			}
 		}
+		if (foundCaves >= this.getCampLimit()) return;
 
-		if (foundCaves >= this.getCampLimit())
-		{
-			return;
-		}
 		if (::World.getTime().Days < this.m.DayThresholdMin) return;
 
 		this.m.Score = 2;

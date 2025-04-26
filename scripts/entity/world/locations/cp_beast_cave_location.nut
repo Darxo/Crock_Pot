@@ -20,7 +20,7 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = this.World.EntityManager.getUniqueLocationName(::Const.World.LocationNames.Cave);
+		this.m.Name = ::World.EntityManager.getUniqueLocationName(::Const.World.LocationNames.Cave);
 		this.location.onSpawned();
 	}
 
