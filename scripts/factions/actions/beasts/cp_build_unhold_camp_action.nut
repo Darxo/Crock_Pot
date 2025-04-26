@@ -8,6 +8,7 @@ this.cp_build_unhold_camp_action <- this.inherit("scripts/factions/actions/cp_bu
 		this.m.DefenderSpawnlistId = "Unhold";
 		this.m.CampLimitDefault = 2;
 		this.m.CampScriptName = "scripts/entity/world/locations/cp_beast_locations/cp_beast_unhold_location";
+		this.m.DayThresholdMin = ::CrockPot.Const.DayThresholdMinDangerBeasts;
 	}
 
 // New Overrides

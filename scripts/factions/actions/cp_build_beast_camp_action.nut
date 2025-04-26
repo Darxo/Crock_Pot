@@ -1,5 +1,8 @@
 this.cp_build_beast_camp_action <- this.inherit("scripts/factions/faction_action", {
 	m = {
+		// Public
+		DayThresholdMin = 1,	// The world clock must be at least on this for this camp to be able to spawn
+
 		// Config
 		CampLimitDefault = 1,	// This many camps can be present from Day 1
 		DefenderSpawnlistId = "",	// Must be set by an inheriting class
@@ -28,6 +31,7 @@ this.cp_build_beast_camp_action <- this.inherit("scripts/factions/faction_action
 		{
 			return;
 		}
+		if (::World.getTime().Days < this.m.DayThresholdMin) return;
 
 		this.m.Score = 2;
 	}
