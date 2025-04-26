@@ -79,5 +79,28 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 		}
 	}
 
+// Virtual Functions
+	// Generate a roaming party at this location, using _scaling of this locations resources
+	// It comes with a fitting Name, Description, Footprints and some other beast type specific properties
+	// @param _scaling how many of the locations scaled resources do we have available for the party?
+	// @return instance of the generated party
+	function spawnScaledRoamingParty( _scaling = 0.5 )	// Virtual
+	{
+		return null;
+	}
+
+	// Return an array of all TerrainType, that is preferred/liked by this beast type
+	function getLikeableTerrain()	// Virtual
+	{
+		return [];
+	}
+
+// New Functions
+	// This is the same multiplier calculation as vanilla uses for camp scaling
+	function getDayScalingMult()
+	{
+		return ::Math.minf(3.0, 1.0 + ::World.getTime().Days * 0.0075);
+	}
+
 });
 

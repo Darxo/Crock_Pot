@@ -7,6 +7,7 @@ this.cp_build_webknecht_camp_action <- this.inherit("scripts/factions/actions/cp
 
 		this.m.DefenderSpawnlistId = "Spiders";
 		this.m.CampLimitDefault = 3;
+		this.m.CampScriptName = "scripts/entity/world/locations/cp_beast_locations/cp_beast_webknecht_location";
 	}
 
 // New Overrides

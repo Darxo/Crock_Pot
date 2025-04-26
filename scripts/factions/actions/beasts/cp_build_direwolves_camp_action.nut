@@ -7,6 +7,7 @@ this.cp_build_direwolves_camp_action <- this.inherit("scripts/factions/actions/c
 
 		this.m.DefenderSpawnlistId = "Direwolves";
 		this.m.CampLimitDefault = 3;
+		this.m.CampScriptName = "scripts/entity/world/locations/cp_beast_locations/cp_beast_direwolf_location";
 	}
 
 // New Overrides

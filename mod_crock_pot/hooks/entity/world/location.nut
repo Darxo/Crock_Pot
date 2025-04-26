@@ -1,4 +1,6 @@
 ::CrockPot.HooksMod.hook("scripts/entity/world/location", function(q) {
+	q.m.CP_CanSpawnRoamer <- false;		// New flag that tells us, whether some new spawn-related functions are implemented
+
 	q.onDeserialize = @(__original) function( _in )
 	{
 		__original(_in);

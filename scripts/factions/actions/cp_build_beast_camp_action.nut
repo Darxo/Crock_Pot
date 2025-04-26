@@ -3,6 +3,7 @@ this.cp_build_beast_camp_action <- this.inherit("scripts/factions/faction_action
 		// Config
 		CampLimitDefault = 1,	// This many camps can be present from Day 1
 		DefenderSpawnlistId = "",	// Must be set by an inheriting class
+		CampScriptName = "",
 	},
 	function create()
 	{
@@ -36,7 +37,7 @@ this.cp_build_beast_camp_action <- this.inherit("scripts/factions/faction_action
 		local tile = this.findTileToSpawn();
 		if (tile != null)
 		{
-			local camp = ::World.spawnLocation("scripts/entity/world/locations/cp_beast_cave_location", tile.Coords);
+			local camp = ::World.spawnLocation(this.m.CampScriptName, tile.Coords);
 			if (camp != null)	// This creation might fail for some reason. Not sure though as it's in the exe
 			{
 				camp.setDefenderSpawnListId(this.m.DefenderSpawnlistId)

@@ -7,6 +7,7 @@ this.cp_build_serpent_camp_action <- this.inherit("scripts/factions/actions/cp_b
 
 		this.m.DefenderSpawnlistId = "Serpents";
 		this.m.CampLimitDefault = 3;
+		this.m.CampScriptName = "scripts/entity/world/locations/cp_beast_locations/cp_beast_serpent_location";
 	}
 
 // New Overrides

@@ -7,6 +7,7 @@ this.cp_build_unhold_frost_camp_action <- this.inherit("scripts/factions/actions
 
 		this.m.DefenderSpawnlistId = "UnholdFrost";
 		this.m.CampLimitDefault = 2;
+		this.m.CampScriptName = "scripts/entity/world/locations/cp_beast_locations/cp_beast_unhold_frost_location";
 	}
 
 // New Overrides

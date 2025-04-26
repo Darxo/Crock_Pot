@@ -7,6 +7,7 @@ this.cp_build_unhold_bog_camp_action <- this.inherit("scripts/factions/actions/c
 
 		this.m.DefenderSpawnlistId = "UnholdBog";
 		this.m.CampLimitDefault = 1;
+		this.m.CampScriptName = "scripts/entity/world/locations/cp_beast_locations/cp_beast_unhold_bog_location";
 	}
 
 // New Overrides
