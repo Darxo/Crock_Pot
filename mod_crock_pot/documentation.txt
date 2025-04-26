@@ -15,6 +15,21 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.4.0
+	- Add new southern medium settlement, which always belongs to one of the southern city states, and offer a mix of southern and northern contracts
+		- 3 of these spawn randomly at the start of each campaign. So this will not affect existing campaigns
+	- All Caves now spawn a roaming parties every 2 days, which use half of the camps resources (scaled by day in the same way camps are scaled). They roam the near area for 1 day and then return to the camp.
+		- Direwolves, Ghouls, Hyenas, Serpents and Webknechts spawned this way have a VisibilityMult of 0.5
+		- Caves spawned before this update, will not spawn roaming parties
+	- Caves now have 140 Resourecs (up from 120) and 0.4 VisbilityMult (down from 0.75). In addition to a guaranteed treasure, Caves now will either drop a second treasure or 5-10 tools
+	- All Caves can now spawn up 5 tiles closer to settlements or other locations
+	- Direwolf, Ghoul, Serpent, Hyena and Webknecht Caves can now appear up to 3 times the in world (up from 2)
+	- Lindwurm, Unhold and Frost Unhold Caves can now appear up to 2 times the in world (up from 1)
+	- Serpents, Lindwurm and Unhold Caves now only start spawning at day 10+
+	- All Beasts, which are now covered by Caves will no longer randomly spawn in the world
+	- All other Beasts (Alps, Hexen, Schrats, Kraken and Ifrit) now have a shared maximum of 8 parties (down from 15 for all beasts combined)
+	- Add five new tips of the day describing unhold camps spawn behavior and caves in general
+
 0.3.0
 	- Disable **Creative** trait from appearing
 	- Prevent Lindwurm caves from spawning in hills

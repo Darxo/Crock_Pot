@@ -1,0 +1,12 @@
+
+
+- southern village
+- bounty hunter system
+- bounty hunter origin
+- cave roamer
+- lower tier necromancer
+
+- look into breakNorthSouthAlliances when considering holy war support
+
+- add beast specific suffixes to the cave name? Something like "of the slithering" for a Snake den
+- Give caves unique names depending on enemy type
