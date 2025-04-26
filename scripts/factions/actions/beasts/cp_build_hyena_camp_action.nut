@@ -7,6 +7,7 @@ this.cp_build_hyena_camp_action <- this.inherit("scripts/factions/actions/cp_bui
 
 		this.m.DefenderSpawnlistId = "Hyenas";
 		this.m.CampLimitDefault = 3;
+		this.m.CampScriptName = "scripts/entity/world/locations/cp_beast_locations/cp_beast_hyena_location";
 	}
 
 // New Overrides

@@ -7,6 +7,7 @@ this.cp_build_lindwurm_camp_action <- this.inherit("scripts/factions/actions/cp_
 
 		this.m.DefenderSpawnlistId = "Lindwurm";
 		this.m.CampLimitDefault = 2;
+		this.m.CampScriptName = "scripts/entity/world/locations/cp_beast_locations/cp_beast_lindwurm_location";
 	}
 
 // New Overrides

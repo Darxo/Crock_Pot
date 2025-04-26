@@ -7,6 +7,7 @@ this.cp_build_ghouls_camp_action <- this.inherit("scripts/factions/actions/cp_bu
 
 		this.m.DefenderSpawnlistId = "Ghouls";
 		this.m.CampLimitDefault = 3;
+		this.m.CampScriptName = "scripts/entity/world/locations/cp_beast_locations/cp_beast_ghoul_location";
 	}
 
 // New Overrides
@@ -23,7 +24,7 @@ this.cp_build_ghouls_camp_action <- this.inherit("scripts/factions/actions/cp_bu
 		for (local i = 0; i < ::Const.World.TerrainType.COUNT; ++i )
 		{
 			// Ghouls only live in Swamps. This makes they hideouts very rare to spawn because swamps are so rare and the RNG generator needs to hit a swamp tile randomly
-			if (i == this.Const.World.TerrainType.Swamp)
+			if (i == ::Const.World.TerrainType.Swamp)
 			{
 				continue;
 			}
