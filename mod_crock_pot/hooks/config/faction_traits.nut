@@ -8,4 +8,7 @@
 	"scripts/factions/actions/beasts/cp_build_unhold_camp_action",
 	"scripts/factions/actions/beasts/cp_build_unhold_frost_camp_action",
 	"scripts/factions/actions/beasts/cp_build_webknecht_camp_action",
+
+	// For sending out roaming parties
+	"scripts/factions/actions/cp_send_beast_roamers_action",
 ]);
