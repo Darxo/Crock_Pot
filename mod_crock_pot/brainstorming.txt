@@ -1,0 +1,300 @@
+# Origins
+
+## Bounty Hunter
+
+- Deal 10% more damage against Humans
+- Deal 10% less damage against Beasts
+- **It's just business**/**Nothing Personal**: Negative Relationship recovers 20% faster
+
+## Trader
+
+- Move 15% faster on roads
+	- Escorts move 15% faster?
+- Cities have 10% more wares
+
+
+# Factions
+
+## Mercenaries
+
+### Bounty Hunters
+- Specialize in fighting humans and are somewhat decent in fighting other enemies that use weapons (goblins, orcs, undead)
+- They Utilize Nimble/Flexible nad field rather bad armor (so they are not meant for farming gear)
+- They use nets a lot
+- Their signatures are:
+	- Lots of nets (+ Angler and later Kingfisher)
+	- Overwhelm
+	- Medium Armor
+	- Lose Formation Style
+	- Parry (Hardened)
+- Like in GTA, you can now get "Stars". Every Star will cause more bounty hunter to try to track you down. While you can farm them, that is probably not very profitable
+- What they give you when fighting them:
+	- Nets (if you kill them quick enough)
+	- A little money from equipped weapons
+	- Almost no food
+	- Average XP
+- Might come with a new **Dead or Alive** effect, which grants: "10% more damage against humans, 50% less chance for fatality"
+- Lowest tier (Tracker) might spawn with dogs (or maybe just the ranged variants of the tracker), just for flavor
+	- But later variants stop spawning dogs, those dont help anyways in actual fights
+
+
+
+# Changing existing Entities
+
+### Militia
+The Militia is made up of everyday villagers, hastily gathered in times of need to defend their homes with basic weapons and minimal training.
+Though not professional soldiers, their numbers and fierce resolve can make them a formidable force in desperate times.
+- Tier 1 of Militia Frontline
+- Cost: 10 (same as Vanilla)
+- Stats:
+	- 50 Hitpoints (same as Vanilla)
+	- 70 Resolve (up from 40)
+	- 100 Stamina (same as Vanilla)
+	- 50 Melee Skill (same as Vanilla)
+	- 35 Ranged Skill (same as Vanilla)
+	- 0 Melee Defense (same as Vanilla)
+	- 0 Ranged Defense (same as Vanilla)
+	- 90 Initiative (same as Vanilla)
+- Weapons:
+	- Butchers Cleaver
+	- Wooden Stick
+	- Wooden Flail
+
+	- Militia Spear
+	- Shortsword
+	- Bludgeon
+	- Hatchet
+	- Reinforced Wooden Flail
+	- Scramasax
+- Armor:
+	- Linen Tunic (20)
+	- Apron (25)
+	- Leather Tunic (30)
+	- Thick Tunic (35)
+	- No longer spawn with: Sackcloth (10), Tattered Sackcloth (5), Padded Surcoat (50)
+- Helmet:
+	- Headscarf (20)
+	- Hood (30)
+	- Straw Hat (30)	*new*
+	- Feathered Hat (30) 	*new*
+	- No longer spawn with: Aketon Cap (40), Open Leather Cap (40), Full Leather Cap (45)
+
+### Militia Veteran
+Militia Veterans are drafted townsfolk who have survived multiple battles, earning them a bit more trust and slightly better equipment.
+Though still not professionals, their battle-hardened experience makes them more reliable in a fight,
+and they provide a stronger backbone for the militia when defending their village.
+- Tier 2 of Militia Frontline
+- Cost: 18 (up from 12)
+- Stats:
+	- 70 Melee Skill (up from 55)
+	- 50 Ranged Skill (up from 40)
+	- 10 Melee Defense (up from 0)
+	- 10 Ranged Defense (up from 0)
+	- 70 Hitpoints (up from 60)
+	- 120 Stamina (up from 110)
+	- 120 Initiative (up from 100)
+	- 80 Resolve (up from 50)
+- Weapons:
+	- Militia Spear
+	- Shortsword
+	- Bludgeon
+	- Hatchet
+	- Reinforced Wooden Flail
+	- Scramasax
+	- Falchion
+
+	- No longer spawn with: Boar Spear, Hand Axe
+
+	- Hooked Blade
+	- Warfork
+	- Goedendag
+- Armor:
+	- Padded Surcoat (50)
+	- Gabeson (65)
+	- Padded Leather (80)
+	- Leather Lamellar Armor (95)
+	- No longer spawn with: Leather Tunic (30), Thick Tunic (35)
+- Helmet:
+	- Aketon Cap (40)
+	- Open Leather Cap (40)
+	- Full Leather Cap (45)	*new*
+	- Full Aketon Cap (50)
+- Perks: Strength in Numbers, Phalanx, Weapon Mastery
+
+# New Enemies
+
+## Mercs
+
+### [Scum] Tracker
+- Lowest Tier of Bounty Hunter
+	- Subparty:
+		- Wardog in heavy dog armor with Bodyguard AI
+
+### Bounty Hunter
+- 50% chance to with 1H weapon + net
+	- Key Perks: Parry, Duelist
+	- Other Perks: Overwhelm
+	- Loadout:
+		- 1H melee weapon; Net in offhand
+	- Attributes:
+		- 70 Melee Skill, 70 Ranged Skill,
+		- 10 Melee Defense, 25 Ranged Defense
+- 30% chance to spawn with 1H weapon and shield
+	- Key Perks: Rotation, One with the Shield
+	- Other Perks: Overwhelm
+	- Loadout:
+		- Maybe goblin shield?
+	- Attributes:
+		- 70 Melee Skill, 70 Ranged Skill,
+		- 20 Melee Defense, 20 Ranged Defense,
+- 20% chance to spawn with crossbow and 1H melee weapon
+	- Subparty:
+		- Wardog in normal dog armor with Bodyguard AI
+	- Key Perks: Hybridization, Scout? (better fighting at night)
+	- Other Perks: Overwhelm
+	- Loadout:
+		- Medium Crossbow
+		- Goblin Poison
+	- Attributes:
+		- 70 Melee Skill, 70 Ranged Skill,
+		- 10 Melee Defense, 25 Ranged Defense,
+
+### Crown Taker
+- Highest Tier version of Bounty Hunter
+- Focussed on fighting humanoids
+- Utilize Parry a lot
+	- 10 Melee Defense, 25 Ranged Defense
+- 50% chance to with 1H weapon, no offhand
+	- Key Perks: Parry, Duelist
+	- Other Perks: Battle Fervor, Exude Confidence
+	- Other Perks
+	- Attributes:
+		- 85 Melee Skill, 85 Ranged Skill,
+		- 20 Melee Defense, 40 Ranged Defense
+- 30% chance to spawn with 1H weapon and shield
+	- Key Perks: Rotation, One with the Shield
+	- Other Perks: Battle Fervor, Exude Confidence
+	- Attributes:
+		- 85 Melee Skill, 85 Ranged Skill,
+		- 30 Melee Defense, 30 Ranged Defense,
+- 20% chance to spawn with crossbow and 1H melee weapon
+	- Subparty:
+		- Wardog in heavy dog armor with Bodyguard AI
+	- Key Perks: Hybridization, Scout? (better fighting at night)
+	- Other Perks: Battle Fervor, Exude Confidence
+		- Goblin Poison
+	- Loadout:
+		- Heavy Crossbow
+		- Goblin Poison
+	- Attributes:
+		- 85 Melee Skill, 85 Ranged Skill,
+		- 20 Melee Defense, 40 Ranged Defense
+
+### Town Guard
+The Town Guard is the first line of defense in a large village or town, a professional group responsible for maintaining order and protecting key areas like gates and walls.
+Well-trained and better equipped than the militia, they are called upon to respond swiftly to threats both in peacetime and during larger conflicts.
+- They are Tier 3 of Militia Frontline
+- They are also their own separate tier with a certain min Resource value. So a few of them will appear early while the rest must come through upgrading
+- AI: PrefersToWait = true
+- Stats:
+	- 70 Resolve
+	- 20 Melee/Ranged Defense
+- Weapons:
+	- Arming Sword
+	- Goedendag
+	- Boar Speer
+	- Pike,
+- Perks:
+	- Vigilant
+	- Poise (to have more effective armor without dropping better armor),
+- Weaponspecific: Shield Expert
+
+### Local Hero
+	The Local Hero is a talented townsman who, despite their combat skills, chose an ordinary life over a military career.
+	When needed, they take up a two-handed weapon and medium armor, using their experience to protect their home.
+	With strong defenses and high resolve, they inspire confidence in those around them, standing firm in the face of danger.
+	- Tier 1 of Militia Elite
+	- Cost: 30	(Mercenary has 25)
+	- Stats:
+		- 90 Hitpoints	(same as Mercenary)
+		- 100 Resolve	(Mercenary has 70)
+		- 135 Stamina	(same as Mercenary)
+		- 75 Melee Skill 	(same as Mercenary)
+		- 65 Ranged Skill	(same as Mercenary)
+		- 30 Melee Defense	(Mercenary has 20)
+		- 30 Ranged Defense 	(Mercenary has 10)
+		- 135 Initiative		(same as Mercenary)
+	- Weapons:
+		- Wooden Mallet
+		- Two Handed Mace
+		- Goedendag
+		- Pike
+		- Warbrand
+		- 2H Wooden Flail
+	- Armor:
+		- Padded Leather (80)
+		- Leather Lamellar Armor (95)
+	- Helmet:
+		- Undertaker's Hat (40)
+		- Witchhunter\'s Hat (40)
+		- Bear Headpiece (50)
+		- Rusty Mail Coif (70)
+	- Perks: Formidable Approach, Anticipation, Exude Confidence, Weapon Mastery
+
+### Constable
+The constable would be more focused on maintaining order and enforcing laws rather than leading military operations.
+While their role is essential for community stability, it is generally not as prioritized in a combat-oriented scenario.
+
+### Captain
+A militia captain typically leads the local militia and has command over the troops during times of conflict.
+This includes tactical planning, organizing defenses, and direct engagement in battles.
+They are likely to be more focused on military operations and strategies.
+
+
+### Foreman
+- Caravan Hand Combat Stats
+- Good Resolve (~70)
+- Perks:
+	- Supporter
+
+### Quartermaster
+- Caravan Hand Combat Stats + 5
+- High Resolve (~80)
+- Perks:
+	- Supporter
+	- Anticipation
+- Weapons:
+	- Light Crossbow
+
+### Caravan Master
+- Caravan Hand Combat Stats + 10
+- Very High Resolve (~100)
+- Perks:
+	- Combo
+	- Supporter
+	- Anticipation
+	- Hold Steady
+- Weapons:
+	- Crossbow
+
+
+
+
+
+
+Goblin Rider T2 Net Variant Names:
+- Wolfhunter
+- Packtracker
+- Packsnatcher
+
+- southern village
+- bounty hunter system
+- bounty hunter origin
+- cave roamer
+- lower tier necromancer
+
+
+
+
+
+- look into breakNorthSouthAlliances when considering holy war support

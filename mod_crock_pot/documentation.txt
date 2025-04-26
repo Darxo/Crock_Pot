@@ -2,6 +2,11 @@
 
 Write a short summary about what your mod does without going into specific. This text can then be copy&pasted and used whenever you publish the mod
 
+
+### Known Issues
+
+- southern city states now have technically more than 1 "getSettlements()", so some of their actions might choose another origin town than their city state (send peasants)
+
 ### Future Plans: ###
 
 - Improve Caves (Roamer, Tileset, Ambience, Alternative Location Sprites)
