@@ -1,0 +1,10 @@
+<brush name="gfx/cp_world_settlement.png" version="17">
+  <sprite id="world_southern_village_townhall_01" offsetY="0" ic="FF3B5967" img="world_settlement\southern_village_townhall_01.png" />
+  <sprite id="world_southern_village_townhall_01_light" offsetY="0" b7="0" ic="FF69CBD5" img="world_settlement\southern_village_townhall_01_light.png"/>
+  <sprite id="world_houses_0_cp_sv01_01" offsetY="-4" b7="0" ic="FF3C6178" img="world_settlement\southern_village_houses_01.png" left="-123" right="124" />
+  <sprite id="world_houses_0_cp_sv01_02" offsetY="-4" b7="0" ic="FF3C6178" img="world_settlement\southern_village_houses_02.png" left="-123" right="124" />
+
+  <sprite id="world_houses_0_cp_sv01_01_light" offsetY="-4" b7="0" ic="FF67D3EB" img="world_settlement\southern_village_houses_01_light.png"/>
+  <sprite id="world_houses_0_cp_sv01_02_light" offsetY="-4" b7="0" ic="FF67D3EB" img="world_settlement\southern_village_houses_02_light.png"/>
+
+</brush>
