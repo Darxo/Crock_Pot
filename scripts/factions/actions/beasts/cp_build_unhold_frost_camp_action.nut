@@ -6,7 +6,7 @@ this.cp_build_unhold_frost_camp_action <- this.inherit("scripts/factions/actions
 		this.cp_build_beast_camp_action.create();
 
 		this.m.DefenderSpawnlistId = "UnholdFrost";
-		this.m.CampLimitDefault = 1;
+		this.m.CampLimitDefault = 2;
 	}
 
 // New Overrides
@@ -14,8 +14,8 @@ this.cp_build_unhold_frost_camp_action <- this.inherit("scripts/factions/actions
 	{
 		local minDistToSettlements = 7;
 		local maxDistToSettlements = 1000;
-		local minDistToEnemyLocations = 5;
-		local minDistToAlliedLocations = 5;
+		local minDistToEnemyLocations = 4;
+		local minDistToAlliedLocations = 4;
 		local minY = 0.70;	// Only in the snow
 		local maxY = 1.00;
 

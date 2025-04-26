@@ -6,16 +6,16 @@ this.cp_build_direwolves_camp_action <- this.inherit("scripts/factions/actions/c
 		this.cp_build_beast_camp_action.create();
 
 		this.m.DefenderSpawnlistId = "Direwolves";
-		this.m.CampLimitDefault = 2;
+		this.m.CampLimitDefault = 3;
 	}
 
 // New Overrides
 	function findTileToSpawn()
 	{
-		local minDistToSettlements = 10;
+		local minDistToSettlements = 7;
 		local maxDistToSettlements = 1000;
-		local minDistToEnemyLocations = 5;
-		local minDistToAlliedLocations = 10;
+		local minDistToEnemyLocations = 4;
+		local minDistToAlliedLocations = 4;
 		local minY = 0.2;	// Everywhere but the desert part of the world
 		local maxY = 1.0;
 
