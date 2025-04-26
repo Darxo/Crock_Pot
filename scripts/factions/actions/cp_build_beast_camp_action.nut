@@ -1,12 +1,12 @@
 this.cp_build_beast_camp_action <- this.inherit("scripts/factions/faction_action", {
 	m = {
 		// Config
-		CampLimitDefault = 12,	// This many camps can be present from Day 1
+		CampLimitDefault = 1,	// This many camps can be present from Day 1
 		DefenderSpawnlistId = "",	// Must be set by an inheriting class
 	},
 	function create()
 	{
-		this.m.IsRunOnNewCampaign = true;
+		// this.m.IsRunOnNewCampaign = true;
 		this.faction_action.create();
 	}
 

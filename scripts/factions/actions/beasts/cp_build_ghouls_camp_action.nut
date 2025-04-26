@@ -6,7 +6,7 @@ this.cp_build_ghouls_camp_action <- this.inherit("scripts/factions/actions/cp_bu
 		this.cp_build_beast_camp_action.create();
 
 		this.m.DefenderSpawnlistId = "Ghouls";
-		this.m.CampLimitDefault = 2;
+		this.m.CampLimitDefault = 3;
 	}
 
 // New Overrides
@@ -14,8 +14,8 @@ this.cp_build_ghouls_camp_action <- this.inherit("scripts/factions/actions/cp_bu
 	{
 		local minDistToSettlements = 7;
 		local maxDistToSettlements = 1000;
-		local minDistToEnemyLocations = 5;
-		local minDistToAlliedLocations = 5;
+		local minDistToEnemyLocations = 4;
+		local minDistToAlliedLocations = 4;
 		local minY = 0.25;	// Neither in the desert
 		local maxY = 0.75;	// Nor in the snow
 

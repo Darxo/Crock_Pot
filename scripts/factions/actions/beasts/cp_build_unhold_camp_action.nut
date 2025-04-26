@@ -6,16 +6,16 @@ this.cp_build_unhold_camp_action <- this.inherit("scripts/factions/actions/cp_bu
 		this.cp_build_beast_camp_action.create();
 
 		this.m.DefenderSpawnlistId = "Unhold";
-		this.m.CampLimitDefault = 1;
+		this.m.CampLimitDefault = 2;
 	}
 
 // New Overrides
 	function findTileToSpawn()
 	{
-		local minDistToSettlements = 10;
+		local minDistToSettlements = 7;
 		local maxDistToSettlements = 1000;
-		local minDistToEnemyLocations = 5;
-		local minDistToAlliedLocations = 5;
+		local minDistToEnemyLocations = 4;
+		local minDistToAlliedLocations = 4;
 		local minY = 0.2;	// Neither in the desert
 		local maxY = 0.8;	// Nor in the snow
 

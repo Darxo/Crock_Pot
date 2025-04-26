@@ -6,7 +6,7 @@ this.cp_build_lindwurm_camp_action <- this.inherit("scripts/factions/actions/cp_
 		this.cp_build_beast_camp_action.create();
 
 		this.m.DefenderSpawnlistId = "Lindwurm";
-		this.m.CampLimitDefault = 1;
+		this.m.CampLimitDefault = 2;
 	}
 
 // New Overrides
@@ -14,8 +14,8 @@ this.cp_build_lindwurm_camp_action <- this.inherit("scripts/factions/actions/cp_
 	{
 		local minDistToSettlements = 15;
 		local maxDistToSettlements = 1000;
-		local minDistToEnemyLocations = 7;
-		local minDistToAlliedLocations = 7;
+		local minDistToEnemyLocations = 6;
+		local minDistToAlliedLocations = 6;
 		local minY = 0.0;
 		local maxY = 0.5;	// Only in the lower half of the map
 
