@@ -3,6 +3,9 @@
 	Name = "Crock Pot",
 	Version = "0.3.0",
 	// GitHubURL = "https://github.com/YOURNAME/mod_crock_pot",
+	Const = {
+		DayThresholdMinDangerBeasts = 10,	// More dangerous beasts only start spawning at this day point and forward
+	}
 }
 
 ::CrockPot.HooksMod <- ::Hooks.register(::CrockPot.ID, ::CrockPot.Version, ::CrockPot.Name);
