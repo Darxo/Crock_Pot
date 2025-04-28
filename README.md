@@ -23,9 +23,9 @@ This submod is a collection of content for Reforged.
 
 ### Beast Caves
 
-- Beasts Cave locations for most beasts with 140 Base Resources and a Visibility Multiplier of 0.4 (they are hard to naturally find)
+- Add Beasts Cave locations for most beasts with 140 Base Resources and a Visibility Multiplier of 0.4 (they are hard to naturally find)
 - Caves always drop a random treasure and either drop a second treasure or some tools
-- Caves may rarely contain named items
+- Caves may rarely contain named items (They follow the same Vanilla rule as all other camps for this)
 - Every Cave will spawn a roaming party every 2 day. These parties will roam the around the cave for 1 day and then return to it
 - The following Caves will appear from day 1+:
   - Direwolves Caves (Up to 3) spawn only in forests. Their roaming parties have a Visibility Multiplier of 0.5
@@ -63,7 +63,9 @@ This submod is a collection of content for Reforged.
 
 ## Balance & Polishing
 
-- All unleashable Birds (inclduing Falcon) are now automatically released without effect when their owner takes any damage
+- **Falcon** no longer provides Initiative to your party when released. It now grants +15 Initiative while equipped
+- All unleashable Birds (including Falcon) are now automatically released without effect when their owner takes any damage
+- The Falcon now uses actual falcon noises when equipping or releasing, instead of using hawk noises
 
 ## Fixes
 
@@ -77,6 +79,7 @@ This submod is a collection of content for Reforged.
 
 - Geist Tear is not marked as a crafting ingredient even though it's now used in a recipe
 - Peasants and Caravans spawned by City States appear at their Villages instead
+- Southern Villages can sometimes spawn with additional northern buildings. That can happens if too few of those buildings were spawned
 
 # Compatibility
 

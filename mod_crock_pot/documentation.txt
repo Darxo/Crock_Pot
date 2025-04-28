@@ -15,6 +15,11 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.4.1
+	- Falcon no longer provides Initiative to your party when released. It now grants +15 Initiative while equipped
+	- Adjust rarity of a few southern village market place items: Southern Head Wrap is much less common, Nomad Robe is slightly more common, Linothorax and Spiked Skull Cap with Mail are a bit rarer
+	- Fix non-cave beasts potentially spawning more frequently than intended
+
 0.4.0
 	- Add new southern medium settlement, which always belongs to one of the southern city states, and offer a mix of southern and northern contracts
 		- 3 of these spawn randomly at the start of each campaign. So this will not affect existing campaigns

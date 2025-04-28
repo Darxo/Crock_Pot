@@ -166,7 +166,7 @@ this.cp_medium_southern_village <- this.inherit("scripts/entity/world/settlement
 	}
 
 	// Our new southern village faction has the official type "OrientalCityState" for contract/action purposes
-	// But that causes it to not be found when this function is called. So we overwrite it and first redirect a search for 'Settlement'
+	// But that causes it to not be found when this function is called with "Settlement". So we overwrite it and first redirect a search for "Settlement"
 	function getFactionOfType( _type )
 	{
 		if (_type == ::Const.FactionType.Settlement)
