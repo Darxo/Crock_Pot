@@ -102,17 +102,17 @@ this.cp_marketplace_oriental_village_building <- this.inherit("scripts/entity/wo
 				S = "armor/oriental/cloth_sash"
 			},
 			{
-				R = 40,
+				R = 20,		// For southern city states this is 40
 				P = 1.0,
 				S = "armor/oriental/nomad_robe"
 			},
 			{
-				R = 20,
+				R = 40,		// For southern city states this is 20
 				P = 1.0,
 				S = "armor/oriental/padded_vest"
 			},
 			{
-				R = 30,
+				R = 50,		// For southern city states this is 30
 				P = 1.0,
 				S = "armor/oriental/linothorax"
 			},
@@ -122,17 +122,12 @@ this.cp_marketplace_oriental_village_building <- this.inherit("scripts/entity/wo
 				S = "helmets/oriental/southern_head_wrap"
 			},
 			{
-				R = 10,
-				P = 1.0,
-				S = "helmets/oriental/southern_head_wrap"
-			},
-			{
 				R = 30,
 				P = 1.0,
 				S = "helmets/oriental/wrapped_southern_helmet"
 			},
 			{
-				R = 40,
+				R = 70,		// For southern city states this is 40
 				P = 1.0,
 				S = "helmets/oriental/spiked_skull_cap_with_mail"
 			},
