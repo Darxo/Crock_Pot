@@ -20,3 +20,7 @@
 	::include("mod_crock_pot/load");		// Load mod adjustments and other hooks
 	::include("mod_crock_pot/ui/load");		// Load JS Adjustments and Hooks
 });
+
+::CrockPot.HooksMod.queue(">mod_reforged", function() {
+	::includeFiles(::IO.enumerateFiles("mod_crock_pot/hooks_last"));
+}, ::Hooks.QueueBucket.Last);

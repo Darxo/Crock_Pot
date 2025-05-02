@@ -1,6 +1,6 @@
 this.falcon_item <- this.inherit("scripts/items/accessory/cp_bird", {
 	m = {
-		// InitiativeBonus = 15,	// This is already implemented by reforged
+		InitiativeBonus = 15,
 	},
 
 	function create()
@@ -19,7 +19,6 @@ this.falcon_item <- this.inherit("scripts/items/accessory/cp_bird", {
 		];
 	}
 
-	/*	// This is already implemented by reforged
 	function getTooltip()
 	{
 		local tooltip = this.cp_bird.getTooltip();
@@ -45,7 +44,6 @@ this.falcon_item <- this.inherit("scripts/items/accessory/cp_bird", {
 			_properties.Initiative += this.m.InitiativeBonus;
 		}
 	}
-	*/
 
 	function onEquip()
 	{
