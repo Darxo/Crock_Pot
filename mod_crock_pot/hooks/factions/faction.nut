@@ -6,7 +6,7 @@
 	{
 		local ret = __original(_tile, _name, _uniqueName, _template, _resources, _minibossify);
 
-		this.m.LastSpawnedParty <- ::MSU.asWeakTableRef(ret);
+		this.m.CP_LastSpawnedParty <- ::MSU.asWeakTableRef(ret);
 
 		return ret;
 	}
