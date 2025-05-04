@@ -99,7 +99,7 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 	// This is the same multiplier calculation as vanilla uses for camp scaling
 	function getDayScalingMult()
 	{
-		return ::Math.minf(3.0, 1.0 + ::World.getTime().Days * 0.0075);
+		return ::Math.minf(3.0, 1.0 + ::World.getTime().Days * 0.0075) * ::Const.Difficulty.EnemyMult[::World.Assets.getCombatDifficulty()];
 	}
 
 });
