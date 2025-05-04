@@ -2,6 +2,7 @@ this.cp_send_beast_roamers_action <- this.inherit("scripts/factions/faction_acti
 	m = {
 		// Public
 		CooldownInBBSeconds = 200.0,
+		RoamDurationInBBSeconds = 150,
 	},
 	function create()
 	{
@@ -25,7 +26,7 @@ this.cp_send_beast_roamers_action <- this.inherit("scripts/factions/faction_acti
 
 		local roam = ::new("scripts/ai/world/orders/roam_order");
 		roam.setNoTerrainAvailable();
-		roam.setTime(::World.getTime().SecondsPerDay);	// These roamer exist only for one day
+		roam.setTime(this.m.RoamDurationInBBSeconds);	// These roamer exist only for two day
 		roam.setAvoidHeat(true);
 		roam.setMinRange(1);
 		roam.setMaxRange(5);
