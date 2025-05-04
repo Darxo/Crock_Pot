@@ -23,7 +23,7 @@ this.cp_beast_webknecht_location <- this.inherit("scripts/entity/world/locations
 
 		party.getFlags().set("IsWebknechts", true);
 
-		party.setVisibilityMult(0.5);
+		party.setVisibilityMult(0.6);
 
 		return party;
 	}

@@ -21,7 +21,7 @@ this.cp_beast_ghoul_location <- this.inherit("scripts/entity/world/locations/cp_
 		party.getSprite("banner").setBrush("banner_beasts_01");
 		party.setLooting(false);
 
-		party.setVisibilityMult(0.5);
+		party.setVisibilityMult(0.6);
 
 		return party;
 	}
