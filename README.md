@@ -23,10 +23,10 @@ This submod is a collection of content for Reforged.
 
 ### Beast Caves
 
-- Add Beasts Cave locations for most beasts with 140 Base Resources and a Visibility Multiplier of 0.4 (they are hard to naturally find)
+- Add Beasts Cave locations for most beasts with 140 Base Resources and a Visibility Multiplier of 0.6 (they are hard to naturally find)
 - Caves always drop a random treasure and either drop a second treasure or some tools
 - Caves may rarely contain named items (They follow the same Vanilla rule as all other camps for this)
-- Every Cave will spawn a roaming party every 2 day. These parties will roam the around the cave for 1 day and then return to it
+- Every Cave will spawn a roaming party every 2 day. These parties will roam the around the cave for 1,5 day and then return to it
 - The following Caves will appear from day 1+:
   - Direwolves Caves (Up to 3) spawn only in forests. Their roaming parties have a Visibility Multiplier of 0.5
   - Hyena Caves (Up to 3) spawn only in desert. Their roaming parties have a Visibility Multiplier of 0.5

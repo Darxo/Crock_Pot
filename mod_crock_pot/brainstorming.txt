@@ -22,15 +22,37 @@
 - New contract: find out what a certain mercenary company is doing (mix of barbarian king vs. find location contract). Target has low visibility multiplier and is constantly walking. You get tips once per day. A twist might make it so they attack you. But you only need to reveal them
 - Tavern Rumor guaranteed about a named item as an additional reward for a quest
 
-## Goblin Faction
-- Goblins have throwable Insect-Nests
-	- Offhand-Item One-Time-Use
-	- Range of 3 tiles
-	- Applies Insect Swarm on the taret for 3 turns
+# Factions
 
-## Contracts
+	## Beasts
+	- Hyena gain **Vigilant** and their AI circles around you and saves up AP (if you let them) and then strike with enough saved up
+	- Hyena gain T3 leader variant, called Lion, or just something with Hyena in the name
+		- Has some sort of morale check scream
+	- Direwolves gain T3 leader variant, called Warg, or just something with Direwolf in name
+		- Has some sort of rallying scream
 
-### Destroy Scouts
+	## Goblin Faction
+	- Goblins have throwable Insect-Nests
+		- Offhand-Item One-Time-Use
+		- Range of 3 tiles
+		- Applies Insect Swarm on the taret for 3 turns
+
+	## Orcs
+	- Grunt (T2 Orc Young)
+		- Always full armor + higher tier weapons
+	- Orc Ravager (T1 lower tier variant of Orc Berserker)
+
+	## Barbarian
+	- Barbarian Looter (New T2 variant after Thrall, before Reaver)
+		- Looter ~~ powerlevel of current Reaver
+		- Reaver -> 50% better than Looter
+	- Barbarian Chosen -> Elite type, instead of regular upgrade
+	- Barbarian Houndmaster (T1 variant of Beastmaster)
+		- Comes with whip and 2 Warhounds
+
+# Contracts
+
+## Destroy Scouts
 - Early-Mid Game contract (similar to follow the tracks)
 - Goal is to find a nearby enemy party consisting of scouts, and killing everybody without letting anyone escape
 - The nearby party will have a low visibility multiplier (optional: that will slowly grow back to 1.0)
@@ -56,3 +78,16 @@
 	- Brigand, Goblins, Orcs, Barbarian, Nomads
 	- Undead (a bit of a joke, as they only consist of slow-ass wiederganger)
 	- Noble (during noble crisis or holy war), Southern (during holy war)
+
+
+# Items
+
+## New Watchdog unleashable:
+	- has defensive AI with protect far
+	- is otherwise weaker than the other doggies (to be decided how)
+	- has **Supporter** perk and is able to encourage allies (sfx is replaced with dog barking)
+
+## Undead Full Helm Variant
+- uses existing decayed full helm artwork with the fluff on top, mirroring the "Decorated Full Helm"
+- Effect: -5 Morale for adjacent enemies
+- Possible Prefixes: Twisted, Tarnished, Cursed, Withered, Forsaken
