@@ -24,3 +24,7 @@
 ::CrockPot.HooksMod.queue(">mod_reforged", function() {
 	::includeFiles(::IO.enumerateFiles("mod_crock_pot/hooks_last"));
 }, ::Hooks.QueueBucket.Last);
+
+::CrockPot.HooksMod.queue(">mod_reforged", function() {
+	::includeFiles(::IO.enumerateFiles("mod_crock_pot/hooks_afterhooks"));
+}, ::Hooks.QueueBucket.AfterHooks);
