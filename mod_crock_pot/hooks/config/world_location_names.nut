@@ -6,7 +6,7 @@ local cavePrefix = [
 	"Cold",
 	"Dark",
 	"Deep",
-	"Echo",
+	"Echoing",
 	"Forgotten",
 	"Grim",
 	"Hidden",
