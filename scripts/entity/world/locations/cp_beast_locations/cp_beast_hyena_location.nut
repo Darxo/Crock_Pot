@@ -22,6 +22,7 @@ this.cp_beast_hyena_location <- this.inherit("scripts/entity/world/locations/cp_
 		party.setLooting(false);
 
 		party.setVisibilityMult(0.6);
+		party.setMovementSpeed(party.getBaseMovementSpeed() * 0.9);  // Beasts are easier to catch
 
 		return party;
 	}

@@ -21,7 +21,8 @@ this.cp_beast_ghoul_location <- this.inherit("scripts/entity/world/locations/cp_
 		party.getSprite("banner").setBrush("banner_beasts_01");
 		party.setLooting(false);
 
-		party.setVisibilityMult(0.6);
+		party.setVisibilityMult(0.6);	// Beasts are harder to see
+		party.setMovementSpeed(party.getBaseMovementSpeed() * 0.9);  // Beasts are easier to catch
 
 		return party;
 	}
