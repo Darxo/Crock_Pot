@@ -4,7 +4,7 @@ this.cp_beast_unhold_bog_location <- this.inherit("scripts/entity/world/location
 	function create()
 	{
 		this.cp_beast_cave_location.create();
-		this.m.TypeID = "location.cp_beast_unhold_bog_location";
+		this.m.TypeID = "location.cp_beast_unhold_bog";
 		this.m.CP_CanSpawnRoamer = true;
 	}
 

@@ -4,7 +4,7 @@ this.cp_beast_hyena_location <- this.inherit("scripts/entity/world/locations/cp_
 	function create()
 	{
 		this.cp_beast_cave_location.create();
-		this.m.TypeID = "location.cp_beast_hyena_location";
+		this.m.TypeID = "location.cp_beast_hyena";
 		this.m.CP_CanSpawnRoamer = true;
 	}
 

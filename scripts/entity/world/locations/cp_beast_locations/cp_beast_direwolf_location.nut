@@ -4,7 +4,7 @@ this.cp_beast_direwolf_location <- this.inherit("scripts/entity/world/locations/
 	function create()
 	{
 		this.cp_beast_cave_location.create();
-		this.m.TypeID = "location.cp_beast_direwolf_location";
+		this.m.TypeID = "location.cp_beast_direwolf";
 		this.m.CP_CanSpawnRoamer = true;
 	}
 
