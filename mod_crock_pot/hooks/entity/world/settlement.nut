@@ -45,4 +45,27 @@
 
 		__original(_id, _list);
 	}
+
+// New Functions
+	// @Return a WeightContainer with all applicable random situations for this settlemtn
+	q.CP_getApplicableRandomSituations = @(__original) function()
+	{
+		local ret = __original();
+
+		switch (this.getSize())
+		{
+			case 2:		// Both size 2 and size 3 towns can spawn these behaviors
+			case 3:
+			{
+				ret.add("cp_physicians_gathering_situation", 12);
+				if (!this.isMilitary() || ::isKindOf(this, "city_state"))	// Civilian Settlements or Citystate can have this situation
+				{
+					ret.add("cp_grand_travelling_show_situation", 12);
+				}
+				break;
+			}
+		}
+
+		return ret;
+	}
 });
