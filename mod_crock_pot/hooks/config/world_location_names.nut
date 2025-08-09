@@ -24,6 +24,9 @@
 		"Grotto",
 		"Hollow",
 		"Lair",
+		"Nest",
+		"Tangle",
+		"Warren",
 	]
 
 	foreach (prefix in cavePrefix)
