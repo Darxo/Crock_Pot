@@ -1,6 +1,6 @@
 ::CrockPot.HooksMod.hook("scripts/factions/actions/send_beast_roamers_action", function(q) {
 	// Public
-	q.m.MaxSpawnedParties <- 8;	// This many beast roamers may be on the world map at the same time
+	q.m.MaxSpawnedParties <- 6;	// This many beast roamers may be on the world map at the same time
 
 	// Private
 	q.m.RoamerFlagName <- "CP_IsVanillaRoamer";
@@ -18,11 +18,11 @@
 		this.m.Options.remove(0);		// Remove Frost Unholds from spawn-pool
 		this.m.Options.remove(0);		// Remove Bog Unholds from spawn-pool
 		// Keep Alps in the pool
-		// Keep Hexen in the pool
+		this.m.Options.remove(1);		// Remove Hexen from spawn-pool
 		// Keep Schrats in the pool
 		// Keep Kraken in the pool
 		// Keep Ifrits in the pool
-		this.m.Options.remove(5);		// Remove Lindwurms from spawn-pool
+		this.m.Options.remove(4);		// Remove Lindwurms from spawn-pool
 	}
 
 	// Overwrite, because we simplify the vanilla calculation a lot and remove its hard-coded exclusion of certain high level beasts.

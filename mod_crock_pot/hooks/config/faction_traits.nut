@@ -1,6 +1,7 @@
 ::Const.FactionTrait.Actions[::Const.FactionTrait.Beasts].extend([
 	"scripts/factions/actions/beasts/cp_build_direwolves_camp_action",
 	"scripts/factions/actions/beasts/cp_build_ghouls_camp_action",
+	"scripts/factions/actions/beasts/cp_build_hexen_camp_action",
 	"scripts/factions/actions/beasts/cp_build_hyena_camp_action",
 	"scripts/factions/actions/beasts/cp_build_lindwurm_camp_action",
 	"scripts/factions/actions/beasts/cp_build_serpent_camp_action",

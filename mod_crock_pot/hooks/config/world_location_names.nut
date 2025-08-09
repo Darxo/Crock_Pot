@@ -34,3 +34,37 @@
 		}
 	}
 }
+
+{	// WitchHut Names
+	::Const.World.LocationNames.WitchHut <- [];
+
+	local witchPrefix = [
+		"Bewitched",
+		"Crone\'s",
+		"Cursewood",
+		"Cursed",
+		"Crooked",
+		"Deceiver\'s",
+		"Hag\'s",
+		"Hexroot"
+		"Witchbound",
+		"Whispering",
+	];
+
+	local witchSynonym = [
+		"Cabin",
+		"Hut",
+		"Lodge",
+		"Retreat",
+		"Shack",
+		"Shed",
+	];
+
+	foreach (prefix in witchPrefix)
+	{
+		foreach (synonym in witchSynonym)
+		{
+			::Const.World.LocationNames.WitchHut.push(prefix + " " + synonym);
+		}
+	}
+}
