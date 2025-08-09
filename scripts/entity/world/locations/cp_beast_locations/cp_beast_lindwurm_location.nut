@@ -5,7 +5,9 @@ this.cp_beast_lindwurm_location <- this.inherit("scripts/entity/world/locations/
 	{
 		this.cp_beast_cave_location.create();
 		this.m.TypeID = "location.cp_beast_lindwurm";
+
 		this.m.CP_CanSpawnRoamer = true;
+		this.m.Resources *= 1.5;
 	}
 
 // New Functions
