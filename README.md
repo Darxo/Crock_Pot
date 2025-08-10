@@ -27,24 +27,35 @@ This submod is a collection of content for Reforged.
 - Caves always drop a random treasure and either drop a second treasure or some tools
 - Caves may rarely contain named items (They follow the same Vanilla rule as all other camps for this)
 - Every Cave will spawn a roaming party every 2 day. These parties will roam the around the cave for 1,5 day and then return to it
-- The following Caves will appear from day 1+:
+- The following Caves will appear from day 1:
   - Direwolves Caves (Up to 3) spawn only in forests. Their roaming parties have a Visibility Multiplier of 0.5
   - Hyena Caves (Up to 3) spawn only in desert. Their roaming parties have a Visibility Multiplier of 0.5
   - Ghoul Caves (Up to 3) spawn only in swamps. Their roaming parties have a Visibility Multiplier of 0.5
   - Webknecht Caves (Up to 3) spawn only in non-snowy forests. Their roaming parties have a Visibility Multiplier of 0.5
 - The following Caves will only start appearing at day 10+:
   - Serpent Caves (Up to 3) spawn only in the desert
-  - Lindwurm Caves (Up to 2) spawn only in the desert or steppe
+  - Lindwurm Caves (Up to 2) spawn only in the desert or steppe. Their caves have 210 Base Resources
   - Unhold Caves (Up to 2) spawn only in the mountains or hills
   - Frost Unhold Caves (Up to 2) spawn only in the snow
   - Bog Unhold Caves (Up to 1) spawn only in the swamp
+  - Hexen "Caves" (Up to 2) spawn only in the swamp or forest. Their "cave" takes the appearance of the legendary witch hut location and has 210 Base Resources
 - Caves might be mentioned in tavern rumors but they will never be the target of contracts
+
+### New Entities
+
+- **Hooded Man** is a new tier 1 necromancer. He has the same cost of 30 and very similar stats to the old Necromancer. He has the same skills as the old Necromancer but no perks
+  - The **Necromancer** is now tier 2. He costs 50 resources (up from 30), has 90 Hitpoints (up from 50), 200 Stamina (up from 80), 60 Melee Skill (up from 50), 10 Melee Defense (up from 5) and grants 500 XP (up from 350). He no longer spawns with a hat and wields either a rondel dagger or a scramasax
+
+### New Situations
+
+- **Physicians Gathering** can randomly occur in any settlement with size 2 or 3. It increases amount of available medicine, reduces medicine price and makes Anatomists and Monks more common during hiring
+- **Grand Travelling Show** can randomly occur in any civilian settlement with size 2 or 3 or in city states. It increases food price, increases available recruits and it makes Juggler, Houndmaster and Wildmen more common during hiring
 
 ### Craftable Items
 
 - Forgetfulness Potion
   - Requires: Geist Tear, Shimmering Ashes
-  - Consumable: Refund a random perk point
+  - Consumable: Refund two random perk points
 - Ayahuasca
   - Requires: Mysterious Herbs, 2x Poison Gland
   - Consumable: Increase your Perk Tier by 1
@@ -70,6 +81,13 @@ This submod is a collection of content for Reforged.
 ## Fixes
 
 - Change witchhunter helmet icon to align with sprite
+
+## For Modder
+
+- Add new `CP_getApplicableRandomSituations()` function to `settlement.nut` that returns a WeightedContainer with all applicable random situations for this settlement
+- Modularize (overwrite) `onUpdate` of `add_random_situation_action.nut` using new `CP_getApplicableRandomSituations`
+  - Add `MaximumSituations = 2` member, for configuring, what the situation threshold is, at which point no random situation can spawn
+  - Add `MinDistanceToPlayer = 11` member, that defines how far away the player must be from the settlement, for it to consider spawning random situations
 
 # Requirements
 

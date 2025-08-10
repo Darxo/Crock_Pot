@@ -1,8 +1,8 @@
 this.cp_send_beast_roamers_action <- this.inherit("scripts/factions/faction_action", {
 	m = {
 		// Public
-		CooldownInBBSeconds = 200.0,
-		RoamDurationInBBSeconds = 150,
+		CooldownInBBSeconds = 200.0,	// roughly 2 days
+		RoamDurationInBBSeconds = 150,	// roughly 1.5 days
 	},
 	function create()
 	{

@@ -15,6 +15,21 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.5.0
+	- Add new lower tier necromancer called **Hooded Man**. He has very similar stats and cost to the vanilla Necromancer, but loses Soul Link and Inspiring Presence.
+	- The existing Necromancer is buffed to become the Tier 2 version of the Necromancer caster. He costs 50 (up from 30), grants 500 XP (up from 350), has 90 Hitpoints (up from 50), 200 Stamina (up from 80) and minor improvements to combat stats. He never spawns with a hat
+	- Add new Hexen Location with 210 Base Resources. They spawn only in forests or towns near settlements. Up to two of them can exist at any given time
+	- Hexen Parties are no longer randomly spawned into the world. They now only exist as roaming parties sent from these new locations
+	- Add new **Physicians Gathering** Situation, that can randomly occur in any size 2 or size 3 settlement. It increases amount of available medicine, reduces medicine price and makes it so more Anatomists and Monks are available for hire
+	- Add new **Grand Travelling Show** Situation, that can randomly occur in any size 2 or size 3 civilian settlement or in city states. It increases food price, available recruits and it so more Juggler, Houndmaster and Wildmen are available for hire
+	- **Forgetfulness Potion** now refunds 2 random perks (up from 1)
+	- Increase Base Resources of Lindwurm caves to 210 (up from 140)
+	- Set Movement Speed of roaming Ghoul and Hyena parties to 90% (down from 100%)
+	- Add three new suffixes for cave names
+	- Fix missing sign in falcon item tooltip
+	- Add new `CP_getApplicableRandomSituations()` function to `settlement.nut` that returns a WeightedContainer with all applicable random situations
+	- Modularize onUpdate of add_random_situation_action using new CP_getApplicableRandomSituations to determine which situation can appear
+
 0.4.2
 	- Increase cave visibility to 0.6 (up from 0.4)
 	- Increase visibility of small cave roamer to 0.6 (up from 0.5)

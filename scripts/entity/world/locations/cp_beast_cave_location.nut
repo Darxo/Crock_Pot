@@ -13,7 +13,6 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 		this.m.IsDespawningDefenders = false;
 		// this.m.IsShowingDefenders = false;
 		// this.m.IsShowingBanner = false;
-		// this.setDefenderSpawnList(::Const.World.Spawn.BerserkersOnly);
 		this.m.Resources = 140;
 		this.m.VisibilityMult = 0.6;	// Caves are much harder to spot than regular locations
 	}
