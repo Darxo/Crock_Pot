@@ -1,6 +1,6 @@
 this.cp_forgetfulness_potion <- this.inherit("scripts/items/item", {
 	m = {
-		RedundedPerks = 1,	// Amount of perks refunded, when drinking this potion
+		RedundedPerks = 2,	// Amount of perks refunded, when drinking this potion
 	},
 
 	function create()
