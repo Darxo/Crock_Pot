@@ -17,7 +17,7 @@
 		_faction.get().getSettlements = function() {
 			return proxySettlements;	// We briefly pretend like _faction only has "proxySettlements" settlements
 		}
-		getFaction()
+
 		__original(_faction);
 
 		_faction.get().getSettlements = oldGetSettlement;
