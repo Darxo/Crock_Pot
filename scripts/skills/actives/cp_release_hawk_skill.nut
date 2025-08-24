@@ -24,7 +24,7 @@ this.cp_release_hawk_skill <- this.inherit("scripts/skills/skill", {
 		this.m.IsActive = true;
 		this.m.IsTargeted = true;
 		this.m.IsStacking = false;
-		this.m.IsAttack = true;
+		this.m.IsAttack = false;
 		this.m.IsRanged = false;
 		this.m.IsIgnoredAsAOO = true;
 		this.m.IsTargetingActor = true;
@@ -80,7 +80,7 @@ this.cp_release_hawk_skill <- this.inherit("scripts/skills/skill", {
 		}
 
 		local target = _targetTile.getEntity();
-
+		if (this.getContainer().getActor().isAlliedWith(target)) return false;
 		if (target.getFlags().has("CP_WasHarassedByHawk"))
 		{
 			return false;
