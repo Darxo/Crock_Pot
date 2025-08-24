@@ -81,10 +81,7 @@ this.cp_release_hawk_skill <- this.inherit("scripts/skills/skill", {
 
 		local target = _targetTile.getEntity();
 		if (this.getContainer().getActor().isAlliedWith(target)) return false;
-		if (target.getFlags().has("CP_WasHarassedByHawk"))
-		{
-			return false;
-		}
+		if (target.getFlags().has("CP_WasHarassedByHawk")) return false;
 
 		return true;
 	}
