@@ -9,9 +9,9 @@ this.cp_beast_serpent_location <- this.inherit("scripts/entity/world/locations/c
 	}
 
 // New Functions
-	function spawnScaledRoamingParty( _scaling = 0.5 )
+	function spawnScaledRoamingParty( _scaling )
 	{
-		local resources = this.getResources() * _scaling * this.getDayScalingMult();
+		local resources = this.getResources() * _scaling;
 		local faction = ::World.FactionManager.getFaction(this.getFaction());
 		local party = faction.spawnEntity(this.getTile(), "Serpents", false, this.getRoamerSpawnList(), resources);
 		party.setDescription("Giant serpents slithering about.");

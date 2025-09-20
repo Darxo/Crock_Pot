@@ -11,9 +11,9 @@ this.cp_beast_lindwurm_location <- this.inherit("scripts/entity/world/locations/
 	}
 
 // New Functions
-	function spawnScaledRoamingParty( _scaling = 0.5 )
+	function spawnScaledRoamingParty( _scaling )
 	{
-		local resources = this.getResources() * _scaling * this.getDayScalingMult();
+		local resources = this.getResources() * _scaling;
 		local faction = ::World.FactionManager.getFaction(this.getFaction());
 		local party = faction.spawnEntity(this.getTile(), "Lindwurms", false, this.getRoamerSpawnList(), resources);
 		party.setDescription("A Lindwurm - a wingless bipedal dragon resembling a giant snake.");

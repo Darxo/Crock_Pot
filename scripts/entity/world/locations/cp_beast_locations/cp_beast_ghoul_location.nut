@@ -9,9 +9,9 @@ this.cp_beast_ghoul_location <- this.inherit("scripts/entity/world/locations/cp_
 	}
 
 // New Functions
-	function spawnScaledRoamingParty( _scaling = 0.5 )
+	function spawnScaledRoamingParty( _scaling )
 	{
-		local resources = this.getResources() * _scaling * this.getDayScalingMult();
+		local resources = this.getResources() * _scaling;
 		local faction = ::World.FactionManager.getFaction(this.getFaction());
 		local party = faction.spawnEntity(this.getTile(), "Nachzehrers", false, this.getRoamerSpawnList(), resources);
 		party.setDescription("A flock of scavenging nachzehrers.");

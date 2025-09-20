@@ -83,7 +83,7 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 	// It comes with a fitting Name, Description, Footprints and some other beast type specific properties
 	// @param _scaling how many of the locations scaled resources do we have available for the party?
 	// @return instance of the generated party
-	function spawnScaledRoamingParty( _scaling = 0.5 )	// Virtual
+	function spawnScaledRoamingParty( _scaling )	// Virtual
 	{
 		return null;
 	}

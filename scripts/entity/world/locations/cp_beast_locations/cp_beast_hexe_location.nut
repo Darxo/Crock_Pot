@@ -29,9 +29,9 @@ this.cp_beast_hexe_location <- this.inherit("scripts/entity/world/locations/cp_b
 	}
 
 // New Functions
-	function spawnScaledRoamingParty( _scaling = 0.5 )
+	function spawnScaledRoamingParty( _scaling )
 	{
-		local resources = this.getResources() * _scaling * this.getDayScalingMult();
+		local resources = this.getResources() * _scaling;
 		local faction = ::World.FactionManager.getFaction(this.getFaction());
 		local party = faction.spawnEntity(this.getTile(), "Hexen", false, this.getRoamerSpawnList(), resources);
 		party.setDescription("A malevolent old crone, said to lure and abduct little children to make broth and concoctions out of, strike sinister pacts with villagers, and weave curses.");

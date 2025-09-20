@@ -40,7 +40,9 @@ this.cp_send_beast_roamers_action <- this.inherit("scripts/factions/faction_acti
 
 		local despawn = ::new("scripts/ai/world/orders/despawn_order");
 
-		local party = settlement.spawnScaledRoamingParty(0.5);
+		local resourceScale = 0.5;	// By default, we use half as many base resources as our origin-location has
+		resourceScale *= this.getReputationToDifficultyLightMult();		// Then we apply a simple vanilla day-scaling. This scales faster, but not for as much as the location scaling
+		local party = settlement.spawnScaledRoamingParty(resourceScale);
 		local controller = party.getController();
 		controller.addOrder(roam);
 		controller.addOrder(move);
