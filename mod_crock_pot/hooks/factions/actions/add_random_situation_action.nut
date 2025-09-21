@@ -17,6 +17,8 @@
 		local possibleSituations = this.m.Settlement.CP_getApplicableRandomSituations();
 		if (possibleSituations.len() == 0) return;
 
+		// Vanilla has this additional gate in place to make it less likely to spawn situations if a lot situations are applicable at this moment
+		// We dont reuse that because it quickly turns off this action from triggering alltogether as more situations are added
 		// if (::Math.rand(1, 100) <= 75 - possibleSituations.len() * 25) return;
 		this.m.Situation = possibleSituations.roll();
 		this.m.Score = 1;

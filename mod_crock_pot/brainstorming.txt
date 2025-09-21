@@ -1,21 +1,8 @@
-
-- lower tier necromancer
+# New Units
 
 ### Bounty Hunter System
 - bounty hunter system
 - bounty hunter origin
-
-### Southern Villages
-- look into breakNorthSouthAlliances when considering holy war support
-
-### Beast Caves
-- add beast specific suffixes to the cave name? Something like "of the slithering" for a Snake den
-- Give caves unique names depending on enemy type
-- Contracts that point towards these new locations
-
-### CUstom Location
-- Variatn of Beast Cave base classe but more genericlym so that any enemy type can use them
-- This base class includes ability to keep track of different types of locations for the same enemy type (hexen hut, hexen hideout)
 
 ## Livelier World
 - New noble military town contract: Escort Caravan to/from (currently only civilian factions offer this contract)
@@ -24,31 +11,63 @@
 
 # Factions
 
-	## Beasts
-	- Hyena gain **Vigilant** and their AI circles around you and saves up AP (if you let them) and then strike with enough saved up
-	- Hyena gain T3 leader variant, called Lion, or just something with Hyena in the name
-		- Has some sort of morale check scream
-	- Direwolves gain T3 leader variant, called Warg, or just something with Direwolf in name
-		- Has some sort of rallying scream
+## Beasts
+- Hyena gain T3 leader variant, called Lion, or just something with Hyena in the name
+	- Has some sort of morale check scream
+- Direwolves gain T3 leader variant, called Warg, or just something with Direwolf in name
+	- Has some sort of rallying scream
+- explicitely spawn spider eggs in spider egg caves
 
-	## Goblin Faction
-	- Goblins have throwable Insect-Nests
-		- Offhand-Item One-Time-Use
-		- Range of 3 tiles
-		- Applies Insect Swarm on the taret for 3 turns
+## Goblin Faction
+- Goblins have throwable Insect-Nests
+	- Offhand-Item One-Time-Use
+	- Range of 3 tiles
+	- Applies Insect Swarm on the taret for 3 turns
 
-	## Orcs
-	- Grunt (T2 Orc Young)
-		- Always full armor + higher tier weapons
-	- Orc Ravager (T1 lower tier variant of Orc Berserker)
+## Orcs
+- Grunt (T2 Orc Young)
+	- Always full armor + higher tier weapons
+- Orc Ravager (T1 lower tier variant of Orc Berserker)
 
-	## Barbarian
-	- Barbarian Looter (New T2 variant after Thrall, before Reaver)
-		- Looter ~~ powerlevel of current Reaver
-		- Reaver -> 50% better than Looter
-	- Barbarian Chosen -> Elite type, instead of regular upgrade
-	- Barbarian Houndmaster (T1 variant of Beastmaster)
-		- Comes with whip and 2 Warhounds
+## Barbarian
+- Barbarian Looter (New T2 variant after Thrall, before Reaver)
+	- Looter ~~ powerlevel of current Reaver
+	- Reaver -> 50% better than Looter
+- Barbarian Chosen -> Elite type, instead of regular upgrade
+- Barbarian Houndmaster (T1 variant of Beastmaster)
+	- Comes with whip and 2 Warhounds
+
+## Humans
+- revolution leader for slave troops
+- higher tier peasant ("citizen") with 50-80% more cost
+
+# Situations
+
+- Pest: (causes half the recruits in the town to have "sickness", which is revealed by tryout)
+- make marketplaces sell physician_mask when physicians gathering is happening
+	- this needs a api adjustment of situations to allow checking, which building we are updating the wares of (currently the passed object always has the id "shop")
+
+# Locations
+- empty caves: interacting with them grants a few rewards from past inhabitants
+- custom prefixes for caves depending on inhabitant
+	- hyena: keckling
+	- direwolf: howling, growling
+	- unhold:
+	- serpent: hissing, slithering,
+	- ghoul:
+	- add beast specific suffixes to the cave name? Something like "of the slithering" for a Snake den
+- Contracts that point towards these new locations
+- Variation of Beast Cave base classe but more genericlym so that any enemy type can use them
+	- This base class includes ability to keep track of different types of locations for the same enemy type (hexen hut, hexen hideout)
+
+# Events
+
+- New Event: drunken guy thrown out of tavern/town
+	- Condition:
+		- While near a town (doesnt have to be friendly)
+		- Has to be night
+		- You have to pay something to the guy
+	- You gain a random background with the drunkard trait
 
 # Contracts
 
@@ -79,15 +98,9 @@
 	- Undead (a bit of a joke, as they only consist of slow-ass wiederganger)
 	- Noble (during noble crisis or holy war), Southern (during holy war)
 
-
 # Items
 
 ## New Watchdog unleashable:
 	- has defensive AI with protect far
 	- is otherwise weaker than the other doggies (to be decided how)
 	- has **Supporter** perk and is able to encourage allies (sfx is replaced with dog barking)
-
-## Undead Full Helm Variant
-- uses existing decayed full helm artwork with the fluff on top, mirroring the "Decorated Full Helm"
-- Effect: -5 Morale for adjacent enemies
-- Possible Prefixes: Twisted, Tarnished, Cursed, Withered, Forsaken

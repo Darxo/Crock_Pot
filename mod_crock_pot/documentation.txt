@@ -15,6 +15,13 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.5.1
+	- Reduce chance of random situations spawning by 50% to be more in line with how often they appear in vanilla
+	- Change scaling of roaming beasts to work off of the vanilla faction action scaling instead of the location day scaling
+	- Fix **Release Hawk** and **Release Owl** counting as attacks
+	- Fix **Big Game Hunt** contract potentially not being able to spawn all types of beasts
+	- Fix **Release Owl** being usable on fleeing characters
+
 0.5.0
 	- Add new lower tier necromancer called **Hooded Man**. He has very similar stats and cost to the vanilla Necromancer, but loses Soul Link and Inspiring Presence.
 	- The existing Necromancer is buffed to become the Tier 2 version of the Necromancer caster. He costs 50 (up from 30), grants 500 XP (up from 350), has 90 Hitpoints (up from 50), 200 Stamina (up from 80) and minor improvements to combat stats. He never spawns with a hat
