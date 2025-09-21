@@ -11,10 +11,9 @@ local units = [
 		ID = "Unit.CP.CP_HoodedManY",
 		Troop = "CP_HoodedMan",
 		Figure = ["figure_necromancer_01"],
-		StartingResourceMin = 100, // In Vanilla they appear in a group of 100 cost
 		StaticDefs = {
-			Parties = [
-				{ BaseID = "SubPartyYeoman", HardMin = 1, HardMax = 1 },
+			Units = [
+				{ BaseID = "Unit.RF.ZombieYeomanBodyguard" },
 			],
 		},
 	},
@@ -24,8 +23,9 @@ local units = [
 		Figure = ["figure_necromancer_01"],
 		StartingResourceMin = 150, // In Vanilla they appear in a group of 320 cost
 		StaticDefs = {
-			Parties = [
-				{ BaseID = "SubPartyYeoman", HardMin = 2, HardMax = 2 },
+			Units = [
+				{ BaseID = "Unit.RF.ZombieYeomanBodyguard" },
+				{ BaseID = "Unit.RF.ZombieYeomanBodyguard" },
 			],
 		},
 	},
@@ -35,10 +35,9 @@ local units = [
 		ID = "Unit.CP.CP_HoodedManN",
 		Troop = "CP_HoodedMan",
 		Figure = ["figure_necromancer_01"],
-		StartingResourceMin = 110,
 		StaticDefs = {
-			Parties = [
-				{ BaseID = "SubPartyNomad", HardMin = 1, HardMax = 1 },
+			Units = [
+				{ BaseID = "Unit.RF.ZombieNomadBodyguard" },
 			],
 		},
 	},
@@ -48,8 +47,9 @@ local units = [
 		Figure = ["figure_necromancer_01"],
 		StartingResourceMin = 150,
 		StaticDefs = {
-			Parties = [
-				{ BaseID = "SubPartyNomad", HardMin = 2, HardMax = 2 },
+			Units = [
+				{ BaseID = "Unit.RF.ZombieNomadBodyguard" },
+				{ BaseID = "Unit.RF.ZombieNomadBodyguard" },
 			],
 		},
 	},
