@@ -69,6 +69,7 @@ this.cp_release_owl_skill <- this.inherit("scripts/skills/skill", {
 		local target = _targetTile.getEntity();
 		if (this.getContainer().getActor().isAlliedWith(target)) return false;
 		if (target.getMoraleState() == ::Const.MoraleState.Ignore) return false;
+		if (target.getMoraleState() == ::Const.MoraleState.Fleeing) return false;
 
 		return true;
 	}
