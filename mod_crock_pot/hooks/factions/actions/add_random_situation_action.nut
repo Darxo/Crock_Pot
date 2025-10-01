@@ -2,7 +2,7 @@
 	// Overwrite, because we modularize this action allowing much easier addition of more situations
 	// Applicable random Situations are now managed by CP_getApplicableRandomSituations from settlement.nut
 	// Public
-	q.m.Chance <- 2;
+	q.m.Chance <- 1;	// Vanilla: 2
 	q.m.MaximumSituations <- 2;
 	q.m.MinDistanceToPlayer <- 11;
 
