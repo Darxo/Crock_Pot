@@ -11,9 +11,26 @@
 
 # New Units
 
-### Bounty Hunter System
-- bounty hunter system
-- bounty hunter origin
+## Bounty Hunter
+
+### bounty hunter system
+
+- Attacking Human Factions causes you to accumulate "Attention" in a Skull system
+- By default you have 0 Skulls and you can have up to 5 Skulls
+	- 1 Skull:
+		- Caravans gain 20% more Guards
+		- Bounty Hunter Parties become hostile to you
+	2. Skull:
+		- Whenever you visit a town or attack a human party your current Location will be revealed to every **Bounty Hunter** group
+	3. Skull:
+		- An additional Bounty Hunter group is spawned by a nearby town
+	4. Skull:
+		- Caravans gain 50% more Guards
+		- Noble Caravans gain 50% more Guards
+	5. Skull:
+		- An additional Bounty Hunter group is spawned by a nearby town
+
+### bounty hunter origin
 
 ## Livelier World
 - New noble military town contract: Escort Caravan to/from (currently only civilian factions offer this contract)
@@ -71,6 +88,13 @@
 - Contracts that point towards these new locations
 - Variation of Beast Cave base classe but more genericlym so that any enemy type can use them
 	- This base class includes ability to keep track of different types of locations for the same enemy type (hexen hut, hexen hideout)
+- Problem: if the same cave always is freed up, it will be the first one to spawn again and likely take up the exact same spot on the world map
+	-> cycling cave type spawn
+	-> high cooldown for destroyed camp type
+
+# Rumors
+
+- New category of "Beast" Cave rumors, which give more detail on what you can expect in them
 
 # Events
 
@@ -80,6 +104,43 @@
 		- Has to be night
 		- You have to pay something to the guy
 	- You gain a random background with the drunkard trait
+- Camp Event, where you get attacked in your mercenary camp by brigands, who just want to steal your stuff.
+	- You spawn in the middle in your camp
+	- Brigands spawn in a circle around you
+	- up to 10 trading goods and loot items you have with you will spawn as interactable crates on the battlefield
+	- Brigands can pich up those crates while next to them and will flee the battlefield once they have such a thing
+
+# Noble Alliance
+- Player can choose 1 Noble House to enter a temporary contract under, if relationship with them is high enough and renown is high enough
+- Alliance Grants:
+	- Relation with them decays towards 80, instead of 50
+	- You can now click on the Castles in any military settlement of that faction
+
+## Castle Features
+- Armory
+	- Sells Weapons, Armor, Tools, Ammunition, Attachements and Paint
+	- Shields sold here are always in the color of the Noble Faction owning this place
+- Kitchen (working title)
+	- Sells Food
+- Relay Station (working title)
+	- Similar to Seaport, allowing the player to pay a fee to teleport instantly to any settlement from this faction
+- Training Grounds
+	- Similar/Cheaper training?
+	- Cheaper way of buying perk groups?
+- Alchemist?
+	- Sells Poison
+- Barracks
+	- Function: Hire noble trainees/troops directly, expensive but powerful
+	- The recruits here are basically the same you would hire outside except that they recently started their career in the noble army causing them to have higher levels
+	- Certain distrustful backgrounds won't appear
+- Dueling Yard
+	- Function: Solo arena for 1v1 duels with noble champions
+	- Fight is until one side gives up (fleeing morale) or dies.
+	- Your characters have a 100% chance to being struck down if not killed by fatality while dueling
+	- There are only a fixed, hard-coded amount of fights here per campaign that get more difficult (no infinite farming)
+- Vault / Treasury
+	- Function: Store crowns or items with interest/loss over time.
+	- Secondary Use: Could have noble bonds or investment returns.
 
 # Contracts
 
@@ -116,3 +177,7 @@
 	- has defensive AI with protect far
 	- is otherwise weaker than the other doggies (to be decided how)
 	- has **Supporter** perk and is able to encourage allies (sfx is replaced with dog barking)
+
+## Amnesia Poison
+- Poisons weapon for 4 turns
+- Every turn that damages hitpoints, removes a random perk from the enemy
