@@ -6,7 +6,7 @@ this.cp_build_serpent_camp_action <- this.inherit("scripts/factions/actions/cp_b
 		this.cp_build_beast_camp_action.create();
 
 		this.m.DefenderSpawnlistId = "Serpents";
-		this.m.CampLimitDefault = 3;
+		this.m.CampLimitDefault = 2;
 		this.m.CampScriptName = "scripts/entity/world/locations/cp_beast_locations/cp_beast_serpent_location";
 		this.m.DayThresholdMin = ::CrockPot.Const.DayThresholdMinDangerBeasts;
 	}
