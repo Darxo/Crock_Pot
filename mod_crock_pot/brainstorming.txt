@@ -1,3 +1,14 @@
+# Future Plans:
+
+- Improve Caves (Roamer, Tileset, Ambience, Alternative Location Sprites)
+- Change auto release of birds to instead happen when owner loses morale?
+- New Ammunition (ammunition rework)
+- New Throwing Dagger weapon (3 AP attack, Dagger/Throwing hybrid, profits from between the ribs)
+- change crock pot sounds into mono to reduce file size
+- change bird sfx to mono to safe space
+- Verify whether caves count towards beast fights. If not, make it so they do
+- change events that grant falcon to alternatively also grant one of the other animals
+
 # New Units
 
 ### Bounty Hunter System
@@ -44,6 +55,7 @@
 # Situations
 
 - Pest: (causes half the recruits in the town to have "sickness", which is revealed by tryout)
+- Flood: (happens only in coastal settlements: causes less wares/troops and no port access. Higher building prices? Rebuilding Efforts spawning after?)
 - make marketplaces sell physician_mask when physicians gathering is happening
 	- this needs a api adjustment of situations to allow checking, which building we are updating the wares of (currently the passed object always has the id "shop")
 

@@ -3,10 +3,12 @@
 This submod is a collection of content for Reforged.
 
 # Overview
-- New southern medium settlements (requires new game)
-- New Beast Caves for most types of beasts. Those beasts now only spawn from their caves instead of randomly appearing in the world
+- 3 new southern medium settlements (requires new game)
+- 23 new Beast Caves for most types of beasts. Those beasts now only spawn from their caves instead of randomly appearing in the world
 - 2 new craftable items
 - 3 new unleashable birds
+- 2 new Settlement Situations
+- 1 new Enemy Type
 
 # List of all Changes
 
@@ -23,7 +25,7 @@ This submod is a collection of content for Reforged.
 
 ### Beast Caves
 
-- Add Beasts Cave locations for most beasts with 140 Base Resources and a Visibility Multiplier of 0.6 (they are hard to naturally find)
+- Add Beasts Cave locations for most beasts with 150 Base Resources and a Visibility Multiplier of 0.6 (they are hard to naturally find)
 - Caves always drop a random treasure and either drop a second treasure or some tools
 - Caves may rarely contain named items (They follow the same Vanilla rule as all other camps for this)
 - Every Cave will spawn a roaming party every 2 day. These parties will roam the around the cave for 1,5 day and then return to it
@@ -33,7 +35,7 @@ This submod is a collection of content for Reforged.
   - Ghoul Caves (Up to 3) spawn only in swamps. Their roaming parties have a Visibility Multiplier of 0.5
   - Webknecht Caves (Up to 3) spawn only in non-snowy forests. Their roaming parties have a Visibility Multiplier of 0.5
 - The following Caves will only start appearing at day 10+:
-  - Serpent Caves (Up to 3) spawn only in the desert
+  - Serpent Caves (Up to 2) spawn only in the desert
   - Lindwurm Caves (Up to 2) spawn only in the desert or steppe. Their caves have 210 Base Resources
   - Unhold Caves (Up to 2) spawn only in the mountains or hills
   - Frost Unhold Caves (Up to 2) spawn only in the snow
