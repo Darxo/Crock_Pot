@@ -11,6 +11,15 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 		this.m.TypeID = "location.beast_cave";
 		this.m.LocationType = ::Const.World.LocationType.Lair | ::Const.World.LocationType.Passive;
 		this.m.IsDespawningDefenders = false;
+
+		if (this.m.CombatLocation.Template[0] != null)
+		{
+			::logWarning("Hardened: this.m.CombatLocation.Template[0] was not null for some reason. We handle this gracefully!")
+			::MSU.Log.printStackTrace();
+			// ::Hardened.Mod.Debug.addPopupMessage("There is important debugging information in the game\'s log. Please send your log.html to the developers for debugging.", ::MSU.Popup.State.Full);
+		}
+		this.m.CombatLocation.Template[0] = null;
+		this.m.CombatLocation.CutDownTrees = true;
 		// this.m.IsShowingDefenders = false;
 		// this.m.IsShowingBanner = false;
 		this.m.Resources = 150;
