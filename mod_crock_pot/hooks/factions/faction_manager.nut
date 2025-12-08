@@ -88,10 +88,7 @@
 			f.setDiscovered(true);
 			this.m.Factions.push(f);
 			f.addTrait(::Const.FactionTrait.OrientalVillage);
-
-			// We skip the addTrait function, because we dont want a city states actions,
-			// but we want to pretend like we are one, so that caravans are created of the correct type
-			f.m.Traits.push(::Const.FactionTrait.OrientalCityState);
+			f.addTrait(::Const.FactionTrait.OrientalCityState);
 
 			f.addSettlement(s, false);
 		}

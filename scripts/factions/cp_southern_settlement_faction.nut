@@ -112,5 +112,20 @@ this.cp_southern_settlement_faction <- this.inherit("scripts/factions/faction", 
 		delay *= ::World.getTime().SecondsPerDay;
 		return ::Time.getVirtualTimeF() > this.m.LastContractTime + delay;
 	}
+
+	function addTrait( _trait )
+	{
+		// We don't want the CityState actions for our village
+		// But we do want to pretend like we are a CityState, so that caravans are created of the correct type
+		// So, when this specific faction adds the OrientalCityState trait, we only add that one to the Traits array and do nothing else
+		if (_trait == ::Const.FactionTrait.OrientalCityState)
+		{
+			this.m.Traits.push(_trait);
+		}
+		else
+		{
+			this.faction.addTrait(_trait);
+		}
+	}
 });
 
