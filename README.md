@@ -82,6 +82,7 @@ This submod is a collection of content for Reforged.
 
 ## Fixes
 
+- Increase the amount of supported factions in the combat manager to 64 (up from 32)
 - Change witchhunter helmet icon to align with sprite
 
 ## For Modder

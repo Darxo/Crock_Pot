@@ -4,6 +4,9 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.5.3
+	- Fix(Vanilla): increase the amount of supported factions in the combat manager to 64 (up from 32)
+
 0.5.2
 	- Regular Caves now have 150 Resources (up from 140)
 	- Camp Limit of Serpent Caves is now 2 (down from 3)
