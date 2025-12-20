@@ -1,5 +1,5 @@
 ::CrockPot.HooksMod.hook("scripts/entity/world/settlements/medium_farming_village", function(q) {
-// Hardened Functions
+// CrockPot Functions
 	q.CP_getApplicableRandomSituations = @(__original) function()
 	{
 		local ret = __original();
