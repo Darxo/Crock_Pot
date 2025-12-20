@@ -22,6 +22,11 @@
 });
 
 ::CrockPot.HooksMod.queue(">mod_reforged", function() {
+	// It remains to be decided, if all module stuff should be run late, but or now it only containes weighted gear container, which need to run after Hardeneds container
+	::includeFiles(::IO.enumerateFiles("mod_crock_pot/api/modules"));
+}, ::Hooks.QueueBucket.Last);
+
+::CrockPot.HooksMod.queue(">mod_reforged", function() {
 	::includeFiles(::IO.enumerateFiles("mod_crock_pot/hooks_last"));
 }, ::Hooks.QueueBucket.Last);
 
