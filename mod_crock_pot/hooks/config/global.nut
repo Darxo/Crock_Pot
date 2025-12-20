@@ -33,8 +33,10 @@ function addSpawnlistEntry( _typeId, _script, _cost, _strength, _row, _variant =
 	}
 }
 
-{	// Hooded Man
-	local cost = 30;
-	addEntityType("CP_HoodedMan", "human_01_orientation", "Hooded Man", "Hooded Men", ::Const.FactionType.Zombies);		// We re-use the orientatio of regular necromancers
-	addSpawnlistEntry("CP_HoodedMan", "scripts/entity/tactical/enemies/cp_hooded_man", cost, 50, 3);	// Hooded Men don't appear as champions
+{	// New Entities
+	{	// Hooded Man
+		local cost = 30;
+		addEntityType("CP_HoodedMan", "human_01_orientation", "Hooded Man", "Hooded Men", ::Const.FactionType.Zombies);		// We re-use the orientatio of regular necromancers
+		addSpawnlistEntry("CP_HoodedMan", "scripts/entity/tactical/enemies/cp_hooded_man", cost, 50, 3);	// Hooded Men don't appear as champions
+	}
 }
