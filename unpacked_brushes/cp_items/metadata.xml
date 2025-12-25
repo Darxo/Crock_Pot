@@ -15,4 +15,7 @@
   <sprite id="bust_helmet_83" offsetY="35" ic="FF3A4956" width="104" height="142" img="helmets\bust_helmet_83.png" left="-52" right="40" top="-18" bottom="50" />
   <sprite id="bust_helmet_83_damaged" offsetY="35" ic="FF313F4B" width="104" height="142" img="helmets\bust_helmet_83_damaged.png" left="-52" right="40" top="-18" bottom="50" />
   <sprite id="bust_helmet_83_dead" offsetX="6" offsetY="10" f="64F0" f1="-15" f2="-15" ic="FF313F4C" width="191" height="185" img="helmets\bust_helmet_83_dead.png" left="-51" right="21" top="-81" bottom="7" />
+
+  <sprite id="cp_icon_reinforced_wooden_staff_01" offsetY="35" ic="FF394359" width="130" height="142" img="weapons\cp_icon_reinforced_wooden_staff_01.png" left="-63" right="3" top="-55" bottom="65" />
+  <sprite id="cp_icon_reinforced_wooden_staff_01_bloodied" offsetY="35" ic="FF333D56" width="130" height="142" img="weapons\cp_icon_reinforced_wooden_staff_01_bloodied.png" left="-63" right="3" top="-55" bottom="65" />
 </brush>
