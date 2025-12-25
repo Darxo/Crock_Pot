@@ -53,6 +53,15 @@
 						S = "accessory/cp_vulture_item"
 					});
 				}
+
+				if (this.isSouthern())
+				{
+					_list.push({
+						R = 40,
+						P = 1.0,
+						S = "weapons/cp_reinforced_wooden_staff",
+					});
+				}
 			}
 		}
 
