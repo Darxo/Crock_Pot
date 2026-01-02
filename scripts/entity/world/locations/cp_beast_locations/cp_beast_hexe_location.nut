@@ -28,6 +28,30 @@ this.cp_beast_hexe_location <- this.inherit("scripts/entity/world/locations/cp_b
 		this.location.onSpawned();
 	}
 
+	function onDropLootForPlayer( _lootTable )
+	{
+		this.location.onDropLootForPlayer(_lootTable);
+
+		// One treasure item is guaranteed
+		local regularTreasure = ::MSU.Class.WeightedContainer([
+			[12, "loot/jade_broche_item"],
+			[12, "loot/silver_bowl_item"],
+			[12, "loot/silverware_item"],
+			// Witch Huts sometimes drop one vial, which you normally only get from a contract twist
+			[6, "special/bodily_reward_item"],
+			[6, "special/spiritual_reward_item"],
+		]);
+		this.dropTreasure(1, [regularTreasure.roll()], _lootTable);
+
+		// Witch Huts drop 2 food items
+		local food = ::MSU.Class.WeightedContainer([
+			[12, "roots_and_berries_item"],
+			[12, "pickled_mushrooms_item"],
+			[12, "black_marsh_stew_item"],
+		]);
+		this.dropFood(2, [food.roll()], _lootTable);
+	}
+
 // New Functions
 	function spawnScaledRoamingParty( _scaling )
 	{
