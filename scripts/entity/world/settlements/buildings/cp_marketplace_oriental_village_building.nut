@@ -19,27 +19,6 @@ this.cp_marketplace_oriental_village_building <- this.inherit("scripts/entity/wo
 	{
 		local list = [];
 
-		list.extend([
-			{
-				R = 90,
-				P = 1.0,
-				S = "weapons/two_handed_wooden_hammer"
-			},
-			{
-				R = 80,
-				P = 1.0,
-				S = "weapons/throwing_spear"
-			}
-		]);
-
-		list.extend([
-			{
-				R = 50,
-				P = 1.0,
-				S = "weapons/warfork"
-			}
-		]);
-
 		// Weapons
 		list.extend([
 			{
@@ -91,6 +70,16 @@ this.cp_marketplace_oriental_village_building <- this.inherit("scripts/entity/wo
 				R = 70,
 				P = 1.0,
 				S = "weapons/oriental/firelance"
+			},
+			{
+				R = 90,
+				P = 1.0,
+				S = "weapons/two_handed_wooden_hammer"
+			},
+			{
+				R = 80,
+				P = 1.0,
+				S = "weapons/throwing_spear"
 			},
 		]);
 
@@ -213,21 +202,6 @@ this.cp_marketplace_oriental_village_building <- this.inherit("scripts/entity/wo
 					S = "supplies/bread_item"
 				});
 			}
-		}
-
-		if (this.m.Settlement.getSize() >= 3)
-		{
-			list.push({
-				R = 60,
-				P = 1.0,
-				S = "supplies/cured_rations_item"
-			});
-
-			list.push({
-				R = 90,
-				P = 1.0,
-				S = "accessory/falcon_item"
-			});
 		}
 
 		// Cosmetic Paint
