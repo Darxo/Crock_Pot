@@ -59,6 +59,14 @@ function addSpawnlistEntry( _typeId, _script, _cost, _strength, _row, _variant =
 		addSpawnlistEntry("CP_CitizenSouth", "scripts/entity/tactical/humans/cp_citizen_south", cost, cost, 1);
 	}
 
+	{	// Councilman
+		// T4 Upgrade over Peasants/Citizens
+		// Always spawns with 2 Bodyguards
+		local cost = 12;	// Worse gear than Citizens but slightly better stats
+		addEntityType("CP_Councilman", "greatsword_orientation", "Councilman", "Councilmen", ::Const.FactionType.Settlement);
+		addSpawnlistEntry("CP_Councilman", "scripts/entity/tactical/humans/councilman", cost, cost, 3);
+	}
+
 	{	// Caravan Hand (Southern)
 		local cost = 10;
 		addEntityType("CP_CaravanHandSouthern", "caravan_hand_orientation", "Caravan Hand", "Caravan Hands", ::Const.FactionType.OrientalCityState);

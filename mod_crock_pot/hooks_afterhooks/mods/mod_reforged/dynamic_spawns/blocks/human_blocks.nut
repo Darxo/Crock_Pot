@@ -14,6 +14,9 @@ local removeUnit = function( _unitBlock, _unitID )
 	local unitBlock = ::DynamicSpawns.Public.getUnitBlock("UnitBlock.RF.Peasant");
 	unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CitizenNorth" });
 	unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CitizenNorthBodyguards", HardMax = 2 });
+	unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CouncilmanBodyguards", HardMax = 1 });
+
+	unitBlock.TierWidth <- 3;		// Hardened Fix: In Hardened this is defaulted to 2. We need to increase it to allow the last 3 units to be present;
 }
 
 {	// UnitBlock.RF.SouthernPeasant
@@ -21,3 +24,20 @@ local removeUnit = function( _unitBlock, _unitID )
 	unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CitizenSouth" });
 }
 
+{	// New Blocks
+	local unitBlocks = [
+		{
+			ID = "UnitBlock.CP.CP_Councilman",
+			DynamicDefs = {
+				Units = [
+					{ BaseID = "Unit.CP.CP_CouncilmanBodyguards" },
+				],
+			},
+		},
+	];
+
+	foreach (blockDef in unitBlocks)
+	{
+		::DynamicSpawns.Public.registerUnitBlock(blockDef);
+	}
+}

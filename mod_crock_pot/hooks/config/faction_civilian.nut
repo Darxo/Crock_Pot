@@ -26,3 +26,8 @@
 	Armor = [0, 0],
 };
 
+::Const.Tactical.Actor.Councilman.Hitpoints = 70;		// Vanilla: 60
+::Const.Tactical.Actor.Councilman.Bravery = 50;			// Vanilla: 40
+::Const.Tactical.Actor.Councilman.MeleeSkill = 65;		// Vanilla: 50
+::Const.Tactical.Actor.Councilman.MeleeDefense = 10;	// Vanilla: 0
+::Const.Tactical.Actor.Councilman.RangedDefense = 10;	// Vanilla: 0
