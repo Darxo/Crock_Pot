@@ -33,10 +33,29 @@ function addSpawnlistEntry( _typeId, _script, _cost, _strength, _row, _variant =
 	}
 }
 
+{	// Changes Entities
+	::Const.Strings.EntityName[::Const.EntityType.PeasantSouthern] = "Peasant";
+	::Const.Strings.EntityNamePlural[::Const.EntityType.PeasantSouthern] = "Peasants";
+}
+
 {	// New Entities
 	{	// Hooded Man
 		local cost = 30;
 		addEntityType("CP_HoodedMan", "human_01_orientation", "Hooded Man", "Hooded Men", ::Const.FactionType.Zombies);		// We re-use the orientatio of regular necromancers
 		addSpawnlistEntry("CP_HoodedMan", "scripts/entity/tactical/enemies/cp_hooded_man", cost, 50, 3);	// Hooded Men don't appear as champions
+	}
+
+	{	// Citizen (North)
+		// T2 Upgrade over northern Peasants
+		local cost = 12;
+		addEntityType("CP_CitizenNorth", "militia_captain_orientation", "Citizen", "Citizens", ::Const.FactionType.Settlement);
+		addSpawnlistEntry("CP_CitizenNorth", "scripts/entity/tactical/humans/cp_citizen_north", cost, cost, 1);
+	}
+
+	{	// Citizen (South)
+		// T2 Upgrade of southern Peasants
+		local cost = 12;
+		addEntityType("CP_CitizenSouth", "militia_captain_orientation", "Citizen", "Citizens", ::Const.FactionType.OrientalCityState);
+		addSpawnlistEntry("CP_CitizenSouth", "scripts/entity/tactical/humans/cp_citizen_south", cost, cost, 1);
 	}
 }
