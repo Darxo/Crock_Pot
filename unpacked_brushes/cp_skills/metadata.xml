@@ -5,4 +5,6 @@
 
 	<sprite id="cp_creative_effect" ic = "FF23165B" img="..\..\gfx\ui\traits\trait_icon_cp_creative.png" />
 	<sprite id="cp_creative_effect_mini" ic = "FF23165B" img="mini\cp_creative_effect_mini.png" />
+
+	<sprite id="cp_loaded_compressed_net_effect_mini" ic = "FF23165B" img="mini\cp_loaded_with_compressed_net_effect_mini.png" />
 </brush>
