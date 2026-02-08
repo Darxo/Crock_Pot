@@ -10,6 +10,10 @@ local units = [
 		Troop = "CP_CitizenSouth",
 		Figure = ["figure_player_13"],		// Southern Quickstart Figure
 	},
+	{
+		ID = "Unit.CP.CP_CaravanHandSouthern",
+		Troop = "CP_CaravanHandSouthern",
+	},
 ];
 
 foreach (unitDef in units)
