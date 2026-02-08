@@ -24,6 +24,10 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 		// this.m.IsShowingBanner = false;
 		this.m.Resources = 150;
 		this.m.VisibilityMult = 0.6;	// Caves are much harder to spot than regular locations
+
+	// Crock Pot
+		this.m.CP_TacticalTypeOverwrite = "tactical.CP_cave";
+		this.m.CP_EngageImageOverwrite = "engage/cp_engage_cave";
 	}
 
 	function onSpawned()

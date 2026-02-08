@@ -8,6 +8,9 @@ this.cp_beast_hexe_location <- this.inherit("scripts/entity/world/locations/cp_b
 
 		this.m.CP_CanSpawnRoamer = true;
 		this.m.Resources *= 1.5;	// Hexen Locations have 50% more resources than a regular cave
+
+		this.m.CP_TacticalTypeOverwrite = null;
+		this.m.CP_EngageImageOverwrite = null;
 	}
 
 	function getDescription()
