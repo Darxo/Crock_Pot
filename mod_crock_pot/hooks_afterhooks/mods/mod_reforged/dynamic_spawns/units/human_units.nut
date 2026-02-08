@@ -14,6 +14,22 @@ local units = [
 		ID = "Unit.CP.CP_CaravanHandSouthern",
 		Troop = "CP_CaravanHandSouthern",
 	},
+	{
+		ID = "Unit.CP.CP_PersonalGuard",
+		Troop = "CP_PersonalGuard",
+	},
+
+// ... with Bodyguards
+	{
+		ID = "Unit.CP.CP_CitizenNorthBodyguards",
+		Troop = "CP_CitizenNorth",
+		Figure = ["figure_civilian_05"],	// Figure of a Peasant in noble-like tunic
+		StaticDefs = {
+			Units = [
+				{ BaseID = "Unit.CP.CP_PersonalGuard" },
+			],
+		},
+	},
 ];
 
 foreach (unitDef in units)

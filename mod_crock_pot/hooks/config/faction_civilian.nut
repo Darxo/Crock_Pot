@@ -12,3 +12,17 @@
 	Armor = [0, 0],
 };
 
+::Const.Tactical.Actor.CP_PersonalGuard <- {
+	XP = 250,
+	ActionPoints = 9,
+	Hitpoints = 80,
+	Bravery = 90,
+	Stamina = 120,
+	MeleeSkill = 65,
+	RangedSkill = 0,
+	MeleeDefense = 15,
+	RangedDefense = 15,
+	Initiative = 130,
+	Armor = [0, 0],
+};
+

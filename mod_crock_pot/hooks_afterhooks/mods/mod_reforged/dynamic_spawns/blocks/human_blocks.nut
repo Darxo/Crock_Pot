@@ -13,6 +13,7 @@ local removeUnit = function( _unitBlock, _unitID )
 {	// UnitBlock.RF.Peasant
 	local unitBlock = ::DynamicSpawns.Public.getUnitBlock("UnitBlock.RF.Peasant");
 	unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CitizenNorth" });
+	unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CitizenNorthBodyguards", HardMax = 2 });
 }
 
 {	// UnitBlock.RF.SouthernPeasant

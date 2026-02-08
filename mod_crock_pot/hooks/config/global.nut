@@ -64,4 +64,10 @@ function addSpawnlistEntry( _typeId, _script, _cost, _strength, _row, _variant =
 		addEntityType("CP_CaravanHandSouthern", "caravan_hand_orientation", "Caravan Hand", "Caravan Hands", ::Const.FactionType.OrientalCityState);
 		addSpawnlistEntry("CP_CaravanHandSouthern", "scripts/entity/tactical/humans/cp_caravan_hand_southern", cost, cost, 2);
 	}
+
+	{	// Personal Guard
+		local cost = 25;
+		addEntityType("CP_PersonalGuard", "caravan_guard_orientation", "Personal Guard", "Personal Guards", ::Const.FactionType.Settlement);
+		addSpawnlistEntry("CP_PersonalGuard", "scripts/entity/tactical/humans/cp_personal_guard", cost, cost, 2);
+	}
 }
