@@ -78,4 +78,10 @@ function addSpawnlistEntry( _typeId, _script, _cost, _strength, _row, _variant =
 		addEntityType("CP_PersonalGuard", "caravan_guard_orientation", "Personal Guard", "Personal Guards", ::Const.FactionType.Settlement);
 		addSpawnlistEntry("CP_PersonalGuard", "scripts/entity/tactical/humans/cp_personal_guard", cost, cost, 2);
 	}
+
+	{	// Sellsword
+		local cost = 55;	// 10 more than Chosen and 5 less than Hedgeknight
+		addEntityType("CP_Sellsword", "mercenary_orientation", "Sellsword", "Sellswords", ::Const.FactionType.Generic);
+		addSpawnlistEntry("CP_Sellsword", "scripts/entity/tactical/humans/cp_sellsword", cost, cost, 1);
+	}
 }

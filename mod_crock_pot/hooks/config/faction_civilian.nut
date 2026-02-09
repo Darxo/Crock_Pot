@@ -26,6 +26,20 @@
 	Armor = [0, 0],
 };
 
+::Const.Tactical.Actor.CP_Sellsword <- {	// Cost: 50
+	XP = 500,
+	ActionPoints = 9,
+	Hitpoints = 110,
+	Bravery = 80,
+	Stamina = 150,
+	MeleeSkill = 80,
+	RangedSkill = 70,
+	MeleeDefense = 30,
+	RangedDefense = 20,
+	Initiative = 140,
+	Armor = [0, 0],
+};
+
 ::Const.Tactical.Actor.Councilman.Hitpoints = 70;		// Vanilla: 60
 ::Const.Tactical.Actor.Councilman.Bravery = 50;			// Vanilla: 40
 ::Const.Tactical.Actor.Councilman.MeleeSkill = 65;		// Vanilla: 50

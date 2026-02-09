@@ -24,6 +24,11 @@ local removeUnit = function( _unitBlock, _unitID )
 	unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CitizenSouth" });
 }
 
+{	// UnitBlock.RF.MercenaryFrontline
+	local unitBlock = ::DynamicSpawns.Public.getUnitBlock("UnitBlock.RF.MercenaryFrontline");
+	unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_Sellsword" });
+}
+
 {	// New Blocks
 	local unitBlocks = [
 		{

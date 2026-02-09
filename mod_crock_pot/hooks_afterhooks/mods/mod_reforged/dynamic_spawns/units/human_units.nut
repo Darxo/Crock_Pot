@@ -23,6 +23,10 @@ local units = [
 		ID = "Unit.CP.CP_PersonalGuard",
 		Troop = "CP_PersonalGuard",
 	},
+	{
+		ID = "Unit.CP.CP_Sellsword",
+		Troop = "CP_Sellsword",
+	},
 
 // ... with Bodyguards
 	{
