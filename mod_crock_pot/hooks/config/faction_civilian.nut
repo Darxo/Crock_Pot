@@ -26,6 +26,20 @@
 	Armor = [0, 0],
 };
 
+::Const.Tactical.Actor.CP_Crowntaker <- {
+	XP = 500,
+	ActionPoints = 9,
+	Hitpoints = 100,
+	Bravery = 80,
+	Stamina = 140,
+	MeleeSkill = 85,
+	RangedSkill = 75,
+	MeleeDefense = 0,
+	RangedDefense = 50,
+	Initiative = 120,
+	Armor = [0, 0],
+};
+
 ::Const.Tactical.Actor.CP_Sellsword <- {	// Cost: 50
 	XP = 500,
 	ActionPoints = 9,

@@ -29,6 +29,11 @@
 		local unitBlock = ::DynamicSpawns.Public.getUnitBlock("UnitBlock.RF.MercenaryFrontline");
 		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_Sellsword" });
 	}
+
+	{	// UnitBlock.RF.BountyHunter
+		local unitBlock = ::DynamicSpawns.Public.getUnitBlock("UnitBlock.RF.BountyHunter");
+		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_Crowntaker" });
+	}
 }
 
 {	// New Blocks
