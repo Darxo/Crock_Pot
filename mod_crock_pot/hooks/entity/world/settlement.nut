@@ -16,6 +16,19 @@
 					P = 1.0,
 					S = "accessory/cp_owl_item"
 				});
+
+				_list.push({
+					R = 75,
+					P = 1.0,
+					S = "ammo/cp_net_bag",
+				});
+
+				_list.push({
+					R = 90,
+					P = 1.0,
+					S = "ammo/cp_incendiary_bag",
+				});
+
 				break;
 			}
 			case "building.marketplace":
