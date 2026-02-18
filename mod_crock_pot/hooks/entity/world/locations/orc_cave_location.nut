@@ -16,4 +16,11 @@
 	{
 		return "Amidst rugged terrain, a cave entrance invites exploration into the unknown depths.";
 	}
+
+	q.onSpawned = @(__original) function()
+	{
+		__original();
+		// We mirror the default cave name generation to hide the fact that this is an orc location
+		this.m.Name = ::World.EntityManager.getUniqueLocationName(::Const.World.LocationNames.Cave);
+	}
 });
