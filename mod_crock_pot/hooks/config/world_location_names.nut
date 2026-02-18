@@ -4,16 +4,21 @@
 	local cavePrefix = [
 		"Ancient",
 		"Black",
+		"Child-Snatcher\'s",
 		"Cold",
 		"Dark",
 		"Deep",
 		"Echoing",
+		"Flesheater\'s",
+		"Foul",
 		"Forgotten",
 		"Grim",
 		"Hidden",
 		"Murky",
+		"Occupied",
 		"Shadow",
 		"Stone",
+		"Uncharted",
 	]
 
 	local caveSynonym = [
