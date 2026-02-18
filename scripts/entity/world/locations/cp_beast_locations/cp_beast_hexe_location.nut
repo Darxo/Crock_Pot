@@ -9,6 +9,10 @@ this.cp_beast_hexe_location <- this.inherit("scripts/entity/world/locations/cp_b
 		this.m.CP_CanSpawnRoamer = true;
 		this.m.Resources *= 1.5;	// Hexen Locations have 50% more resources than a regular cave
 
+		// cp_beast_cave_location hides the defenders and banner, so we need to re-enable it here again
+		this.m.IsShowingBanner = true;
+		this.m.IsShowingDefenders = true;
+
 		this.m.CP_TacticalTypeOverwrite = null;
 		this.m.CP_EngageImageOverwrite = null;
 	}

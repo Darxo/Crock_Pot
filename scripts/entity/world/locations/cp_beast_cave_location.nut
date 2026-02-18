@@ -12,6 +12,10 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 		this.m.LocationType = ::Const.World.LocationType.Lair | ::Const.World.LocationType.Passive;
 		this.m.IsDespawningDefenders = false;
 
+		// We don't show the banner or defender of this location so that the player has to guess, whether it is orcs or beasts
+		this.m.IsShowingBanner = false;
+		this.m.IsShowingDefenders = false;
+
 		if (this.m.CombatLocation.Template[0] != null)
 		{
 			::logWarning("Hardened: this.m.CombatLocation.Template[0] was not null for some reason. We handle this gracefully!")
