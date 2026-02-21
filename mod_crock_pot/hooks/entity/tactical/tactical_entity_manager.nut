@@ -27,6 +27,22 @@
 		__original(_players, _offsetX, _offsetY);
 	}
 
+	q.setupAmbience = @(__original) function( _worldTile )
+	{
+		foreach (entity in ::World.getAllEntitiesAtPos(_worldTile.Pos, 10))
+		{
+			if (!entity.isLocation()) continue;
+
+			if (entity.m.CP_TacticalTypeOverwrite == "tactical.CP_cave")
+			{
+				this.CP_setupAmbienceCave();
+				return;
+			}
+		}
+
+		__original(_worldTile);
+	}
+
 // New Functions
 	// Prepare a tile for a player spawn by making sure its not isolated (presumably because of its Level)
 	q.downsizeTile <- function( _tile )
@@ -35,5 +51,12 @@
 		{
 			_tile.Level = 1;
 		}
+	}
+
+	q.CP_setupAmbienceCave <- function()
+	{
+		local weather = ::Tactical.getWeather();
+		weather.setAmbientLightingColor(::createColor(::Const.Tactical.AmbientLightingColor.CP_Cave));
+		weather.setAmbientLightingSaturation(::Const.Tactical.AmbientLightingSaturation.CP_Cave);
 	}
 });
