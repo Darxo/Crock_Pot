@@ -4,6 +4,30 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.6.0
+	- Add new **Bag of compressed Nets** and **Large Bag of compressed Nets** ammo items for Firearm: When you reload your weapon its next shot will deal 80% less damage and put every enemy hit in a net
+		- The normal bag is sometimes sold by alchemists
+	- Add **Bag of incendiary Bullets** and **Large Bag of incendiary Bullets** ammo items for Firearm: When you reload your weapon its next shot will convert all damage to Fire Damage and light the respective tiles on fire for 2 turns on a hit
+		- The normal bag is sometimes sold by alchemists
+	- Add six new recipes to craft those four new ammo items
+	- Add new **Reinforced Wooden Stafff** weapon as a lower tier version of the **Polemace**. It has the same weapon type, range and attack patterns. It has 35-55 Damage, 120% Armor Damage, 40% Armor Penetration, 6 Reach and a Weight of 10
+		- It is sometimes sold in southern marketplaces
+		- **Nomad Cutthroats** have a 10% chance to spawn with this weapon
+	- Add new cave layout for tactical combat which is used for beast and orc cave fights
+	- Orc Caves and Beast Caves now hide their defender
+	- Orc Caves now use the same name generation as Beast Caves
+	- Add five additional prefixes for Cave Names
+	- Improve food and loot item drop pool of **Witch Hut** locations. They now may drop a **Green Vial** (10%) or **Blue Vial** (10%)
+	- Rename the existing southern **Citizen** to **Peasant**
+	- Add new **Citizen** unit as the Tier 2 upgrade over **Peasant**. They cost 12 resources. They have the same perks and slightly better stats and gear than their Tier 1 version
+	- Add new southern **Caravan Hand**. They have the same cost and stats as their northern counterpart and similar gear. They will now appear in southern caravans
+	- Add new **Personal Guard** unit. They cost 25 resources. They have similar stats and skills to the caravaran guard. Their behavior is similar to that of the **Heralds Bodyguard** in that they try to stay close to their protected targets
+	- Add new **Councilman** unit as the Tier 3 upgrade over **Citizen**. They cost 12 resources. They have slightly worse gear than a citizen but slightly better stats. They will always spawn together with **Personal Guards**. They have a 10% chance to appear in regular caravans and are guaranteed to spawn in the rare heavily armed caravan variant
+	- Add new **Sellsword** unit as the Tier 2 upgrade over [melee] **Mercenaries**. They cost 55 resources. They have better stats, better quality gear and gain the **Poise** perk in addition to all the other perks from the **Mercenary**
+	- Add new **Crowntaker** unit as the TIer 2 upgrade over [melee] **Bounty Hunter**. They cost 50 resources. They use higher quality helmets, weapons and reinforced nets. They have **Anticipation**, **Executioner**, **Small Target**, **Angler** and **Throwing Mastery** in addition to all the perks from regular **Bounty Hunter**
+	- Add `location.m.CP_TacticalTypeOverwrite` and `location.m.CP_EngageImageOverwrite`to assign custom tactical types and images when fighting this location
+	- Add `skill.m.CP_IsAttachedSkill = false` which can be set to true, to make this skill stay with its item, even if that is unequipped
+
 0.5.3
 	- Fix(Vanilla): increase the amount of supported factions in the combat manager to 64 (up from 32)
 

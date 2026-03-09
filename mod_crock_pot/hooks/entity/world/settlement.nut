@@ -8,13 +8,13 @@
 				_list.push({
 					R = 75,
 					P = 1.0,
-					S = "accessory/cp_vulture_item"
+					S = "accessory/cp_vulture_item",
 				});
 
 				_list.push({
 					R = 75,
 					P = 1.0,
-					S = "accessory/cp_owl_item"
+					S = "accessory/cp_owl_item",
 				});
 
 				_list.push({
@@ -38,19 +38,19 @@
 					_list.push({
 						R = 95,
 						P = 1.0,
-						S = "accessory/cp_hawk_item"
+						S = "accessory/cp_hawk_item",
 					});
 
 					_list.push({
 						R = 95,
 						P = 1.0,
-						S = "accessory/cp_owl_item"
+						S = "accessory/cp_owl_item",
 					});
 
 					_list.push({
 						R = 95,
 						P = 1.0,
-						S = "accessory/cp_vulture_item"
+						S = "accessory/cp_vulture_item",
 					});
 				}
 
