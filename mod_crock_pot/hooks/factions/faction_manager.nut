@@ -99,7 +99,7 @@
 		// We briefly we remove all southern villages from the Settlements-List so that they are not assigned to the noble houses
 		local temporarilyRemovedSettlements = [];
 		local settlements = ::World.EntityManager.getSettlements();
-		for (local i = settlements.len() - 1; i > 0; --i)
+		for (local i = settlements.len() - 1; i >= 0; --i)
 		{
 			if (settlements[i].isSouthern() && !::isKindOf(settlements[i], "city_state")) //  && ::MSU.isNull(settlements[i].getOwner())
 			{
