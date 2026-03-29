@@ -117,6 +117,7 @@ This submod is a collection of content for Reforged.
 
 # Known Issues
 
+- Crafting Recipes that require a certain Powder Bag variant will accept any Powder Bag of any size/variant. This is a vanilla bug and fixed in the overhaul mod **Hardened**
 - Geist Tear is not marked as a crafting ingredient even though it's now used in a recipe
 - Peasants and Caravans spawned by City States appear at their Villages instead
 - Southern Villages can sometimes spawn with additional northern buildings. That can happens if too few of those buildings were spawned
