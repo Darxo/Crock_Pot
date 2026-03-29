@@ -12,8 +12,8 @@ local removeBlock = function( _party, _unitBlockID )
 
 // Hooking
 {
-	local caravanParty = ::DynamicSpawns.Public.getParty("Caravan");
-	caravanParty.filter(function(_item, _weight) {
+	local caravanParty = ::Reforged.Spawns.Parties["Caravan"];
+	caravanParty.Variants.filter(function(_item, _weight) {
 		if (_item.ID == "Caravan_0")
 		{
 			_item.DynamicDefs.UnitBlocks.push({ BaseID = "UnitBlock.CP.CP_Councilman", ExclusionChance = 0.9, StartingResourceMin = 200, RatioMax = 0.15, DeterminesFigure = false });

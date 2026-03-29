@@ -12,7 +12,7 @@
 	}
 
 	{	// UnitBlock.RF.Peasant
-		local unitBlock = ::DynamicSpawns.Public.getUnitBlock("UnitBlock.RF.Peasant");
+		local unitBlock = ::Reforged.Spawns.UnitBlocks["UnitBlock.RF.Peasant"];
 		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CitizenNorth" });
 		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CitizenNorthBodyguards", HardMax = 2 });
 		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CouncilmanBodyguards", HardMax = 1 });
@@ -21,17 +21,17 @@
 	}
 
 	{	// UnitBlock.RF.SouthernPeasant
-		local unitBlock = ::DynamicSpawns.Public.getUnitBlock("UnitBlock.RF.SouthernPeasant");
+		local unitBlock = ::Reforged.Spawns.UnitBlocks["UnitBlock.RF.SouthernPeasant"];
 		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CitizenSouth" });
 	}
 
 	{	// UnitBlock.RF.MercenaryFrontline
-		local unitBlock = ::DynamicSpawns.Public.getUnitBlock("UnitBlock.RF.MercenaryFrontline");
+		local unitBlock = ::Reforged.Spawns.UnitBlocks["UnitBlock.RF.MercenaryFrontline"];
 		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_Sellsword" });
 	}
 
 	{	// UnitBlock.RF.BountyHunter
-		local unitBlock = ::DynamicSpawns.Public.getUnitBlock("UnitBlock.RF.BountyHunter");
+		local unitBlock = ::Reforged.Spawns.UnitBlocks["UnitBlock.RF.BountyHunter"];
 		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_Crowntaker" });
 	}
 }
@@ -50,6 +50,6 @@
 
 	foreach (blockDef in unitBlocks)
 	{
-		::DynamicSpawns.Public.registerUnitBlock(blockDef);
+		::Reforged.Spawns.UnitBlocks[blockDef.ID] <- blockDef;
 	}
 }

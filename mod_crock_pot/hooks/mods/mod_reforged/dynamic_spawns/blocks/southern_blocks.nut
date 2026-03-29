@@ -21,6 +21,6 @@
 
 	foreach (blockDef in unitBlocks)
 	{
-		::DynamicSpawns.Public.registerUnitBlock(blockDef);
+		::Reforged.Spawns.UnitBlocks[blockDef.ID] <- blockDef;
 	}
 }
