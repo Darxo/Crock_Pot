@@ -9,6 +9,23 @@ this.cp_hooded_man <- this.inherit("scripts/entity/tactical/enemies/necromancer"
 
 		this.m.BeardChance = 100;	// So that you can see the black hair as this is the "younger" variant of the necromancer
 		this.m.HairColors = ["black"];	// In Vanilla necromancer have black and grey, but we reserve grey for the higher tier one
+
+		this.m.CP_ChestWeightedContainer = ::MSU.Class.WeightedContainer([
+			[12, "scripts/items/armor/ragged_dark_surcoat"],
+			[12, "scripts/items/armor/thick_dark_tunic"],
+			[12, "scripts/items/armor/ragged_surcoat"],
+		]);
+
+		this.m.CP_HelmetWeightedContainer = ::MSU.Class.WeightedContainer([
+			[12, "scripts/items/helmets/witchhunter_hat"],
+			[12, "scripts/items/helmets/dark_cowl"],
+			[12, "scripts/items/helmets/hood"],
+		]);
+
+		this.m.CP_WeaponWeightContainer = ::MSU.Class.WeightedContainer([
+			[12, "scripts/items/weapons/dagger"],
+			[12, "scripts/items/weapons/butchers_cleaver"],
+		]);
 	}
 
 	function onInit()
@@ -28,41 +45,10 @@ this.cp_hooded_man <- this.inherit("scripts/entity/tactical/enemies/necromancer"
 
 	function assignRandomEquipment()
 	{
-		local r = ::Math.rand(1, 2);
-
-		if (r == 1)
+		local helmet = this.getHeadItem();
+		if (helmet != null && helmet.getID() == "armor.head.hood")
 		{
-			this.getItems().equip(::new("scripts/items/weapons/dagger"));
-		}
-		else if (r == 2)
-		{
-			this.getItems().equip(::new("scripts/items/weapons/butchers_cleaver"));
-		}
-
-		r = ::Math.rand(1, 2);
-		if (r == 1)
-		{
-			this.getItems().equip(::new("scripts/items/armor/ragged_dark_surcoat"));
-		}
-		else if (r == 2)
-		{
-			this.getItems().equip(::new("scripts/items/armor/thick_dark_tunic"));
-		}
-
-		local r = ::Math.rand(1, 3);
-		if (r == 1)
-		{
-			this.getItems().equip(::new("scripts/items/helmets/witchhunter_hat"));
-		}
-		else if (r == 2)
-		{
-			this.getItems().equip(::new("scripts/items/helmets/dark_cowl"));
-		}
-		else if (r == 3)
-		{
-			local hood = ::new("scripts/items/helmets/hood");
-			hood.setVariant(63);
-			this.getItems().equip(hood);
+			helmet.setVariant(63);
 		}
 	}
 });
