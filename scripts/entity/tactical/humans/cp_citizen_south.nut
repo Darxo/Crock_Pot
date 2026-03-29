@@ -4,7 +4,7 @@ this.cp_citizen_south <- this.inherit("scripts/entity/tactical/human", {
 	{
 		this.m.BloodType = ::Const.BloodType.Red;
 		this.m.Type = ::Const.EntityType.CP_CitizenSouth;
-		this.m.XP = ::Const.Tactical.Actor.CP_Citizen.XP;
+		this.m.XP = ::Const.Tactical.Actor.CP_CitizenNorth.XP;
 
 		this.human.create();
 
@@ -71,7 +71,7 @@ this.cp_citizen_south <- this.inherit("scripts/entity/tactical/human", {
 	{
 		// Tweak Base Properties
 		local b = this.getBaseProperties();
-		b.setValues(::Const.Tactical.Actor.CP_Citizen);		// Shared between North and South variant
+		b.setValues(::Const.Tactical.Actor.CP_CitizenNorth);		// Shared between North and South variant
 		this.m.ActionPoints = b.ActionPoints;
 		this.m.Hitpoints = b.Hitpoints;
 		this.m.CurrentProperties = clone b;

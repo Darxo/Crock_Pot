@@ -14,6 +14,13 @@
 	q.onInit = @(__original) function()
 	{
 		__original();
+
+		local b = this.m.BaseProperties;
+		b.setValues(::Const.Tactical.Actor.CP_Councilman);
+		this.m.ActionPoints = b.ActionPoints;
+		this.m.Hitpoints = b.Hitpoints;
+		this.m.CurrentProperties = clone b;
+
 		this.setAppearance();
 
 		this.getSkills().add(::Reforged.new("scripts/skills/special/cp_vip", function(o) {
