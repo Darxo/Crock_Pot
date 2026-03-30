@@ -6,7 +6,7 @@ Write a short summary about what your mod does without going into specific. This
 
 0.7.0
 	- Now compatible with Reforged 0.8.0
-	- Add new **Random Trio** Starting Scenario. This is a 1:1 copy of the **Random Trio** Starting Scenario, except that your starting brothers can only roll lowborn backgrounds
+	- Add new **Lowborn Trio** Starting Scenario. This is a 1:1 copy of the **Random Trio** Starting Scenario, except that your starting brothers can only roll lowborn backgrounds
 	- **Hooded Men** now cost 25% less resources than the old **Necromancer** (instead of 30)
 	- **Necromancer** now cost 20% more resources than the old **Necromancer** (instead of 50)
 	- **Sellswords** now cost 60% more resources than **Mercenaries** (instead of 55)

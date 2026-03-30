@@ -83,7 +83,7 @@ This submod is a collection of content for Reforged.
 
 ### New Origins
 
-- Add **Random Trio** Origin. This is a 1:1 copy of the Reforged **Random Trio** Origin, except that your starting brothers can only roll lowborn backgrounds
+- Add **Lowborn Trio** Origin. This is a 1:1 copy of the Reforged **Random Trio** Origin, except that your starting brothers can only roll lowborn backgrounds
 
 ### Additional Artwork
 
