@@ -43,7 +43,6 @@ this.cp_vip_bodyguard <- ::inherit("scripts/skills/special/rf_bodyguard", {
 // Reforged Functions
 	function setVIP( _entity )
 	{
-		::logWarning("CP: setVIP " + _entity.getName());
 		local vipSkill = _entity.getSkills().getSkillByID("special.cp_vip");
 		if (vipSkill == null)
 		{
