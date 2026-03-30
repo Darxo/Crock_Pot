@@ -49,15 +49,10 @@ This submod is a collection of content for Reforged.
 - Add new southern **Caravan Hand**. They have the same cost and stats as their northern counterpart and similar gear. They will now appear in southern caravans
 - Add new **Personal Guard** unit. They cost 25 resources. They have similar stats and skills to the caravaran guard. Their behavior is similar to that of the **Heralds Bodyguard** in that they try to stay close to their protected targets
 - Add new **Councilman** unit. They cost 12 resources. They have slightly worse gear than a citizen but slightly better stats. They will always spawn together with **Personal Guards**. They have a 10% chance to appear in regular caravans and are guaranteed to spawn in the rare heavily armed mercenary caravan variant
-- Add new **Sellsword** unit as the Tier 2 upgrade over melee **Mercenaries**. They cost 55 resources. They have better stats, better quality gear and gain the **Poise** perk in addition to all the other perks from the **Mercenary**
-- Add new **Crowntaker** unit as the TIer 2 upgrade over melee **Bounty Hunter**. They cost 50 resources. They use higher quality helmets, weapons and reinforced nets. They have **Anticipation**, **Executioner**, **Small Target**, **Angler** and **Throwing Mastery** in addition to all the perks from regular **Bounty Hunter**
-- **Hooded Man** is a new tier 1 necromancer. He has the same cost of 30 and very similar stats to the old Necromancer. He has the same skills as the old Necromancer but no perks
-  - The **Necromancer** is now tier 2. He costs 50 resources (up from 30), has 90 Hitpoints (up from 50), 200 Stamina (up from 80), 60 Melee Skill (up from 50), 10 Melee Defense (up from 5) and grants 500 XP (up from 350). He no longer spawns with a hat and wields either a rondel dagger or a scramasax
-
-### New Situations
-
-- **Physicians Gathering** can randomly occur in any settlement with size 2 or 3. It increases amount of available medicine, reduces medicine price and makes Anatomists and Monks more common during hiring
-- **Grand Travelling Show** can randomly occur in any civilian settlement with size 2 or 3 or in city states. It increases food price, increases available recruits and it makes Juggler, Houndmaster and Wildmen more common during hiring
+- Add new **Sellsword** unit as the Tier 2 upgrade over melee **Mercenaries**. They cost 60% more resources. They have better stats, better quality gear and gain the **Poise** perk in addition to all the other perks from the **Mercenary**
+- Add new **Crowntaker** unit as the TIer 2 upgrade over melee **Bounty Hunter**. They cost 60% more resources. They use higher quality helmets, weapons and reinforced nets. They have **Anticipation**, **Executioner**, **Small Target**, **Angler** and **Throwing Mastery** in addition to all the perks from regular **Bounty Hunter**
+- **Hooded Man** is a new tier 1 necromancer. They cost 25% less resources than the **Necromancer** and has otherwise similar stats to the old Necromancer. He has the same skills as the old Necromancer but no perks
+  - The **Necromancer** is now tier 2. He now costs 20% more resources, has 90 Hitpoints (up from 50), 200 Stamina (up from 80), 60 Melee Skill (up from 50), 10 Melee Defense (up from 5) and grants 500 XP (up from 350). He no longer spawns with a hat and wields either a rondel dagger or a scramasax
 
 ### Items
 
@@ -70,8 +65,6 @@ This submod is a collection of content for Reforged.
 - **Bag of incendiary Bullets** (stores 5 uses) and **Large Bag of incendiary Bullets** (stores 7 uses) are new firearm ammo items. When you reload your weapon its next shot will convert all damage to Fire Damage and light the respective tiles on fire for 2 turns on a hit. The small bag variant is sometimes sold by **Alchemists**
 - **Reinforced Wooden Staff** weapon is a lower tier version of the **Polemace**. It has the same weapon type, range and attack patterns. It has 35-55 Damage, 120% Armor Damage, 40% Armor Penetration, 6 Reach and a Weight of 10. It is sometimes sold in southern marketplaces and has a 10% chance to spawn on **Nomad Cutthroats**
 
-### Crafting Recipes
-
 ### Craftable Items
 
 - **Forgetfulness Potion**: Geist Tear, Shimmering Ashes, 500 Crowns
@@ -83,9 +76,14 @@ This submod is a collection of content for Reforged.
 - **Large Bag of incendiary Bullets**: Bag of incendiary Bullets, Serpent Skin, 300 Crowns
 - **Large Bag of incendiary Bullets**: Large Powder Bag, Sulfurous Rocks, 300 Crowns
 
-### Unleashable Birds
+### New Situations
 
-- Add 3 new unleashable birds, which are equipped in the Accessory slot, just like the Falcon
+- **Physicians Gathering** can randomly occur in any settlement with size 2 or 3. It increases amount of available medicine, reduces medicine price and makes Anatomists and Monks more common during hiring
+- **Grand Travelling Show** can randomly occur in any civilian settlement with size 2 or 3 or in city states. It increases food price, increases available recruits and it makes Juggler, Houndmaster and Wildmen more common during hiring
+
+### New Origins
+
+- Add **Random Trio** Origin. This is a 1:1 copy of the Reforged **Random Trio** Origin, except that your starting brothers can only roll lowborn backgrounds
 
 ### Additional Artwork
 

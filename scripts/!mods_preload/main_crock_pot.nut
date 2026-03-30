@@ -1,7 +1,7 @@
 ::CrockPot <- {
 	ID = "mod_crock_pot",
 	Name = "Crock Pot",
-	Version = "0.6.0",
+	Version = "0.7.0",
 	GitHubURL = "https://github.com/Darxo/Crock_Pot",
 	Const = {
 		DayThresholdMinDangerBeasts = 10,	// Higher Tier Beast Caves (Lindwurms and Unholds) only start appearing at this day count
@@ -9,7 +9,7 @@
 }
 
 ::CrockPot.HooksMod <- ::Hooks.register(::CrockPot.ID, ::CrockPot.Version, ::CrockPot.Name);
-::CrockPot.HooksMod.require(["mod_reforged"]);
+::CrockPot.HooksMod.require(["mod_reforged >= 0.8.0-alpha"]);
 
 ::CrockPot.HooksMod.queue(">mod_reforged", function() {
 	::CrockPot.Mod <- ::MSU.Class.Mod(::CrockPot.ID, ::CrockPot.Version, ::CrockPot.Name);
