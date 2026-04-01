@@ -16,7 +16,7 @@ local removeBlock = function( _party, _unitBlockID )
 	caravanParty.Variants.filter(function(_item, _weight) {
 		if (_item.ID == "Caravan_0")
 		{
-			_item.DynamicDefs.UnitBlocks.push({ BaseID = "UnitBlock.CP.CP_Councilman", ExclusionChance = 0.9, StartingResourceMin = 200, RatioMax = 0.15, DeterminesFigure = false });
+			_item.DynamicDefs.UnitBlocks.push({ BaseID = "UnitBlock.CP.CP_Councilman", ExclusionChance = 90, StartingResourceMin = 200, RatioMax = 0.15, DeterminesFigure = false });
 		}
 		else if (_item.ID == "Caravan_1")
 		{

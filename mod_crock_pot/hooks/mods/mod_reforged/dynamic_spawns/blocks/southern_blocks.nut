@@ -7,7 +7,7 @@
 				Units = [
 					{ BaseID = "Unit.CP.CP_CaravanHandSouthern" },
 					{ BaseID = "Unit.RF.Conscript" },
-					{ BaseID = "Unit.RF.Officer", HardMax = 1, PartySizeMin = 12, ExclusionChance = 0.5 },
+					{ BaseID = "Unit.RF.Officer", HardMax = 1, PartySizeMin = 12, ExclusionChance = 50 },
 				],
 			},
 		},
