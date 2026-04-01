@@ -5,7 +5,10 @@
 	GitHubURL = "https://github.com/Darxo/Crock_Pot",
 	Const = {
 		DayThresholdMinDangerBeasts = 10,	// Higher Tier Beast Caves (Lindwurms and Unholds) only start appearing at this day count
-	}
+	},
+	Global = {
+		IsViewingRecipes = false,	// WHen true, then certain items will return different ItemIDs
+	},
 }
 
 ::CrockPot.HooksMod <- ::Hooks.register(::CrockPot.ID, ::CrockPot.Version, ::CrockPot.Name);
