@@ -4,6 +4,11 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.7.1
+	- Fix new recipes accepting any powder bag as ingredient instead of only the listed one
+	- Fix typoe in **Release Vulture** skill tooltip
+	- Fix **Officer** and **Councilman** appearing more freqently than intended
+
 0.7.0
 	- Now compatible with Reforged 0.8.0
 	- Add new **Lowborn Trio** Starting Scenario. This is a 1:1 copy of the **Random Trio** Starting Scenario, except that your starting brothers can only roll lowborn backgrounds
