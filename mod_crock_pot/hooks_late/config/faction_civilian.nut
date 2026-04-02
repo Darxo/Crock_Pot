@@ -122,7 +122,7 @@
 		::Const.FactionType.Generic,
 		{
 			Variant = 0,
-			Strength = ::Const.World.Spawn.Troops.BountyHunter.Cost * 1.6,		// Vanilla: 25; Hardened: 30
+			Strength = ::Const.World.Spawn.Troops.BountyHunter.Strength * 1.6,		// Vanilla: 25; Hardened: 30
 			Cost = ::Const.World.Spawn.Troops.BountyHunter.Cost * 1.6,			// Vanilla: 25; Hardened: 30
 			Row = 1,
 			Script = "scripts/entity/tactical/humans/cp_crowntaker",
@@ -145,7 +145,7 @@
 		::Const.FactionType.Generic,
 		{
 			Variant = 0,
-			Strength = ::Const.World.Spawn.Troops.Mercenary.Cost * 1.6,		// Vanilla: 25; Hardened: 30
+			Strength = ::Const.World.Spawn.Troops.Mercenary.Strength * 1.6,		// Vanilla: 25; Hardened: 30
 			Cost = ::Const.World.Spawn.Troops.Mercenary.Cost * 1.6,			// Vanilla: 25; Hardened: 30
 			Row = 1,
 			Script = "scripts/entity/tactical/humans/cp_sellsword",
