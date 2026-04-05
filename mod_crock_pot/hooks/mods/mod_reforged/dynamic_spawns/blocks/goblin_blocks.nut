@@ -3,4 +3,9 @@
 		local unitBlock = ::Reforged.Spawns.UnitBlocks["UnitBlock.RF.GoblinBoss"];
 		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_GoblinTaskmaster" });
 	}
+
+	{	// UnitBlock.RF.GoblinSupport
+		local unitBlock = ::Reforged.Spawns.UnitBlocks["UnitBlock.RF.GoblinSupport"];
+		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_GoblinShaman" });
+	}
 }
