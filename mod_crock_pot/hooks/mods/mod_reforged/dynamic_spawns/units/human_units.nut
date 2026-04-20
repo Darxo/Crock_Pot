@@ -33,6 +33,10 @@ local units = [
 	},
 // Elites
 	{
+		ID = "Unit.CP.CP_Firebrand",
+		Troop = "CP_Firebrand",
+	},
+	{
 		ID = "Unit.CP.CP_FreeLancer",
 		Troop = "CP_FreeLancer",
 	},

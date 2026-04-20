@@ -165,6 +165,40 @@
 }
 
 {	// Elites
+	// Firebrands made their living from doing sabotage and causing ruckus.
+	// They are pot-throwing backliner that use throwing weapons for attacking
+	// Their gimmick is an NPC-Only accessory, called "Bottomless Bag", which generates and equips a random throwable pot into their offhand each turn
+	// They are weak
+	::Reforged.Entities.addEntity(
+		"CP_Firebrand",
+		"Firebrand",
+		"Firebrands",
+		"assassin_orientation",
+		::Const.FactionType.Settlement,
+		{
+			Variant = ::Const.World.Spawn.Troops.HedgeKnight.Variant,
+			Strength = ::Const.World.Spawn.Troops.HedgeKnight.Strength,
+			Cost = ::Const.World.Spawn.Troops.HedgeKnight.Cost,
+			Row = 2,
+			Script = "scripts/entity/tactical/humans/cp_firebrand",
+			NameList = ::Const.Strings.CP_FirebrandNames,
+			TitleList = null,
+		},
+		{
+			XP = ::Const.Tactical.Actor.HedgeKnight.XP,
+			ActionPoints = 9,
+			Hitpoints = 100,
+			Bravery = 80,
+			Stamina = 120,
+			MeleeSkill = 70,
+			RangedSkill = 90,
+			MeleeDefense = 20,
+			RangedDefense = 15,
+			Initiative = 160,
+			Armor = [0, 0],
+		}
+	);
+
 	// Free Lancer represent knights that used to do jousting or fighting as cavalry and now ended up without a horse and without a faction they call home
 	// They are accurate heavily armored backliner, using a Pike as a weapon
 	// Their gimmick is being able to walk 4 tiles and still attack with their Pike, thanks to the combination of Fresh and Furious and Vigorous Assault

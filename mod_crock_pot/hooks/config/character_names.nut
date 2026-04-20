@@ -11,6 +11,21 @@ local generateAllIterations = function( _prefixes, _suffixes )
 	return ret;
 }
 
+local firebrandSuffixes = [
+	"the Ashen",
+	"the Blacksmoke",
+	"the Blast",
+	"the Burner",
+	"the Cinder",
+	"the Firestarter",
+	"the Flash",
+	"the Kindler",
+	"the Torch",
+	"the Scorcher",
+	"the Wildfire",
+];
+::Const.Strings.CP_FirebrandNames <- generateAllIterations(["%randomname%"], firebrandSuffixes);
+
 local freeLancerSuffixes = [
 	"the Breaklance",
 	"the Charger",

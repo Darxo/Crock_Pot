@@ -8,4 +8,6 @@
 
 	<sprite id="cp_loaded_compressed_net_effect_mini" ic = "FF23165B" img="mini\cp_loaded_with_compressed_net_effect_mini.png" />
 	<sprite id="cp_loaded_incendiary_shot_effect_mini" ic = "FF23165B" img="mini\cp_loaded_incendiary_shot_effect_mini.png" />
+
+	<sprite id="cp_bottomless_bag_effect" ic = "FF23165B" img="overlay\bags_and_belts.png" />
 </brush>
