@@ -34,6 +34,11 @@
 		local unitBlock = ::Reforged.Spawns.UnitBlocks["UnitBlock.RF.BountyHunter"];
 		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_Crowntaker" });
 	}
+
+	{	// UnitBlock.RF.MercenaryElite
+		local unitBlock = ::Reforged.Spawns.UnitBlocks["UnitBlock.RF.MercenaryElite"];
+		unitBlock.DynamicDefs.Units.add({ BaseID = "Unit.CP.CP_FreeLancer" });
+	}
 }
 
 {	// New Blocks

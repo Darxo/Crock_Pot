@@ -163,3 +163,39 @@
 		})
 	);
 }
+
+{	// Elites
+	// Free Lancer represent knights that used to do jousting or fighting as cavalry and now ended up without a horse and without a faction they call home
+	// They are accurate heavily armored backliner, using a Pike as a weapon
+	// Their gimmick is being able to walk 4 tiles and still attack with their Pike, thanks to the combination of Fresh and Furious and Vigorous Assault
+	// Their weakness is their reliance on dodge, which (together with their hitchance) quickly falls apart in a crowded environment
+	::Reforged.Entities.addEntity(
+		"CP_FreeLancer",
+		"Free Lancer",
+		"Free Lancer",
+		"zombie_03_orientation",	// Fallen Hero icon
+		::Const.FactionType.Settlement,
+		{
+			Variant = ::Const.World.Spawn.Troops.HedgeKnight.Variant,
+			Strength = ::Const.World.Spawn.Troops.HedgeKnight.Strength,
+			Cost = ::Const.World.Spawn.Troops.HedgeKnight.Cost,
+			Row = 0,
+			Script = "scripts/entity/tactical/humans/cp_free_lancer",
+			NameList = ::Const.Strings.CP_FreeLancerNames,
+			TitleList = null,
+		},
+		{
+			XP = ::Const.Tactical.Actor.HedgeKnight.XP,
+			ActionPoints = 9,
+			Hitpoints = ::Const.Tactical.Actor.HedgeKnight.Hitpoints,
+			Bravery = ::Const.Tactical.Actor.HedgeKnight.Bravery,
+			Stamina = ::Const.Tactical.Actor.HedgeKnight.Stamina - 10,
+			MeleeSkill = ::Const.Tactical.Actor.HedgeKnight.MeleeSkill + 10,
+			RangedSkill = ::Const.Tactical.Actor.HedgeKnight.RangedSkill,
+			MeleeDefense = ::Const.Tactical.Actor.HedgeKnight.MeleeDefense - 20,
+			RangedDefense = ::Const.Tactical.Actor.HedgeKnight.RangedDefense,
+			Initiative = ::Const.Tactical.Actor.HedgeKnight.Initiative + 40,
+			Armor = [0, 0],
+		}
+	);
+}
