@@ -31,6 +31,7 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 	// Crock Pot
 		this.m.CP_TacticalTypeOverwrite = "tactical.CP_cave";
 		this.m.CP_EngageImageOverwrite = "engage/cp_engage_cave";
+		this.m.CP_TacticalTextOverwrite = "in a cave";
 	}
 
 	function onSpawned()
