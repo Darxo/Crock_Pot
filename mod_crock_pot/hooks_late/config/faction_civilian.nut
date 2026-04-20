@@ -198,4 +198,39 @@
 			Armor = [0, 0],
 		}
 	);
+
+	// Ironguards represent knights are overfocussed on defense, using any combination of scounged-up gear they can find
+	// They are heavily armored frontliner, using a 1H mace/hammer and an orc shield
+	// Their gimmick is the use of Menacing and the Threat helmets (Hardened) causing a heavy resolve debuff
+	// Line Breaker makes them cause similar chaos on the battle field, as Orc Warrior would do
+	// Their weakness is their low accuracy and damage output due to missing damage perks and using a shield
+	::Reforged.Entities.addEntity(
+		"CP_Ironguard",
+		"Ironguard",
+		"Ironguards",
+		"wildman_03_orientation",
+		::Const.FactionType.Settlement,
+		{
+			Variant = ::Const.World.Spawn.Troops.HedgeKnight.Variant,
+			Strength = ::Const.World.Spawn.Troops.HedgeKnight.Strength,
+			Cost = ::Const.World.Spawn.Troops.HedgeKnight.Cost,
+			Row = ::Const.World.Spawn.Troops.HedgeKnight.Row,
+			Script = "scripts/entity/tactical/humans/cp_ironguard",
+			NameList = ::Const.Strings.CP_IronguardNames,
+			TitleList = null,
+		},
+		{
+			XP = ::Const.Tactical.Actor.HedgeKnight.XP,
+			ActionPoints = 9,
+			Hitpoints = ::Const.Tactical.Actor.HedgeKnight.Hitpoints,
+			Bravery = ::Const.Tactical.Actor.HedgeKnight.Bravery,
+			Stamina = ::Const.Tactical.Actor.HedgeKnight.Stamina + 10,
+			MeleeSkill = ::Const.Tactical.Actor.HedgeKnight.MeleeSkill - 20,
+			RangedSkill = ::Const.Tactical.Actor.HedgeKnight.RangedSkill,
+			MeleeDefense = ::Const.Tactical.Actor.HedgeKnight.MeleeDefense,
+			RangedDefense = ::Const.Tactical.Actor.HedgeKnight.RangedDefense,
+			Initiative = ::Const.Tactical.Actor.HedgeKnight.Initiative,
+			Armor = [0, 0],
+		}
+	);
 }

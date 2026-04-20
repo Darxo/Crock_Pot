@@ -38,6 +38,7 @@
 	{	// UnitBlock.RF.MercenaryElite
 		local unitBlock = ::Reforged.Spawns.UnitBlocks["UnitBlock.RF.MercenaryElite"];
 		unitBlock.DynamicDefs.Units.add({ BaseID = "Unit.CP.CP_FreeLancer" });
+		unitBlock.DynamicDefs.Units.add({ BaseID = "Unit.CP.CP_Ironguard" });
 	}
 }
 

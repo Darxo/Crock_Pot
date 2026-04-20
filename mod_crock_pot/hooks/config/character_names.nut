@@ -26,3 +26,17 @@ local freeLancerSuffixes = [
 ];
 ::Const.Strings.CP_FreeLancerNames <- generateAllIterations(["%randomname%"], freeLancerSuffixes);
 
+local ironguardSuffixes = [
+	"the Anvil",
+	"the Bastion",
+	"the Bulwark",
+	"the Gate",
+	"the Holdfast",
+	"the Ironclad",
+	"the Steadfast",
+	"the Shield",
+	"the Unyielding",
+	"the Wall",
+	"the Ward",
+];
+::Const.Strings.CP_IronguardNames <- generateAllIterations(["%randomname%"], ironguardSuffixes);

@@ -36,6 +36,10 @@ local units = [
 		ID = "Unit.CP.CP_FreeLancer",
 		Troop = "CP_FreeLancer",
 	},
+	{
+		ID = "Unit.CP.CP_Ironguard",
+		Troop = "CP_Ironguard",
+	},
 
 // ... with Bodyguards
 	{
