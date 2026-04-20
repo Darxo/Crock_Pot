@@ -12,8 +12,8 @@ this.cp_sellsword <- this.inherit("scripts/entity/tactical/humans/mercenary", {
 		this.m.XP = ::Const.Tactical.Actor.CP_Sellsword.XP;
 
 		this.m.CP_ChestWeightedContainer = ::MSU.Class.WeightedContainer([
-			[12, "scripts/items/armor/rf_brigandine_armor"],
-			[12, "scripts/items/armor/rf_brigandine_harness"],
+			[12, "scripts/items/armor/rf_breastplate"],
+			[12, "scripts/items/armor/rf_reinforced_footman_armor"],
 			[36, "scripts/items/armor/sellsword_armor"],		// Most iconic armor piece
 		]);
 
