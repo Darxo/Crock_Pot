@@ -34,9 +34,9 @@ this.cp_reinforced_wooden_staff <- this.inherit("scripts/items/weapons/weapon", 
 	function onEquip()
 	{
 		this.weapon.onEquip();
-		local skill = this.new("scripts/skills/actives/crumble_skill");
+		local skill = ::new("scripts/skills/actives/crumble_skill");
 		this.addSkill(skill);
-		skill = this.new("scripts/skills/actives/knock_over_skill");
+		skill = ::new("scripts/skills/actives/knock_over_skill");
 		this.addSkill(skill);
 	}
 });

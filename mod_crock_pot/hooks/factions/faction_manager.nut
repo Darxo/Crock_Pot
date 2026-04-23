@@ -80,7 +80,7 @@
 			if (::isKindOf(s, "city_state")) continue;
 			if (!s.isSouthern()) continue;
 
-			local f = this.new("scripts/factions/cp_southern_settlement_faction");
+			local f = ::new("scripts/factions/cp_southern_settlement_faction");
 			f.setID(this.m.Factions.len());
 			f.setName(s.getName());
 			f.setDescription(s.getDescription());

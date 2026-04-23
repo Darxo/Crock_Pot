@@ -4,7 +4,7 @@ this.cp_hooded_man <- this.inherit("scripts/entity/tactical/enemies/necromancer"
 	{
 		this.necromancer.create();
 		this.m.Type = ::Const.EntityType.CP_HoodedMan;
-		this.m.Name = this.Const.Strings.EntityName[this.m.Type];	// This is normally done within create of human, but at that point we havent set the type yet
+		this.m.Name = ::Const.Strings.EntityName[this.m.Type];	// This is normally done within create of human, but at that point we havent set the type yet
 		this.m.XP = ::Const.Tactical.Actor.CP_HoodedMan.XP;
 
 		this.m.BeardChance = 100;	// So that you can see the black hair as this is the "younger" variant of the necromancer

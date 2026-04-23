@@ -68,7 +68,7 @@ this.cp_bird <- this.inherit("scripts/items/accessory/accessory", {
 		this.accessory.onEquip();
 		if (this.m.IsReleasedOnTakingDamage)
 		{
-			local skill = this.new("scripts/skills/special/cp_bird_auto_release");	// Birds will be released automatically
+			local skill = ::new("scripts/skills/special/cp_bird_auto_release");	// Birds will be released automatically
 			skill.setItem(this);
 			this.addSkill(skill);
 		}

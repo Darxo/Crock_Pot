@@ -48,7 +48,7 @@ this.falcon_item <- this.inherit("scripts/items/accessory/cp_bird", {
 	function onEquip()
 	{
 		this.cp_bird.onEquip();
-		local skill = this.new("scripts/skills/actives/release_falcon_skill");
+		local skill = ::new("scripts/skills/actives/release_falcon_skill");
 		skill.setItem(this);
 		this.addSkill(skill);
 	}

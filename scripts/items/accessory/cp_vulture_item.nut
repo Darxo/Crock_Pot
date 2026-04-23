@@ -47,7 +47,7 @@ this.cp_vulture_item <- this.inherit("scripts/items/accessory/cp_bird", {
 	function onEquip()
 	{
 		this.cp_bird.onEquip();
-		local skill = this.new("scripts/skills/actives/cp_release_vulture_skill");
+		local skill = ::new("scripts/skills/actives/cp_release_vulture_skill");
 		skill.setItem(this);
 		this.addSkill(skill);
 	}

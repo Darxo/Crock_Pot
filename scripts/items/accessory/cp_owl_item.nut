@@ -47,7 +47,7 @@ this.cp_owl_item <- this.inherit("scripts/items/accessory/cp_bird", {
 	function onEquip()
 	{
 		this.cp_bird.onEquip();
-		local skill = this.new("scripts/skills/actives/cp_release_owl_skill");
+		local skill = ::new("scripts/skills/actives/cp_release_owl_skill");
 		skill.setItem(this);
 		this.addSkill(skill);
 	}
