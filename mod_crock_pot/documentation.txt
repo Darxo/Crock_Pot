@@ -4,6 +4,20 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.8.0
+	- Add **Goblin Taskmaster** as new lower tier version of the **Goblin Overseer**. They cost 40% less resources, have -20 Stamina, +5 Melee Skill, 0 Ranged Skill, -15 Ranged Defense and -10 Initiative. They always come with a **Thorned Whip** equipped, the **Whip** skill (4AP) and the **Anticipation** perk (on top of all basic Goblin perks)
+	- Rename existing **Goblin Shaman** to **Goblin Shaman Elder**
+	- Add **Goblin Shaman** as new lower tier version of the **Goblin Shaman Elder**. They cost 50% less resource, have -10 Hitpoints, -10 Resolve, -30 Stamina, -10 Melee Skill and -10 Ranged Defense. They use the same perks and skills as the regular **Goblin Shaman**, except that they use a **Lesser Root** skill, which only roots a single target, instead of up to 7
+	- Add **Free Lancer** as new Elite Unit for Mercenary and Brigand Parties. They cost the same as Hedge Knights, but have -10 Stamina, +10 Melee Skill, -20 Melee Defense, +40 Initiative. They are heavily armored and use either **Pike** or **Bladed Pike**. They have **Dodge**, **Fresh and Furious**, **Vigorous Assault**, **Savage Strength**, **Skirmisher**. In Base Reforged they also gain **Leverage** and **Finesse**. In Hardened they gain **Nailed It**, **Spear Mastery** and **King of all Weapons** instead
+	- Add **Ironguard** as new Elite Unit for Mercenary and Brigand Parties. They cost the same as Hedge Knights, but have +10 Stamina and -20 Melee Skill. They are heavily armored and always spawn with a **Heavy Metal Shield**. They have **Battle Forged**, **Resilient**, **Shield Expert**, **Underdog**, **Exploit Opening**, **Finesse**, **Line Breaker**, **Survival Instinct** and **The Rush of Battle**. In Hardened they also gain **Warden**
+	- Add **Firebrand** as new Elite Unit for Mercenary and Brigand Parties. They cost the same as Hedge Knights. They have 100 Hitpoints, 80 Resolve, 120 Stamina, 70 Melee Skill, 90 Ranged Skill, 20 Melee Defense, 15 Ranged Defense and 160 Initiative. They are lightly armored and always wield a throwing weapon and a **Battle Whip**. They have **Backstabber**, **Anticipation**, **Dodge**, **Resilient**, **Footwork**, **Offhand Training** and **Throwing Mastery**. In Base Reforged they gain **Pathfinder** and in Hardened they gain **Elusive**. They also have an unlootable **Bottomless Bag** equipped in the accessory slot, which equips randomly either an **Acid Flask**, **Fire Bomb** or **Daze Bomb** into their offhand at the end of their turn
+	- Improve body armor selection of **Sellswords**
+	- Add new standalone AI scripts for `throw_fire_bomb_skill`, `throw_acid_flask` and `throw_daze_bomb_skill` allowing NPCs to use them correctly
+	- Remove fix for vanilla faction limit
+	- Fix **Sellswords** having slightly wrong strength values
+	- Fix tooltips of Caves displaying the wrong tactical tile for where the battle will be in
+	- Add `location::CP_TacticalTextOverwrite = null` for assigning custom location tooltip texts to complete the line "This location is "
+
 0.7.1
 	- Fix new recipes accepting any powder bag as ingredient instead of only the listed one
 	- Fix typoe in **Release Vulture** skill tooltip

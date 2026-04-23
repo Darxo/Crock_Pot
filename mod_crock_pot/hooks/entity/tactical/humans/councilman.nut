@@ -33,7 +33,7 @@
 	{
 		__original();
 
-		// We assign the weapons here, because they would otherwise show up, when this entity is shown in the
+		// We assign the weapons here, because they would otherwise show up, when this entity is shown in contract previews
 		local weaponContainer = ::MSU.Class.WeightedContainer([	// Vanilla: No Weapon
 			[12, "scripts/items/weapons/dagger"],
 			[12, "scripts/items/weapons/shortsword"],

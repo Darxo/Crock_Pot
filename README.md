@@ -44,13 +44,23 @@ This submod is a collection of content for Reforged.
 
 ### New Entities
 
+**Civilians**
 - Add new **Citizen** unit as the Tier 2 upgrade over **Peasant**. They cost 12 resources. They have the same perks and slightly better stats and gear than their Tier 1 version
 	- Rename the existing southern **Citizen** to **Peasant**
 - Add new southern **Caravan Hand**. They have the same cost and stats as their northern counterpart and similar gear. They will now appear in southern caravans
 - Add new **Personal Guard** unit. They cost 25 resources. They have similar stats and skills to the caravaran guard. Their behavior is similar to that of the **Heralds Bodyguard** in that they try to stay close to their protected targets
 - Add new **Councilman** unit. They cost 12 resources. They have slightly worse gear than a citizen but slightly better stats. They will always spawn together with **Personal Guards**. They have a 10% chance to appear in regular caravans and are guaranteed to spawn in the rare heavily armed mercenary caravan variant
+**Mercenaries**
 - Add new **Sellsword** unit as the Tier 2 upgrade over melee **Mercenaries**. They cost 60% more resources. They have better stats, better quality gear and gain the **Poise** perk in addition to all the other perks from the **Mercenary**
 - Add new **Crowntaker** unit as the TIer 2 upgrade over melee **Bounty Hunter**. They cost 60% more resources. They use higher quality helmets, weapons and reinforced nets. They have **Anticipation**, **Executioner**, **Small Target**, **Angler** and **Throwing Mastery** in addition to all the perks from regular **Bounty Hunter**
+**Elites**
+- Add **Firebrand** as new Elite Unit for Mercenary and Brigand Parties. They cost the same as Hedge Knights. They have 100 Hitpoints, 80 Resolve, 120 Stamina, 70 Melee Skill, 90 Ranged Skill, 20 Melee Defense, 15 Ranged Defense and 160 Initiative. They are lightly armored and always wield a throwing weapon and a **Battle Whip**. They have **Backstabber**, **Anticipation**, **Dodge**, **Resilient**, **Footwork**, **Offhand Training** and **Throwing Mastery**. In Base Reforged they gain **Pathfinder** and in Hardened they gain **Elusive**. They also have an unlootable **Bottomless Bag** equipped in the accessory slot, which equips randomly either an **Acid Flask**, **Fire Bomb** or **Daze Bomb** into their offhand at the end of their turn
+- Add **Free Lancer** as new Elite Unit for Mercenary and Brigand Parties. They cost the same as Hedge Knights, but have -10 Stamina, +10 Melee Skill, -20 Melee Defense, +40 Initiative. They are heavily armored and use either **Pike** or **Bladed Pike**. They have **Dodge**, **Fresh and Furious**, **Vigorous Assault**, **Savage Strength**, **Skirmisher**. In Base Reforged they also gain **Leverage** and **Finesse**. In Hardened they gain **Nailed It**, **Spear Mastery** and **King of all Weapons** instead
+- Add **Ironguard** as new Elite Unit for Mercenary and Brigand Parties. They cost the same as Hedge Knights, but have +10 Stamina and -20 Melee Skill. They are heavily armored and always spawn with a **Heavy Metal Shield**. They have **Battle Forged**, **Resilient**, **Shield Expert**, **Underdog**, **Exploit Opening**, **Finesse**, **Line Breaker**, **Survival Instinct** and **The Rush of Battle**. In Hardened they also gain **Warden**
+**Goblins**
+- Add **Goblin Taskmaster** as new lower tier version of the **Goblin Overseer**. They cost 40% less resources, have -20 Stamina, +5 Melee Skill, 0 Ranged Skill, -15 Ranged Defense and -10 Initiative. They always come with a **Thorned Whip** equipped, the **Whip** skill (4 AP) and the **Anticipation** perk (on top of all basic Goblin perks)
+- Add **Goblin Shaman** as new lower tier version of the **Goblin Shaman Elder**. They cost 50% less resource, have -10 Hitpoints, -10 Resolve, -30 Stamina, -10 Melee Skill and -10 Ranged Defense. They use the same perks and skills as the regular **Goblin Shaman**, except that they use a **Lesser Root** skill, which only roots a single target, instead of up to 7
+**Other**
 - **Hooded Man** is a new tier 1 necromancer. They cost 25% less resources than the **Necromancer** and has otherwise similar stats to the old Necromancer. He has the same skills as the old Necromancer but no perks
   - The **Necromancer** is now tier 2. He now costs 20% more resources, has 90 Hitpoints (up from 50), 200 Stamina (up from 80), 60 Melee Skill (up from 50), 10 Melee Defense (up from 5) and grants 500 XP (up from 350). He no longer spawns with a hat and wields either a rondel dagger or a scramasax
 
@@ -97,14 +107,19 @@ This submod is a collection of content for Reforged.
 - The Falcon now uses actual falcon noises when equipping or releasing, instead of using hawk noises
 - Orc Caves now hide their defender, use the same name pool as the beast caves and also use the new cave biome tactical map
 
+## Other Changes
+
+- Rename existing **Goblin Shaman** to **Goblin Shaman Elder**
+- Add new standalone AI scripts for `throw_fire_bomb_skill`, `throw_acid_flask` and `throw_daze_bomb_skill` allowing NPCs to use them correctly
+
 ## Fixes
 
-- Increase the amount of supported factions in the combat manager to 64 (up from 32)
 - Fix recipes that require ammunition items as ingredients from accepting any ammunition item of that type instead of only the specified one
 - Change witchhunter helmet icon to align with sprite
 
 ## For Modder
 
+- Add `location::CP_TacticalTextOverwrite = null` for assigning custom location tooltip texts to complete the line "This location is "
 - Add new `CP_getApplicableRandomSituations()` function to `settlement.nut` that returns a WeightedContainer with all applicable random situations for this settlement
 - Modularize (overwrite) `onUpdate` of `add_random_situation_action.nut` using new `CP_getApplicableRandomSituations`
   - Add `MaximumSituations = 2` member, for configuring, what the situation threshold is, at which point no random situation can spawn
