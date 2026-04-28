@@ -10,7 +10,7 @@ this.cp_incendiary_bag <- this.inherit("scripts/items/ammo/powder_bag", {
 		}
 
 		this.m.Name = "Bag of incendiary Bullets";
-		this.m.Description = "A bag of tightly bound throwing nets, folded to unfurl upon launch and entangle their target.";	// TODO
+		this.m.Description = "A bag of specially prepared shot that bursts into flames on impact.";
 		this.m.Icon = "ammo/cp_incendiary_bullets.png";
 		this.m.Value = 1200;
 		this.m.AmmoCost = 2;
