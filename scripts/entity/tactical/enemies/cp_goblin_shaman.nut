@@ -32,6 +32,8 @@ this.cp_goblin_shaman <- this.inherit("scripts/entity/tactical/enemies/goblin_sh
 		this.getSkills().removeByID("perk.mastery.mace");
 		this.getSkills().removeByID("actives.root");
 		this.getSkills().add(::new("scripts/skills/actives/cp_lesser_root_skill"));
+
+		this.getSkills().getSkillByID("actives.insects").setBaseValue("ActionPointCost", 4);	// Vanilla: 3
 	}
 });
 
