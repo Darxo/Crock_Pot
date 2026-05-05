@@ -4,6 +4,11 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.8.1
+	- Increase **Insect Swarm** AP cost to 4 (up from 3) for **Goblin Shamans**
+	- Rename **Incendiary Bags** into **Incendiary Shot**
+	- Fix wrong item descriptions for incendiary bags
+
 0.8.0
 	- Add **Goblin Taskmaster** as new lower tier version of the **Goblin Overseer**. They cost 40% less resources, have -20 Stamina, +5 Melee Skill, 0 Ranged Skill, -15 Ranged Defense and -10 Initiative. They always come with a **Thorned Whip** equipped, the **Whip** skill (4AP) and the **Anticipation** perk (on top of all basic Goblin perks)
 	- Rename existing **Goblin Shaman** to **Goblin Shaman Elder**

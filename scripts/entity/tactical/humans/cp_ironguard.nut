@@ -13,7 +13,6 @@ this.cp_ironguard <- this.inherit("scripts/entity/tactical/human", {
 		this.m.HairColors = ::Const.HairColors.All;
 		this.m.Beards = ::Const.Beards.All;
 
-		// Todo:
 		this.m.CP_ChestWeightedContainer = ::MSU.Class.WeightedContainer([
 			[12, "scripts/items/armor/rf_breastplate"],
 			[12, "scripts/items/armor/rf_reinforced_footman_armor"],
@@ -98,6 +97,5 @@ this.cp_ironguard <- this.inherit("scripts/entity/tactical/human", {
 // Reforged Functions
 	function onSpawned()
 	{
-		// Todo: add perks like these? perk_rf_bone_breaker
 	}
 });

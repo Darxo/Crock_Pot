@@ -5,9 +5,9 @@ This submod is a collection of content for Reforged.
 # Overview
 - 3 new southern medium settlements (requires new game)
 - 23 new Beast Cave Locations with a unique combat biome
-- 10 new items (1 weapon, 3 birds, 4 ammuo items, 2 craftable consumables)
+- 10 new items (1 weapon, 3 birds, 4 ammo items, 2 craftable consumables)
 - 2 new Settlement Situations
-- 8 new human NPCs/Enemies
+- 13 new NPCs to fight
 
 # List of all Changes
 
@@ -59,7 +59,7 @@ This submod is a collection of content for Reforged.
 - Add **Ironguard** as new Elite Unit for Mercenary and Brigand Parties. They cost the same as Hedge Knights, but have +10 Stamina and -20 Melee Skill. They are heavily armored and always spawn with a **Heavy Metal Shield**. They have **Battle Forged**, **Resilient**, **Shield Expert**, **Underdog**, **Exploit Opening**, **Finesse**, **Line Breaker**, **Survival Instinct** and **The Rush of Battle**. In Hardened they also gain **Warden**
 **Goblins**
 - Add **Goblin Taskmaster** as new lower tier version of the **Goblin Overseer**. They cost 40% less resources, have -20 Stamina, +5 Melee Skill, 0 Ranged Skill, -15 Ranged Defense and -10 Initiative. They always come with a **Thorned Whip** equipped, the **Whip** skill (4 AP) and the **Anticipation** perk (on top of all basic Goblin perks)
-- Add **Goblin Shaman** as new lower tier version of the **Goblin Shaman Elder**. They cost 50% less resource, have -10 Hitpoints, -10 Resolve, -30 Stamina, -10 Melee Skill and -10 Ranged Defense. They use the same perks and skills as the regular **Goblin Shaman**, except that they use a **Lesser Root** skill, which only roots a single target, instead of up to 7
+- Add **Goblin Shaman** as new lower tier version of the **Goblin Shaman Elder**. They cost 50% less resource, have -10 Hitpoints, -10 Resolve, -30 Stamina, -10 Melee Skill and -10 Ranged Defense. They use the same perks and skills as the regular **Goblin Shaman**, except that they use a **Lesser Root** skill, which only roots a single target, instead of up to 7. Their **Insect Swarm** skill costs 4 AP (instead of 3)
 **Other**
 - **Hooded Man** is a new tier 1 necromancer. They cost 25% less resources than the **Necromancer** and has otherwise similar stats to the old Necromancer. He has the same skills as the old Necromancer but no perks
   - The **Necromancer** is now tier 2. He now costs 20% more resources, has 90 Hitpoints (up from 50), 200 Stamina (up from 80), 60 Melee Skill (up from 50), 10 Melee Defense (up from 5) and grants 500 XP (up from 350). He no longer spawns with a hat and wields either a rondel dagger or a scramasax
@@ -72,7 +72,7 @@ This submod is a collection of content for Reforged.
 - **Owl** grants +10 Ranged Defense and can be released to cause a negative morale check on an enemy. They are sold T3 Towns, Military Settlements, or any town with a Trapper location. Also regularly sold by Alchemists
 - **Vulture** grants +10 Threat (similar effect as direwolf pelts) and can be released to remove a single consumable corpse. They are sold T3 Towns, Military Settlements, or any town with a Pig Farm location. Also regularly sold by Alchemists
 - **Bag of compressed Nets** (stores 2 uses) and **Large Bag of compressed Nets** (stores 3 uses) are a new firearm ammo item. When you reload your weapon, its next shot will deal 80% less damage and put every enemy in a net, that was hit. The small bag variant is regularly sold by **Alchemists**
-- **Bag of incendiary Bullets** (stores 5 uses) and **Large Bag of incendiary Bullets** (stores 7 uses) are new firearm ammo items. When you reload your weapon its next shot will convert all damage to Fire Damage and light the respective tiles on fire for 2 turns on a hit. The small bag variant is sometimes sold by **Alchemists**
+- **Bag of incendiary Shot** (stores 5 uses) and **Large Bag of incendiary Shot** (stores 7 uses) are new firearm ammo items. When you reload your weapon its next shot will convert all damage to Fire Damage and light the respective tiles on fire for 2 turns on a hit. The small bag variant is sometimes sold by **Alchemists**
 - **Reinforced Wooden Staff** weapon is a lower tier version of the **Polemace**. It has the same weapon type, range and attack patterns. It has 35-55 Damage, 120% Armor Damage, 40% Armor Penetration, 6 Reach and a Weight of 10. It is sometimes sold in southern marketplaces and has a 10% chance to spawn on **Nomad Cutthroats**
 
 ### Craftable Items
@@ -82,9 +82,9 @@ This submod is a collection of content for Reforged.
 - **Bag of compressed Nets**: Powder Bag, Throwing Net, Serpent Skin, 150 Crowns
 - **Large Bag of compressed Nets**: Bag of compressed Nets, Throwing Net, Serpent Skin, 300 Crowns
 - **Large Bag of compressed Nets**: Large Powder Bag, 2x Throwing Net, 300 Crowns
-- **Bag of incendiary Bullets**: Powder Bag, Sulfurous Rocks, Serpent Skin, 150 Crowns
-- **Large Bag of incendiary Bullets**: Bag of incendiary Bullets, Serpent Skin, 300 Crowns
-- **Large Bag of incendiary Bullets**: Large Powder Bag, Sulfurous Rocks, 300 Crowns
+- **Bag of incendiary Shot**: Powder Bag, Sulfurous Rocks, Serpent Skin, 150 Crowns
+- **Large Bag of incendiary Shot**: Bag of incendiary Shot, Serpent Skin, 300 Crowns
+- **Large Bag of incendiary Shot**: Large Powder Bag, Sulfurous Rocks, 300 Crowns
 
 ### New Situations
 

@@ -116,3 +116,7 @@
 	- has defensive AI with protect far
 	- is otherwise weaker than the other doggies (to be decided how)
 	- has **Supporter** perk and is able to encourage allies (sfx is replaced with dog barking)
+
+
+- add new snowy cave biome
+- change icy cave fight to use snowy cave biome
