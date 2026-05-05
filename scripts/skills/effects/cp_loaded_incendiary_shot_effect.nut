@@ -13,7 +13,7 @@ this.cp_loaded_incendiary_shot_effect <- ::inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "effects.cp_loaded_incendiary_shot";
 		this.m.Name = "Loaded with Incendiary Ammo";
-		this.m.Description = "Your firearm is currently loaded with incendiary ammunition.";
+		this.m.Description = "Your firearm is currently loaded with incendiary shot.";
 		this.m.Icon = "skills/cp_loaded_incendiary_shot_effect.png";
 		this.m.IconMini = "cp_loaded_incendiary_shot_effect_mini";
 		this.m.Type = ::Const.SkillType.StatusEffect;

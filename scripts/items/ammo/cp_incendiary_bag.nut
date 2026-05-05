@@ -9,7 +9,7 @@ this.cp_incendiary_bag <- this.inherit("scripts/items/ammo/powder_bag", {
 			this.m.ID = "ammo.cp_incendiary_bag";	// Hardened allows ammo items to have unique IDs
 		}
 
-		this.m.Name = "Bag of incendiary Bullets";
+		this.m.Name = "Bag of incendiary Shot";
 		this.m.Description = "A bag of specially prepared shot that bursts into flames on impact.";
 		this.m.Icon = "ammo/cp_incendiary_bullets.png";
 		this.m.Value = 1200;

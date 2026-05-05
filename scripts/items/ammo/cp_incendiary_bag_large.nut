@@ -10,7 +10,7 @@ this.cp_incendiary_bag_large <- this.inherit("scripts/items/ammo/cp_incendiary_b
 			this.m.AmmoWeight = 0.5;	// Same as Hardened large powder bags
 		}
 
-		this.m.Name = "Large Bag of incendiary Bullets";
+		this.m.Name = "Large Bag of incendiary Shot";
 		this.m.Description = "A bag of specially prepared shot that bursts into flames on impact.";
 		this.m.Icon = "ammo/cp_incendiary_bullets_large.png";
 
