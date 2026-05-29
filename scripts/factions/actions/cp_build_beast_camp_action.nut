@@ -60,7 +60,7 @@ this.cp_build_beast_camp_action <- this.inherit("scripts/factions/faction_action
 		local minDistToSettlements = 7;
 		local maxDistToSettlements = 1000;
 		local minDistToEnemyLocations = 5;
-		local minDistToAlliedLocations = 5;
+		local minDistToAlliedLocations = 10;	// So that all caves are more spread out
 		local minY = 0.2;
 		local maxY = 0.75;
 
