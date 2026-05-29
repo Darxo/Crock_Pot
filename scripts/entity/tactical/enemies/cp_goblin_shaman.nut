@@ -35,5 +35,19 @@ this.cp_goblin_shaman <- this.inherit("scripts/entity/tactical/enemies/goblin_sh
 
 		this.getSkills().getSkillByID("actives.insects").setBaseValue("ActionPointCost", 4);	// Vanilla: 3
 	}
+
+	function getLootForTile( _killer, _loot )
+	{
+		// We do not call goblin.getLootForTile in order to skip Reforged loot assignment
+		local ret = this.actor.getLootForTile(_killer, _loot);
+
+		local loot = ::MSU.Class.WeightedContainer([
+			[12, "scripts/items/loot/goblin_carved_ivory_iconographs_item"],
+			[12, "scripts/items/loot/goblin_minted_coins_item"],
+		]).roll();
+		ret.push(::new(loot));
+
+		return ret;
+	}
 });
 
