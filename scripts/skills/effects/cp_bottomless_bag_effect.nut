@@ -87,7 +87,7 @@ this.cp_bottomless_bag_effect <- ::inherit("scripts/skills/skill", {
 			local existingItem = actor.getItems().getItemAtSlot(randomItem.getSlotType());
 			if (existingItem != null) actor.getItems().unequip(existingItem);
 
-			if (actor.getItems().equip(randomItem))
+			if (actor.getItems().equip(randomItem) && !actor.isHiddenToPlayer())
 			{
 				randomItem.playInventorySound(::Const.Items.InventoryEventType.Equipped);
 				this.spawnIcon("cp_bottomless_bag_effect", actor.getTile());
