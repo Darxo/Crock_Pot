@@ -104,7 +104,7 @@ this.cp_loaded_incendiary_shot_effect <- ::inherit("scripts/skills/skill", {
 		if (!this.isSkillValid(_skill)) return;
 		if (!this.isTileValid(this.m.CP_TargetedTile)) return;
 
-		this.onApplyFire(this.m.CP_TargetedTile);
+		::Tactical.State.spawnFireOnTile(this.m.CP_TargetedTile, this.getContainer().getActor().isPlayerControlled());
 
 		this.m.CP_TargetedTile = null;
 	}
@@ -150,50 +150,6 @@ this.cp_loaded_incendiary_shot_effect <- ::inherit("scripts/skills/skill", {
 		}
 
 		return true;
-	}
-
-	function onApplyFire( _tile )
-	{
-		if (_tile.Properties.Effect != null && _tile.Properties.Effect.Type == "fire")
-		{
-			_tile.Properties.Effect.Timeout = ::Time.getRound() + this.m.CP_BurningGroundDuration;
-			return;
-		}
-		else
-		{
-			if (_tile.Properties.Effect != null)
-			{
-				::Tactical.Entities.removeTileEffect(_tile);
-			}
-
-			local fireEffect = {
-				Type = "fire",
-				Tooltip = "Fire rages here, melting armor and flesh alike",
-				IsPositive = false,
-				IsAppliedAtRoundStart = false,
-				IsAppliedAtTurnEnd = true,
-				IsAppliedOnMovement = false,
-				IsAppliedOnEnter = false,
-				IsByPlayer = this.getContainer().getActor().isPlayerControlled(),
-				Timeout = ::Time.getRound() + this.m.CP_BurningGroundDuration,
-				Callback = ::Const.Tactical.Common.onApplyFire,
-				function Applicable( _a )
-				{
-					return true;
-				}
-			};
-
-			_tile.Properties.Effect = clone fireEffect;
-			local particles = [];
-			for (local i = 0; i < ::Const.Tactical.FireParticles.len(); ++i)
-			{
-				particles.push(::Tactical.spawnParticleEffect(true, ::Const.Tactical.FireParticles[i].Brushes, _tile, ::Const.Tactical.FireParticles[i].Delay, ::Const.Tactical.FireParticles[i].Quantity, ::Const.Tactical.FireParticles[i].LifeTimeQuantity, ::Const.Tactical.FireParticles[i].SpawnRate, ::Const.Tactical.FireParticles[i].Stages));
-			}
-
-			::Tactical.Entities.addTileEffect(_tile, _tile.Properties.Effect, particles);
-			_tile.clear(::Const.Tactical.DetailFlag.Scorchmark);
-			_tile.spawnDetail("impact_decal", ::Const.Tactical.DetailFlag.Scorchmark, false, true);
-		}
 	}
 
 	function CP_onRemoved( _actor )
