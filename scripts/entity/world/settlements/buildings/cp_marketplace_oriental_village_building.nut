@@ -7,15 +7,7 @@ this.cp_marketplace_oriental_village_building <- this.inherit("scripts/entity/wo
 		this.m.UIImageNight = "ui/settlements/desert_building_06_night";
 	}
 
-	function onUpdateShopList()
-	{
-		local list = this.CP_getShoplist();
-		this.m.Settlement.onUpdateShopList(this.m.ID, list);
-		this.fillStash(list, this.m.Stash, 1.0, true);
-	}
-
-// New Functions
-	function CP_getShoplist()
+	function getDefaultShopList()
 	{
 		local list = [];
 
