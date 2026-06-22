@@ -84,6 +84,9 @@
 				{
 					ret.add("cp_grand_travelling_show_situation", 12);
 				}
+
+				ret.add("cp_restored_order_situation", 12);
+
 				break;
 			}
 		}
