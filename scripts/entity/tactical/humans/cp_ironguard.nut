@@ -20,7 +20,7 @@ this.cp_ironguard <- this.inherit("scripts/entity/tactical/human", {
 		]);
 
 		this.m.CP_HelmetWeightedContainer = ::MSU.Class.WeightedContainer([
-			[12, "scripts/items/helmets/barbarians/heavy_horned_plate_helmet"],
+			[6, "scripts/items/helmets/barbarians/heavy_horned_plate_helmet"],
 			[12, "scripts/items/helmets/decayed_great_helm"],
 		]);
 
