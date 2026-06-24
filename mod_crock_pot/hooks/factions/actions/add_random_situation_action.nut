@@ -15,6 +15,7 @@
 		if (!this.isReadyForRandomSituation(_faction)) return;
 
 		local possibleSituations = this.m.Settlement.CP_getApplicableRandomSituations();
+		this.CP_enforceExcludedSituations(possibleSituations);		// Some situation might exclude others from appearing. We enforce that here
 		if (possibleSituations.len() == 0) return;
 
 		// Vanilla has this additional gate in place to make it less likely to spawn situations if a lot situations are applicable at this moment
@@ -38,5 +39,21 @@
 		if (this.m.Settlement.hasSituation("situation.short_on_food")) return false;
 
 		return true;
+	}
+
+	// Remove any situation script from _situationContainer, which is invalid for this.m.Settlement, due to its defined Excluded situations
+	/// @param _situationContainer instance of ::MSU.Class.WeightedContainer containing situation scripts as items
+	q.CP_enforceExcludedSituations <- function( _situationContainer )
+	{
+		foreach (situationScript in _situationContainer.toArray())
+		{
+			local situation = ::new("scripts/entity/world/settlements/situations/" + situationScript);
+			if (!situation.CP_isSettlementValid(this.m.Settlement))
+			{
+				continue;
+			}
+
+			_situationContainer.remove(situationScript);
+		}
 	}
 });
