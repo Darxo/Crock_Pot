@@ -48,11 +48,17 @@ this.cp_grand_travelling_show_situation <- this.inherit("scripts/entity/world/se
 
 	function onUpdateDraftList( _draftList )
 	{
-		for (local i = 1; i <= 4; ++i)
+		local tickets = 4;
+		for (local i = 1; i <= tickets; ++i)
 		{
-			_draftList.push("juggler_background");
 			_draftList.push("houndmaster_background");
 			_draftList.push("wildman_background");
+		}
+
+		for (local i = 1; i <= (tickets / 2); ++i)
+		{
+			_draftList.push("juggler_background");
+			_draftList.push("juggler_southern_background");
 		}
 	}
 });
