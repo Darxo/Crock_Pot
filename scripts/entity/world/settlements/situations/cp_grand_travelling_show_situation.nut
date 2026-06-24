@@ -14,6 +14,14 @@ this.cp_grand_travelling_show_situation <- this.inherit("scripts/entity/world/se
 		];
 		this.m.IsStacking = false;	// Only one show can be in any town at any time
 		this.m.ValidDays = 7;
+
+	// Crock Pot
+		this.m.CP_Excluded = [
+			"situation.besieged",
+			"situation.conquered",
+			"situation.razed",
+			"situation.raided",
+		];
 	}
 
 	function getAddedString( _s )
