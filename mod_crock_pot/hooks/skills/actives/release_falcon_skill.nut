@@ -5,7 +5,8 @@
 
 		this.m.SoundOnUse = [
 			"sounds/combat/cp_falcon_use_01.wav",
-			"sounds/combat/cp_falcon_use_02.wav"
+			"sounds/combat/cp_falcon_use_02.wav",
 		];
+		this.m.SoundVolume = 0.9;
 	}
 });
