@@ -90,6 +90,7 @@ This submod is a collection of content for Reforged.
 
 - **Physicians Gathering** can randomly occur in any settlement with size 2 or 3. It increases amount of available medicine, reduces medicine price and makes Anatomists and Monks more common during hiring
 - **Grand Travelling Show** can randomly occur in any civilian settlement with size 2 or 3 or in city states. It increases food price, increases available recruits and it makes Juggler, Houndmaster and Wildmen more common during hiring
+- **Restored Order** can randomly occur in any size 2 or size 3 settlement. It increases amount of available items and reduces buy price and sell price. It causes **Thiefs**, **Graverobber** and **Killer on the Run** to no longer be available for hire
 
 ### New Origins
 
@@ -119,6 +120,7 @@ This submod is a collection of content for Reforged.
 
 ## For Modder
 
+- Add `situation::m::CP_Excluded = []`, which can be used to prevent situations from being added while other situations are already present
 - Add `location::CP_TacticalTextOverwrite = null` for assigning custom location tooltip texts to complete the line "This location is "
 - Add new `CP_getApplicableRandomSituations()` function to `settlement.nut` that returns a WeightedContainer with all applicable random situations for this settlement
 - Modularize (overwrite) `onUpdate` of `add_random_situation_action.nut` using new `CP_getApplicableRandomSituations`

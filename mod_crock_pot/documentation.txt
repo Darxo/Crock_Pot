@@ -4,6 +4,17 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.9.0
+	- Make mod compatible with Vanilla 1.5.2.2
+	- Add new **Restored Order** Situation, that can randomly occur in any size 2 or size 3 settlement. It increases amount of available items and reduces buy price and sell price. It causes **Thiefs**, **Graverobber** and **Killer on the Run** to no longer be available for hire
+	- Reduce value of loot dropped by **Goblin Taskmaster** and **Goblin Shaman**
+	- Increase the minimum distance between beast caves to 10 tiles (up from 5)
+	- Lower the chance for **Ironguards** to spawn with a **Heavy Horned Plate Helmet**
+	- Slightly lower volume of sound effect when releasing falcon
+	- Fix **Firebrands** producing combat logs while not visible to the player
+	- Fix **Grand Travelling Show** not adding southern variants of jugglers
+	- Add `situation::m::CP_Excluded = []`, which can be used to prevent situations from being added while other situations are already present
+
 0.8.1
 	- Increase **Insect Swarm** AP cost to 4 (up from 3) for **Goblin Shamans**
 	- Rename **Incendiary Bags** into **Incendiary Shot**
