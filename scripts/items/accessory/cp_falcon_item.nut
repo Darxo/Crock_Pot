@@ -1,4 +1,6 @@
-this.falcon_item <- this.inherit("scripts/items/accessory/cp_bird", {
+::CrockPot.Util.registerReplacementScript("scripts/items/accessory/falcon_item", "scripts/items/accessory/cp_falcon_item");
+
+this.cp_falcon_item <- this.inherit("scripts/items/accessory/cp_bird", {
 	m = {
 		InitiativeBonus = 15,
 	},
