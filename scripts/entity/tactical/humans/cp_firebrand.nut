@@ -93,4 +93,16 @@ this.cp_firebrand <- this.inherit("scripts/entity/tactical/human", {
 		// secondary weapon
 		this.getItems().addToBag(::new("scripts/items/weapons/battle_whip"));
 	}
+
+// Reforged Functions
+	// Overwrite, because we completely replace Reforged Perks/Skills that are depending on assigned Loadout
+	function onSpawned()
+	{
+		// We slightly lower the idealsize for the equipped throwing weapon to nudge firebrands towards staying in range for their throwables
+		local weapon = this.getMainhandItem();
+		if (weapon != null && weapon.m.RangeIdeal == 4)
+		{
+			weapon.m.RangeIdeal = 3;
+		}
+	}
 });
