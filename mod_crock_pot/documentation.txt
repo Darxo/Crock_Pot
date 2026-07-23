@@ -4,6 +4,11 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.9.2
+	- Improve artwork for new bird items
+	- Change name of legendary hexen location to **The Witch Hut** (from **Witch Hut**)
+	- Change icon for auto-release tooltip on bird items
+
 0.9.1
 	- Lower ideal range for firebrands to 3 tiles (down from 4)
 	- Fix **Falcon** changes not working correctly

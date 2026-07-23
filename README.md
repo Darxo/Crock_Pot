@@ -112,6 +112,7 @@ This submod is a collection of content for Reforged.
 
 - Rename existing **Goblin Shaman** to **Goblin Shaman Elder**
 - Add new standalone AI scripts for `throw_fire_bomb_skill`, `throw_acid_flask` and `throw_daze_bomb_skill` allowing NPCs to use them correctly
+- Change name of **Witch Hut** to **The Witch Hut**
 
 ## Fixes
 
@@ -133,7 +134,6 @@ This submod is a collection of content for Reforged.
 
 # Known Issues
 
-- Geist Tear is not marked as a crafting ingredient even though it's now used in a recipe
 - Peasants and Caravans spawned by City States appear at their Villages instead
 - Southern Villages can sometimes spawn with additional northern buildings. That can happens if too few of those buildings were spawned
 
