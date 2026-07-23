@@ -33,8 +33,8 @@ this.cp_bird <- this.inherit("scripts/items/accessory/accessory", {
 			tooltip.push({
 				id = 9,
 				type = "text",
-				icon = "ui/icons/special.png",
-				text = "Will be automatically released without effect when you take damage."
+				icon = "ui/icons/warning.png",
+				text = "Will be automatically released without effect when you take damage"
 			});
 		}
 
