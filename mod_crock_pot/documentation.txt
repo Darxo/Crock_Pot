@@ -4,6 +4,23 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.10.0
+	- Add new equippable **Wooden Torch** tool item, worn in the Offhand. It has a 6 Weight, 80 Condition and costs 80 Crowns. It is sold by various marketplaces. It grants the skills **Ignite Torch** and **Set Fire**
+		- Add new **Ignite Torch** skill (granted by **Wooden Torch**), which costs 5 Action Points and 10 Fatigue. It grants **Burning Torch** while holding the **Wooden Torch**
+			- Add new **Burning Torch** effect (granted by **Ignite Torch**). During your turn it reveals all tiles within a radius of 5. It also grants +15 Resolve, +15 Melee Defense against unarmed characters. At the end of every round, your worn Torch loses 8 Condition
+		- Add new **Set Fire** skill (granted by **Wooden Torch**), which costs 7 Action Points and 15 Fatigue. It sets an adjacent empty tile on fire for 2 turns and destroy and consumable corpse on that tile
+	- Add two new blueprints for crafting a **Wooden Torch**
+		- 1x **Wooden Stick**, 2x **Bandage**
+		- 1x **Wooden Stick**, 1x **Gossamer**
+	- Add new **Named Physician Mask** helmet. It is sometimes worn by **Champion Firebrands** and can randomly appear in armorsmiths or as named camp loot
+	- Add Vacancy State for locations which can selectively trigger, when they send out parties. While Vacant, a location can't be attacked, won't naturally spawn parties and does not display defender. If a location stays Vacant for too long (3 days by default), it will despawn
+	- All Beast Locations now become Vacant for 3 days, when they send out a patrol. They are 50% harder to spot, while Vacant
+	- **Beast Caves** now always drop 2 treasures (up from 1.33). They now have a 33% chance to drop a few tools (down from 66%)
+	- Add `item::CP_getEquippableTooltip()` for generating a standardized tooltip for items
+	- Add `item::m.CP_CanBeRepaired <- true`. When false, then this item can't be repaired or marked for repair
+	- Add `location::CP_onNewDay()` event, that triggers at the same time as `retinue_manager::onNewDay()` triggers
+	- Add `location::CP_onPartyDespawn(_despawningParty)` event, that triggers whenever a `despawn_order` executes directly on top of that location
+
 0.9.2
 	- Improve artwork for new bird items
 	- Change name of legendary hexen location to **The Witch Hut** (from **Witch Hut**)

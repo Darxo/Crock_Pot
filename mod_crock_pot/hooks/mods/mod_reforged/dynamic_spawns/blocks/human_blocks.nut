@@ -17,7 +17,7 @@
 		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CitizenNorthBodyguards", HardMax = 2 });
 		unitBlock.DynamicDefs.Units.push({ BaseID = "Unit.CP.CP_CouncilmanBodyguards", HardMax = 1 });
 
-		unitBlock.TierWidth <- 3;		// Hardened Fix: In Hardened this is defaulted to 2. We need to increase it to allow the last 3 units to be present;
+		unitBlock.TierWidth <- 3;
 	}
 
 	{	// UnitBlock.RF.SouthernPeasant

@@ -26,8 +26,10 @@ This submod is a collection of content for Reforged.
 
 - Add Beasts Cave locations for most beasts with 150 Base Resources and a Visibility Multiplier of 0.6 (they are hard to naturally find)
 - Cave Fights use a new "cave biome" tactical map
-- Caves always drop a random treasure and either drop a second treasure or some tools. They also may rarely contain named items, as per vanilla rule
-- Every Cave will spawn a roaming party every 2 day. These parties will roam the around the cave for 1,5 day and then return to it
+- Caves always drop 2 random treasures and either drop a few tools or strange meat. They also may rarely contain named items, as per vanilla rule
+- Every Cave will spawn a roaming party every 2.5 days. These parties will roam the around the cave for 1.5 days and then return to it
+- A cave that sends out a roaming party, becomes **Vacant** until that party returns
+	- While Vacant, the cave can't be attacked, won't naturally spawn parties, does not display defender and is 50% harder to spot. If a location stays Vacant for 3 days, it will despawn
 - The following Caves will appear from day 1:
   - Direwolves Caves (Up to 3) spawn only in forests. Their roaming parties have a Visibility Multiplier of 0.5
   - Hyena Caves (Up to 3) spawn only in desert. Their roaming parties have a Visibility Multiplier of 0.5
@@ -71,9 +73,14 @@ This submod is a collection of content for Reforged.
 - **Hawk** grants +15 Iniative and can be released to hinder an enemy movement for 1 turn. They are sold in T3 Towns, Military Settlements, or any town with a Hunters Cabin location
 - **Owl** grants +10 Ranged Defense and can be released to cause a negative morale check on an enemy. They are sold T3 Towns, Military Settlements, or any town with a Trapper location. Also regularly sold by Alchemists
 - **Vulture** grants +10 Threat (similar effect as direwolf pelts) and can be released to remove a single consumable corpse. They are sold T3 Towns, Military Settlements, or any town with a Pig Farm location. Also regularly sold by Alchemists
+- **Named Physician Mask** is a named helmet variant of the **Physician Mask**. It is sometimes worn by **Champion Firebrands** and can randomly appear in Armorsmiths or as named camp loot
 - **Bag of compressed Nets** (stores 2 uses) and **Large Bag of compressed Nets** (stores 3 uses) are a new firearm ammo item. When you reload your weapon, its next shot will deal 80% less damage and put every enemy in a net, that was hit. The small bag variant is regularly sold by **Alchemists**
 - **Bag of incendiary Shot** (stores 5 uses) and **Large Bag of incendiary Shot** (stores 7 uses) are new firearm ammo items. When you reload your weapon its next shot will convert all damage to Fire Damage and light the respective tiles on fire for 2 turns on a hit. The small bag variant is sometimes sold by **Alchemists**
 - **Reinforced Wooden Staff** weapon is a lower tier version of the **Polemace**. It has the same weapon type, range and attack patterns. It has 35-55 Damage, 120% Armor Damage, 40% Armor Penetration, 6 Reach and a Weight of 10. It is sometimes sold in southern marketplaces and has a 10% chance to spawn on **Nomad Cutthroats**
+- **Wooden Torch** is a tool item, worn in the Offhand. It has a 6 Weight, 80 Condition and costs 80 Crowns. It is sold by various marketplaces. It grants the skills **Ignite Torch** and **Set Fire**
+	- **Ignite Torch** (granted by **Wooden Torch**) costs 5 Action Points and 10 Fatigue. It grants **Burning Torch** while holding the **Wooden Torch**
+		- **Burning Torch** effect (granted by **Ignite Torch**): During your turn it reveals all tiles within a radius of 5. It also grants +15 Resolve, +15 Melee Defense against unarmed characters. At the end of every round, your worn Torch loses 8 Condition
+	- **Set Fire** (granted by **Wooden Torch**) costs 7 Action Points and 15 Fatigue. It sets an adjacent empty tile on fire for 2 turns and destroy and consumable corpse on that tile
 
 ### Craftable Items
 
@@ -85,6 +92,8 @@ This submod is a collection of content for Reforged.
 - **Bag of incendiary Shot**: Powder Bag, Sulfurous Rocks, Serpent Skin, 150 Crowns
 - **Large Bag of incendiary Shot**: Bag of incendiary Shot, Serpent Skin, 300 Crowns
 - **Large Bag of incendiary Shot**: Large Powder Bag, Sulfurous Rocks, 300 Crowns
+- **Wooden Torch**: Wooden Stick, 2x Bandage, 25 Crowns
+- **Wooden Torch**: Wooden Stick, Gossamer, 25 Crowns
 
 ### New Situations
 
@@ -121,6 +130,10 @@ This submod is a collection of content for Reforged.
 
 ## For Modder
 
+- Add `item::CP_getEquippableTooltip()` for generating a standardized tooltip for items
+- Add `item::m.CP_CanBeRepaired <- true`. When false, then this item can't be repaired or marked for repair
+- Add `location::CP_onNewDay()` event, that triggers at the same time as `retinue_manager::onNewDay()` triggers
+- Add `location::CP_onPartyDespawn(_despawningParty)` event, that triggers whenever a `despawn_order` executes directly on top of that location
 - Add `situation::m::CP_Excluded = []`, which can be used to prevent situations from being added while other situations are already present
 - Add `location::CP_TacticalTextOverwrite = null` for assigning custom location tooltip texts to complete the line "This location is "
 - Add new `CP_getApplicableRandomSituations()` function to `settlement.nut` that returns a WeightedContainer with all applicable random situations for this settlement

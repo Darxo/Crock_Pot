@@ -2,8 +2,8 @@ this.cp_goblin_shaman <- this.inherit("scripts/entity/tactical/enemies/goblin_sh
 	m = {},
 	function create()
 	{
-		this.m.Type = this.Const.EntityType.CP_GoblinShaman;
-		this.m.XP = this.Const.Tactical.Actor.CP_GoblinShaman.XP;
+		this.m.Type = ::Const.EntityType.CP_GoblinShaman;
+		this.m.XP = ::Const.Tactical.Actor.CP_GoblinShaman.XP;
 		this.goblin.create();
 		this.m.SoundPitch = this.Math.rand(90, 100) * 0.01;
 		this.m.AIAgent = ::new("scripts/ai/tactical/agents/goblin_shaman_agent");
