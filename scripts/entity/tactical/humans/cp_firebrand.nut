@@ -76,8 +76,11 @@ this.cp_firebrand <- this.inherit("scripts/entity/tactical/human", {
 				[12, "scripts/items/weapons/named/named_throwing_axe"],
 				[12, "scripts/items/weapons/named/named_javelin"],
 			])],
-			[12, ::MSU.Class.WeightedContainer([
+			[8, ::MSU.Class.WeightedContainer([
 				[12, "scripts/items/armor/named/black_leather_armor"],
+			])],
+			[8, ::MSU.Class.WeightedContainer([
+				[12, "scripts/items/helmets/named/named_cp_physician_mask"],
 			])],
 		]).roll().roll();
 		this.getItems().equip(::new(namedItem));
