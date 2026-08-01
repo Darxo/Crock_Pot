@@ -2,6 +2,8 @@
 	<sprite id="cp_release_hawk" ic = "FF23165B" img="..\..\gfx\skills\cp_release_hawk.png" />
 	<sprite id="cp_release_owl" ic = "FF23165B" img="..\..\gfx\skills\cp_release_owl.png" />
 	<sprite id="cp_release_vulture" ic = "FF23165B" img="..\..\gfx\skills\cp_release_vulture.png" />
+	<sprite id="cp_ignite_torch_skill" ic = "FF23165B" img="..\..\gfx\skills\cp_ignite_torch_skill.png" />
+	<sprite id="cp_set_fire_skill" ic = "FF23165B" img="..\..\gfx\skills\cp_set_fire_skill.png" />
 
 	<sprite id="cp_creative_effect" ic = "FF23165B" img="..\..\gfx\ui\traits\trait_icon_cp_creative.png" />
 	<sprite id="cp_creative_effect_mini" ic = "FF23165B" img="mini\cp_creative_effect_mini.png" />
@@ -10,4 +12,5 @@
 	<sprite id="cp_loaded_incendiary_shot_effect_mini" ic = "FF23165B" img="mini\cp_loaded_incendiary_shot_effect_mini.png" />
 
 	<sprite id="cp_bottomless_bag_effect" ic = "FF23165B" img="overlay\bags_and_belts.png" />
+	<sprite id="cp_burning_torch_effect" ic = "FF23165B" img="..\..\gfx\skills\cp_burning_torch_effect.png" />
 </brush>
