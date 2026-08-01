@@ -27,6 +27,11 @@
 	}
 
 // New Functions
+	// Triggered, whenever a party is disbanding on the tile that are are, triggered by the despawn_order
+	q.CP_onPartyDespawn <- function( _despawningParty )
+	{
+	}
+
 	// Triggered once per day, the moment that the day counter flips over
 	q.CP_onNewDay <- function()
 	{
