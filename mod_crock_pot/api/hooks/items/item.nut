@@ -1,4 +1,7 @@
 ::CrockPot.HooksMod.hook("scripts/items/item", function(q) {
+// Public
+	q.m.CP_CanBeRepaired <- true;
+
 	// Vanilla Fix: Some Recipes accepting multiple different types of items
 	// We do this by making every item return its ClassNameHash, which we assume to be unique to any item script file
 	// Recipes use full item script paths for declaring ingredients. That is why we fix this by warping the return value of the getID function of all items
@@ -25,6 +28,20 @@
 		}
 
 		return __original(_skill);
+	}
+
+	q.isToBeRepaired = @(__original) function()
+	{
+		if (!this.CP_canBeRepaired()) return false;
+
+		return __original();
+	}
+
+	q.setToBeRepaired = @(__original) function( _bool )
+	{
+		if (_bool && !this.CP_canBeRepaired()) return false;
+
+		return __original(_bool);
 	}
 
 // New Functions
@@ -75,6 +92,16 @@
 			});
 		}
 
+		if (!this.CP_canBeRepaired())
+		{
+			ret.push({
+				id = 20,
+				type = "text",
+				icon = "ui/icons/warning.png",
+				text = "Cannot be repaired",
+			});
+		}
+
 		ret.push({
 			id = 66,
 			type = "text",
@@ -111,5 +138,10 @@
 		}
 
 		return ret;
+	}
+
+	q.CP_canBeRepaired <- function()
+	{
+		return this.m.CP_CanBeRepaired;
 	}
 });
