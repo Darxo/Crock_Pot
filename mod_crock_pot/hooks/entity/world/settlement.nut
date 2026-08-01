@@ -61,6 +61,21 @@
 						P = 1.0,
 						S = "weapons/cp_reinforced_wooden_staff",
 					});
+
+					// Being made of wood, torches are a bit rarer in southern settlements
+					_list.push({
+						R = 30,
+						P = 1.5,
+						S = "tools/cp_wooden_torch",
+					});
+				}
+				else
+				{
+					_list.push({
+						R = 10,
+						P = 1.0,
+						S = "tools/cp_wooden_torch",
+					});
 				}
 			}
 		}
