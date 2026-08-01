@@ -26,4 +26,90 @@
 
 		return __original(_skill);
 	}
+
+// New Functions
+	q.CP_getEquippableTooltip <- function()
+	{
+		local ret = [];
+
+		ret.push({
+			id = 1,
+			type = "title",
+			text = this.getName(),
+		});
+
+		ret.push({
+			id = 2,
+			type = "description",
+			text = this.getDescription(),
+		});
+
+		if (this.getIconLarge() != null)
+		{
+			ret.push({
+				id = 3,
+				type = "image",
+				image = this.getIconLarge(),
+				isLarge = true,
+			});
+		}
+		else
+		{
+			ret.push({
+				id = 3,
+				type = "image",
+				image = this.getIcon(),
+			});
+		}
+
+		if (this.getConditionMax() > 1.0)
+		{
+			ret.push({
+				id = 4,
+				type = "progressbar",
+				icon = "ui/icons/asset_supplies.png",
+				value = this.getCondition(),
+				valueMax = this.getConditionMax(),
+				text = "" + this.getCondition() + " / " + this.getConditionMax() + "",
+				style = "armor-body-slim",
+			});
+		}
+
+		ret.push({
+			id = 66,
+			type = "text",
+			text = this.getValueString()
+		});
+
+		if (this.getSlotType() != ::Const.ItemSlot.None)
+		{
+			local slotName = "";
+			foreach (key, value in ::Const.ItemSlot)
+			{
+				if (value == this.getSlotType())
+				{
+					slotName = key;
+					break;
+				}
+			}
+
+			ret.push({
+				id = 66,
+				type = "text",
+				text = "Worn in " + slotName + " Slot",
+			});
+		}
+
+		if (this.m.StaminaModifier < 0)
+		{
+			ret.push({
+				id = 8,
+				type = "text",
+				icon = "ui/icons/fatigue.png",
+				text = "Maximum Fatigue [color=" + ::Const.UI.Color.NegativeValue + "]" + this.m.StaminaModifier + "[/color]",
+			});
+		}
+
+		return ret;
+	}
 });
