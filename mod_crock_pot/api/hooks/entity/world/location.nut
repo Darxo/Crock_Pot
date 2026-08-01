@@ -25,4 +25,10 @@
 
 		return ret;
 	}
+
+// New Functions
+	// Triggered once per day, the moment that the day counter flips over
+	q.CP_onNewDay <- function()
+	{
+	}
 });
