@@ -32,6 +32,7 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 		this.m.CP_TacticalTypeOverwrite = "tactical.CP_cave";
 		this.m.CP_EngageImageOverwrite = "engage/cp_engage_cave";
 		this.m.CP_TacticalTextOverwrite = "in a cave";
+		this.m.CP_VacantVisibilityMult = 0.5;
 	}
 
 	function onSpawned()
@@ -78,6 +79,14 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 		{
 			body.setBrush("world_cave_01");
 		}
+	}
+
+	function setLastSpawnTimeToNow()
+	{
+		this.location.setLastSpawnTimeToNow();
+
+		// Sending out world parties turns a beast cave vacant
+		this.CP_setVacant(true);
 	}
 
 	function onDeserialize( _in )
