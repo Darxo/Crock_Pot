@@ -32,6 +32,7 @@
 		foreach (entity in ::World.getAllEntitiesAtPos(_worldTile.Pos, 10))
 		{
 			if (!entity.isLocation()) continue;
+			if (!entity.isAttackable()) continue;
 
 			if (entity.m.CP_TacticalTypeOverwrite == "tactical.CP_cave")
 			{

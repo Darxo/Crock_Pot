@@ -11,6 +11,7 @@
 		foreach (entity in tileCenterEntities)
 		{
 			if (!entity.isLocation()) continue;
+			if (!entity.isAttackable()) continue;
 			if (entity.m.CP_TacticalTypeOverwrite == null) continue;
 
 			ret.TerrainTemplate = entity.m.CP_TacticalTypeOverwrite;
@@ -31,6 +32,7 @@
 		foreach (entity in tileCenterEntities)
 		{
 			if (!entity.isLocation()) continue;
+			if (!entity.isAttackable()) continue;
 			if (entity.m.CP_EngageImageOverwrite == null) continue;
 
 			::Const.World.TerrainTacticalImage[tile.TacticalType] = entity.m.CP_EngageImageOverwrite;
