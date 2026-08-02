@@ -45,3 +45,7 @@ local requiredMods = [
 ::CrockPot.HooksMod.queue(">mod_reforged", function() {
 	// ::includeFiles(::IO.enumerateFiles("mod_crock_pot/hooks_afterhooks"));
 }, ::Hooks.QueueBucket.AfterHooks);
+
+::CrockPot.HooksMod.queue(">mod_reforged", function() {
+	::includeFiles(::IO.enumerateFiles("mod_crock_pot/hooks_first_world_init"));
+}, ::Hooks.QueueBucket.FirstWorldInit);
