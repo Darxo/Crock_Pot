@@ -45,7 +45,7 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 		this.location.onDropLootForPlayer(_lootTable);
 
 		// One treasure item is guaranteed
-		this.dropTreasure(1, [	// Probably taken off a dead human corpse
+		this.dropTreasure(2, [	// Probably taken off a dead human corpse
 			"loot/signet_ring_item",
 			"loot/bead_necklace_item",
 			"loot/jade_broche_item",
@@ -55,16 +55,10 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 		// Then you either find a second treasure, or some strange meat and armor parts (fresh game?)
 		if (::Math.rand(1, 3) == 1)
 		{
-			this.dropTreasure(1, [
-				"loot/signet_ring_item",
-				"loot/bead_necklace_item",
-				"loot/jade_broche_item",
-				"loot/bead_necklace_item",
-			], _lootTable);
+			this.dropArmorParts(::Math.rand(5, 10), _lootTable);
 		}
 		else
 		{
-			this.dropArmorParts(::Math.rand(5, 10), _lootTable);
 			this.dropFood(1, [
 				"strange_meat_item"
 			], _lootTable);
