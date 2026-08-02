@@ -11,14 +11,15 @@
 	{
 		local ret = __original();
 
-		if (this.m.CP_TacticalTextOverwrite == null) return ret;
-
-		foreach (entry in ret)
+		if (this.m.CP_TacticalTextOverwrite != null)
 		{
-			if (entry.id == 21 && entry.type == "hint" && entry.icon == "ui/orientation/terrain_orientation.png")
+			foreach (entry in ret)
 			{
-				entry.text = "This location is " + this.m.CP_TacticalTextOverwrite;
-				break;
+				if (entry.id == 21 && entry.type == "hint" && entry.icon == "ui/orientation/terrain_orientation.png")
+				{
+					entry.text = "This location is " + this.m.CP_TacticalTextOverwrite;
+					break;
+				}
 			}
 		}
 
