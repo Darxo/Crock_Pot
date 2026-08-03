@@ -8,7 +8,7 @@ this.cp_ignite_torch_skill <- this.inherit("scripts/skills/skill", {
 		this.m.Name = "Ignite Torch";
 		this.m.Description = "Set your torch alight.";
 		this.m.Icon = "skills/cp_ignite_torch_skill.png";
-		this.m.IconDisabled = "skills/cp_ignite_torch_skill_bw.png";
+		this.m.IconDisabled = "skills/cp_ignite_torch_skill_sw.png";
 		this.m.Overlay = "cp_ignite_torch_skill";
 		this.m.SoundOnUse = [
 			"sounds/combat/dlc6/fire_hit_01.wav",

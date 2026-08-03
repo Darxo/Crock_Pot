@@ -8,7 +8,7 @@ this.cp_set_fire_skill <- this.inherit("scripts/skills/skill", {
 		this.m.Name = "Set Fire";
 		this.m.Description = "Use your burning torch to set the nearby ground alight.";
 		this.m.Icon = "skills/cp_set_fire_skill.png";
-		this.m.IconDisabled = "skills/cp_set_fire_skill_bw.png";
+		this.m.IconDisabled = "skills/cp_set_fire_skill_sw.png";
 		this.m.Overlay = "cp_set_fire_skill";
 		this.m.SoundOnUse = [
 			// The first vanilla variant has a small delay, which we don't like
