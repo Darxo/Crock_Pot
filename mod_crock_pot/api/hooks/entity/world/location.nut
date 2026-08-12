@@ -26,8 +26,9 @@
 			{
 				if (entry.text == "Unknown garrison")
 				{
+					local hoursVacant = (this.m.Flags.get(this.m.CP_VacantTimeoutFlagName) - ::World.getTime().Days) * 24 - ::World.getTime().Hours;
 					entry.icon = "skills/status_effect_107.png";
-					entry.text = ::Reforged.Mod.Tooltips.parseString("This Location is currently [$ $|Concept.Vacant]");
+					entry.text = ::Reforged.Mod.Tooltips.parseString("This Location is currently [$ $|Concept.Vacant] (" + hoursVacant + " hours left)");
 					break;
 				}
 			}
