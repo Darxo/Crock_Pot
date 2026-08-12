@@ -28,8 +28,8 @@ This submod is a collection of content for Reforged.
 - Cave Fights use a new "cave biome" tactical map
 - Caves always drop 2 random treasures and either drop a few tools or strange meat. They also may rarely contain named items, as per vanilla rule
 - Every Cave will spawn a roaming party every 2.5 days. These parties will roam the around the cave for 1.5 days and then return to it
-- A cave that sends out a roaming party, becomes **Vacant** until that party returns
-	- While Vacant, the cave can't be attacked, won't naturally spawn parties, does not display defender and is 50% harder to spot. If a location stays Vacant for 3 days, it will despawn
+- A cave that sends out a roaming party, becomes **Vacant** for 1-2 days oruntil that party returns
+	- While Vacant, the cave can't be attacked and won't naturally spawn parties and does not display defender
 - The following Caves will appear from day 1:
   - Direwolves Caves (Up to 3) spawn only in forests. Their roaming parties have a Visibility Multiplier of 0.5
   - Hyena Caves (Up to 3) spawn only in desert. Their roaming parties have a Visibility Multiplier of 0.5

@@ -4,6 +4,14 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.10.1
+	- Beast caves no longer die, when their vacancy expires
+	- Vacancy now lasts 2 days by default (down from 3)
+	- Beast Caves are no longer harder to spot, while vacant
+	- Remaining Vacancy now displays in the tooltip of the location, if you are within viewing distance
+	- Fix Vacancy tooltip sometimes not showing up correctly
+	- Fix Cursor image revealing vacancy state, if you are not within viewing distance
+
 0.10.0
 	- Add new equippable **Wooden Torch** tool item, worn in the Offhand. It has a 6 Weight, 80 Condition and costs 80 Crowns. It is sold by various marketplaces. It grants the skills **Ignite Torch** and **Set Fire**
 		- Add new **Ignite Torch** skill (granted by **Wooden Torch**), which costs 5 Action Points and 10 Fatigue. It grants **Burning Torch** while holding the **Wooden Torch**
