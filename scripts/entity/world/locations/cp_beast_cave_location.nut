@@ -32,7 +32,6 @@ this.cp_beast_cave_location <- this.inherit("scripts/entity/world/location", {
 		this.m.CP_TacticalTypeOverwrite = "tactical.CP_cave";
 		this.m.CP_EngageImageOverwrite = "engage/cp_engage_cave";
 		this.m.CP_TacticalTextOverwrite = "in a cave";
-		this.m.CP_VacantVisibilityMult = 0.5;
 	}
 
 	function onSpawned()
