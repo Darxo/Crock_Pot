@@ -1,7 +1,7 @@
 ::CrockPot.HooksMod.hook("scripts/entity/world/location", function(q) {
 // Public
 	q.m.CP_TacticalTypeOverwrite <- null;	// Define custom TacticalType that should be used when fighting this location
-	q.m.CP_VacantDurationInDays <- 3;
+	q.m.CP_VacantDurationInDays <- 2;
 	q.m.CP_VacantVisibilityMult <- 1.0;
 
 	// Define custom engage image to be displayed when fighting at this location
