@@ -17,7 +17,11 @@
 
 	q.getTooltip = @(__original) function()
 	{
+		// A vacant location never shows its defenders, because it is effectively empty
+		local oldIsShowingDefenders = this.isShowingDefenders;
+		if (this.CP_isVacant()) this.isShowingDefenders = function() { return false };
 		local ret = __original();
+		this.isShowingDefenders = oldIsShowingDefenders;
 
 		if (this.CP_isVacant() && !this.isHiddenToPlayer())
 		{
