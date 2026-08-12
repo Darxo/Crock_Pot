@@ -66,8 +66,9 @@
 
 	q.isAttackable = @(__original) function()
 	{
-		// Vacancy prevents this location from being attacked
-		if (this.CP_isVacant()) return false;
+		// Vacancy prevents this location from being attacked, but only if it's visible to the player
+		// We dont want the player cursor to spoil the vacancy state from afar
+		if (this.CP_isVacant() && ::World.State.getPlayer().isAbleToSee(this)) return false;
 
 		return __original();
 	}
