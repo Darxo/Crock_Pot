@@ -148,7 +148,7 @@
 
 		if (this.CP_isVacant() && ::World.getTime().Days >= this.m.Flags.get(this.m.CP_VacantTimeoutFlagName))
 		{
-			this.fadeOutAndDie();
+			this.CP_setVacant(false);
 		}
 	}
 });
