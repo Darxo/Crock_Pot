@@ -4,6 +4,9 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.10.2
+	- Fix cave tooltips not showing up correctly
+
 0.10.1
 	- Beast caves no longer die, when their vacancy expires
 	- Vacancy now lasts 2 days by default (down from 3)
