@@ -6,3 +6,5 @@
 		)),
 	});
 }
+
+::Reforged.Mod.Tooltips.setTooltips(::Reforged.NestedTooltips.Tooltips);
