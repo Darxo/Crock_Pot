@@ -4,6 +4,10 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.10.3
+	- Fix vacancy lasting until midday
+	- Fix vacancy tooltip sometimes producing negative hour numbers
+
 0.10.2
 	- Fix cave tooltips not showing up correctly
 
