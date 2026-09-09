@@ -2,6 +2,10 @@
 // Public
 	q.m.CP_CanBeRepaired <- true;
 
+// Private
+	q.m.CP_IsCheckingRepairState <- false;
+	q.m.CP_IsToBeRepaired <- null;
+
 	// Vanilla Fix: Some Recipes accepting multiple different types of items
 	// We do this by making every item return its ClassNameHash, which we assume to be unique to any item script file
 	// Recipes use full item script paths for declaring ingredients. That is why we fix this by warping the return value of the getID function of all items
@@ -12,6 +16,38 @@
 			return this.ClassNameHash;
 		}
 
+		return __original();
+	}
+
+	q.getCondition = @(__original) function()
+	{
+		// Vanilla Fix: equipped items being repaired, even if isToBeRepaired is false
+		// We fix this, by pretending such items have full condition, during an Assets updateloop only
+		if (::World.Assets.m.CP_IsUpdating)
+		{
+			if (!this.m.CP_IsCheckingRepairState)
+			{
+				// To prevent infinite loops, because the vanilla isToBeRepaired function calls getCondition again
+				this.m.CP_IsCheckingRepairState = true;
+				this.m.CP_IsToBeRepaired = this.isToBeRepaired();
+				this.m.CP_IsCheckingRepairState = false;
+			}
+			if (this.m.CP_IsToBeRepaired == null) return __original();
+
+			if (this.m.CP_IsToBeRepaired)
+			{
+				this.m.CP_IsToBeRepaired = null;
+				return __original();
+			}
+			else
+			{
+				this.m.CP_IsToBeRepaired = null;
+				return this.getConditionMax();
+			}
+		}
+
+		// Todo: Test out loading save
+		this.m.CP_IsToBeRepaired = null;
 		return __original();
 	}
 
