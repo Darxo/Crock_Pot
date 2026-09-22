@@ -48,7 +48,7 @@ this.cp_set_fire_skill <- this.inherit("scripts/skills/skill", {
 			text = "Destroy any consumable corpse on the targeted tile.",
 		});
 
-		if (!this.getItem().m.IsLit)
+		if (::MSU.isEqual(this.getContainer().getActor(), ::MSU.getDummyPlayer()) || !this.getItem().m.IsLit)
 		{
 			ret.push({
 				id = 20,
