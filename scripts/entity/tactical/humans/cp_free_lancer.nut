@@ -13,9 +13,10 @@ this.cp_free_lancer <- this.inherit("scripts/entity/tactical/human", {
 		this.m.HairColors = ::Const.HairColors.All;
 		this.m.Beards = ::Const.Beards.All;
 
-		this.m.CP_ChestWeightedContainer = ::MSU.Class.WeightedContainer([
-			[12, "scripts/items/armor/decayed_coat_of_plates"],
+		this.m.CP_ChestWeightedContainer = ::MSU.Class.WeightedContainer([	// 220 - 260
+			[12, "scripts/items/armor/patchwork_scale_armor"],
 			[12, "scripts/items/armor/decayed_coat_of_scales"],
+			[12, "scripts/items/armor/decayed_coat_of_plates"],
 		]);
 
 		this.m.CP_HelmetWeightedContainer = ::MSU.Class.WeightedContainer([
