@@ -5,7 +5,7 @@ This submod is a collection of content for Reforged.
 # Overview
 - 3 new southern medium settlements (requires new game)
 - 23 new Beast Cave Locations with a unique combat biome
-- 10 new items (1 weapon, 3 birds, 4 ammo items, 2 craftable consumables)
+- 12 new items (1 weapon, 1 helmet, 1 offhand, 3 birds, 4 ammo items, 2 consumables)
 - 2 new Settlement Situations
 - 13 new NPCs to fight
 
