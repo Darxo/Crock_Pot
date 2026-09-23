@@ -118,7 +118,7 @@ this.cp_wooden_torch <- this.inherit("scripts/items/weapons/weapon", {
 				::Sound.play(this.m.BreakingSound, 1.0, actor.getPos());
 			}
 
-			this.unequip();
+			this.getContainer().unequip(this);
 		}
 	}
 });
