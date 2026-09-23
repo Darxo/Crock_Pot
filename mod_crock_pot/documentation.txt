@@ -4,6 +4,9 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.10.5
+	- Fix combat freeze when a wooden torch is burned down to 0 condition
+
 0.10.4
 	- Allow **Free Lancer** to spawn with a **Patchwork Scale Armor**
 	- Fix torches being repaired while equipped to a character
