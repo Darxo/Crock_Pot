@@ -20,7 +20,7 @@ this.cp_incendiary_bag <- this.inherit("scripts/items/ammo/powder_bag", {
 	{
 		this.ammo.onEquip();
 
-		// if (!::Hooks.hasMod("mod_hardened"))
+		if (!::Hooks.hasMod("mod_hardened"))
 		{
 			this.addSkill(::new("scripts/skills/effects/cp_incendiary_bag_effect"));
 		}
@@ -46,6 +46,6 @@ this.cp_incendiary_bag <- this.inherit("scripts/items/ammo/powder_bag", {
 	// If Hardened is not present, then this function does nothing
 	function HD_onReload( _reloadedItem )
 	{
-		// _reloadedItem.addSkill(::new("scripts/skills/effects/cp_loaded_incendiary_shot_effect"));
+		_reloadedItem.addSkill(::new("scripts/skills/effects/cp_loaded_incendiary_shot_effect"));
 	}
 });
