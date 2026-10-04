@@ -4,6 +4,9 @@ Write a short summary about what your mod does without going into specific. This
 
 ### Changes: ###
 
+0.10.6
+	- Fix **Indendiary Shot** effect not gained from **Ready to Go** perk (Hardened submod)
+
 0.10.5
 	- Fix combat freeze when a wooden torch is burned down to 0 condition
 

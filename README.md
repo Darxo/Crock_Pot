@@ -149,6 +149,7 @@ This submod is a collection of content for Reforged.
 
 - Peasants and Caravans spawned by City States appear at their Villages instead
 - Southern Villages can sometimes spawn with additional northern buildings. That can happens if too few of those buildings were spawned
+- Mods which trigger an auto-reload at the end of each turn potentially cause powder bag effects to activate even if not enough AP were available to reload
 
 # Compatibility
 
